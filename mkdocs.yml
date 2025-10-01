@@ -3,7 +3,7 @@ site_description: Documentation for Trusted Research Environment (TRE) operators
 site_author: EOSC-ENTRUST Team
 repo_url: https://github.com/your-org/tre-operators-docs
 theme:
-  name: mkdocs
+  name: readthedocs
 
 nav:
   - Home: index.md
