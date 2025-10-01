@@ -1,0 +1,31 @@
+site_name: TRE Operators Guide
+site_description: Documentation for Trusted Research Environment (TRE) operators in the context of Federated EOSC-ENTRUST
+site_author: EOSC-ENTRUST Team
+repo_url: https://github.com/your-org/tre-operators-docs
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - EOSC-ENTRUST Overview: eosc-overview.md
+  - TRE Fundamentals: fundamentals.md
+  - Deployment Guide:
+      - Overview: deployment/index.md
+      - Prerequisites: deployment/prerequisites.md
+      - Environment Setup: deployment/environment.md
+      - IAM: deployment/iam.md
+      - Compute & Networking: deployment/compute-network.md
+      - Storage: deployment/storage.md
+      - Logging & Monitoring: deployment/logging-monitoring.md
+      - Validation: deployment/validation.md
+  - Federation Integration: federation.md
+  - Operations & Maintenance: operations.md
+  - Compliance & Certification: compliance.md
+  - Best Practices: best-practices.md
+  - Troubleshooting & FAQs: troubleshooting.md
+  - Appendices:
+      - Glossary: appendices/glossary.md
+      - Reference Architecture: appendices/reference-architecture.md
+      - Config Examples: appendices/config-examples.md
+      - Resources: appendices/resources.md
