@@ -1,1 +1,0 @@
-This guide provides guidance for Trusted Research Environment (TRE) operators, managers involved in building a new TRE, or trainers looking to educate team members on the necessary capabilities, architecture, and processes required for TRE operation, within a federated context.
