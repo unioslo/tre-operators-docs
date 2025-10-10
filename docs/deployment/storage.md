@@ -1,3 +1,1 @@
 # Storage
-
-Content coming soon.

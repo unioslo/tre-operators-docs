@@ -1,3 +1,1 @@
 # Glossary
-
-Content coming soon.

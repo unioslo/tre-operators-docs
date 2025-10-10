@@ -1,3 +1,1 @@
 # Resources
-
-Content coming soon.
