@@ -2,6 +2,7 @@ site_name: TRE Operators Guide
 site_description: Documentation for Trusted Research Environment (TRE) operators in the context of Federated EOSC-ENTRUST
 site_author: EOSC-ENTRUST Team
 repo_url: https://github.com/unioslo/tre-operators-docs
+use_directory_urls: true
 theme:
   name: readthedocs
 
