@@ -4,7 +4,7 @@ site_author: EOSC-ENTRUST Team
 repo_url: https://github.com/unioslo/tre-operators-docs
 use_directory_urls: true
 theme:
-  name: mkdocs
+  name: readthedocs
 
 nav:
   - Home: index.md
