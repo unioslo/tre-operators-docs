@@ -15,3 +15,19 @@ TREs balance the **need for research access** with the **obligation to protect s
 ## TRE Architecture
 
 ![TRE Architecture](../images/tre_architecture_ops_docs.png)
+
+## Diagram Legend
+
+| Abbreviation | Description |
+|---------------|-------------|
+| **DQ** | Data Quality – validation and cleaning of incoming data |
+| **PHI** | Protected Health Information – identifiable health data |
+| **IdP** | Identity Provider – federated authentication source (e.g., EduGAIN, eIDAS) |
+| **AuthZ** | Authorization service – enforces role- and attribute-based access control |
+| **WSP** | Workspace – secure compute environment (VMs, containers, VDI) |
+| **DLP** | Data Loss Prevention engine – enforces data egress policies |
+| **SIEM** | Security Information and Event Management – aggregates logs and alerts |
+| **RBAC / ABAC** | Role-Based / Attribute-Based Access Control models |
+| **ETL** | Extract, Transform, Load – data curation process |
+| **NetIso** | Network Isolation – prevents external network access |
+| **Egress** | Controlled export of approved outputs after disclosure review |
