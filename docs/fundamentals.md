@@ -11,3 +11,5 @@
 
 ## Why TREs Matter
 TREs balance the **need for research access** with the **obligation to protect sensitive data**. They enable reproducible, large-scale studies while ensuring that privacy and trust are maintained.
+
+![TRE Architecture](../images/tre_architecture_ops_docs.png)
