@@ -1,6 +1,6 @@
 # TRE Fundamentals
 
- **Trusted Research Environment (TRE)** is a secure digital workspace designed to provide researchers controlled access to sensitive data, typically health, social, or administrative records, while ensuring strict safeguards around privacy, security, and compliance.
+**Trusted Research Environment (TRE)** is a secure digital workspace designed to provide researchers controlled access to sensitive data, typically health, social, or administrative records, while ensuring strict safeguards around privacy, security, and compliance.
 
 ## Core Characteristics
 - **Data protection**: TREs prevent data from being copied or removed. Researchers access only the tools and views needed for analysis.  
@@ -20,14 +20,14 @@ TREs balance the **need for research access** with the **obligation to protect s
 
 | Abbreviation | Description |
 |---------------|-------------|
-| **DQ** | Data Quality – validation and cleaning of incoming data |
-| **PHI** | Protected Health Information – identifiable health data |
-| **IdP** | Identity Provider – federated authentication source (e.g., EduGAIN, eIDAS) |
 | **AuthZ** | Authorization service – enforces role- and attribute-based access control |
-| **WSP** | Workspace – secure compute environment (VMs, containers, VDI) |
 | **DLP** | Data Loss Prevention engine – enforces data egress policies |
-| **SIEM** | Security Information and Event Management – aggregates logs and alerts |
-| **RBAC / ABAC** | Role-Based / Attribute-Based Access Control models |
-| **ETL** | Extract, Transform, Load – data curation process |
-| **NetIso** | Network Isolation – prevents external network access |
+| **DQ** | Data Quality – validation and cleaning of incoming data |
 | **Egress** | Controlled export of approved outputs after disclosure review |
+| **ETL** | Extract, Transform, Load – data curation process |
+| **IdP** | Identity Provider – federated authentication source (e.g., EduGAIN, eIDAS) |
+| **NetIso** | Network Isolation – prevents external network access |
+| **PHI** | Protected Health Information – identifiable health data |
+| **RBAC / ABAC** | Role-Based / Attribute-Based Access Control models |
+| **SIEM** | Security Information and Event Management – aggregates logs and alerts |
+| **WSP** | Workspace – secure compute environment (VMs, containers, VDI) |
