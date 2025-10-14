@@ -8,7 +8,6 @@ theme:
 
 nav:
   - Home: index.md
-  - Introduction: introduction.md
   - EOSC-ENTRUST Overview: eosc-overview.md
   - TRE Fundamentals: fundamentals.md
   - Deployment Guide:
