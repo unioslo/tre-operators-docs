@@ -4,6 +4,7 @@ This documentation supports **Trusted Research Environment (TRE)** operators par
 It provides practical guidance for building, operating, and maintaining secure, compliant, and interoperable TREs across the federation.
 
 The goal is to:
+
 - Enable consistent implementation of TREs aligned with EOSC-ENTRUST standards.
 - Support new operators in deploying a TRE from the ground up.
 - Provide existing operators with reference materials for governance, compliance, and integration.
