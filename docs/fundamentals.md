@@ -1,7 +1,7 @@
 
 # TRE Fundamentals
 
-**Trusted Research Environment (TRE)**<sup>[[see Glossary](appendices/glossary.md#tre-operator)]</sup> is a secure digital workspace designed to provide researchers controlled access to sensitive data, typically health, social, or administrative records, while ensuring strict safeguards around privacy, security, and compliance. For definitions of key terms, see the [Glossary](appendices/glossary.md).
+**Trusted Research Environment (TRE)**<sup>[[Glossary](appendices/glossary.md#tre-operator)]</sup> is a secure digital workspace designed to provide researchers controlled access to sensitive data, such as health, social, or administrative records, while ensuring strict safeguards around privacy, security, and compliance. By making data available through a TRE, personal information can be accessed safely, ensuring individuals’ privacy is protected. TREs give approved researchers a single, secure location where both data and analytical tools are available, functioning much like a protected reference library. For definitions of key terms, see the [Glossary](appendices/glossary.md).
 
 
 ## Core Characteristics
