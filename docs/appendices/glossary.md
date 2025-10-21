@@ -83,9 +83,6 @@ Structured data describing content/use to aid discovery and reuse.
 **National dataset catalogue**  
 Public national catalogue describing sources, nature, and availability conditions of electronic health data.
 
-**National Contact Point (NCP) for secondary use**  
-National technical/organisational gateway linking domestic infrastructures with the HealthData@EU Central Platform.
-
 **Non-personal electronic health data**  
 Health data that are anonymised or never related to an identifiable person.
 
