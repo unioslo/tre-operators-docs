@@ -12,10 +12,6 @@ nav:
   - TRE Fundamentals: fundamentals.md
   - Deployment Guide:
       - Architecture: deployment/index.md
-      - Compute & Networking: deployment/compute-network.md
-      - Storage: deployment/storage.md
-      - Logging & Monitoring: deployment/logging-monitoring.md
-      - Validation: deployment/validation.md
   - Federation Integration: federation.md
   - Operations & Maintenance: operations.md
   - Compliance & Certification: compliance.md
@@ -24,5 +20,4 @@ nav:
   - Appendices:
       - Glossary: appendices/glossary.md
       - Reference Architecture: appendices/reference-architecture.md
-      - Config Examples: appendices/config-examples.md
       - Resources: appendices/resources.md
