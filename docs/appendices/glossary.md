@@ -11,9 +11,6 @@ Altering personal data so individuals cannot be identified, directly or indirect
 **Benefit (of data use)**  
 Positive outcomes from data use (e.g., social, health, environmental).
 
-**Central Platform**  
-EU interoperability platform connecting National Contact Points and authorised participants for secondary-use exchange.
-
 **Data access**  
 User processes data provided by a holder under set conditions without necessarily receiving a copy.
 
@@ -31,9 +28,6 @@ HDAB decision authorising a user to process specified health data for defined se
 
 **Data quality**  
 Fitness of health data elements for intended primary and secondary uses.
-
-**Data quality & utility label**  
-Visual/metadata label describing dataset quality and usage conditions.
 
 **Dataset**  
 Structured collection of electronic health data.
@@ -113,14 +107,8 @@ Processing health data for EHDS Chapter IV purposes other than the original purp
 **Secure Processing Environment (SPE)**  
 Controlled environment meeting security/interoperability requirements, granting access only to authorised users and logging activity.
 
-**Significant finding**  
-EHDS doesn’t define; recital describes health-related results identified by users during secondary use that may matter to an individual; classification/communication governed nationally.
-
 **Trusted health data holder**  
 Designated holder eligible for simplified permit procedures and able to supply data via an SPE they manage.
 
 **Trusted third party (TTP)**  
 Independent pseudonymisation entity computing pseudonyms from identifiers; holds no other data.
-
-**Request for Payment**  
-Request to the data user for payment of actual costs for work done during a period, referencing the related invoice components.
