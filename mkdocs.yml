@@ -11,10 +11,7 @@ nav:
   - EOSC-ENTRUST Overview: eosc-overview.md
   - TRE Fundamentals: fundamentals.md
   - Deployment Guide:
-      - Overview: deployment/index.md
-      - Prerequisites: deployment/prerequisites.md
-      - Environment Setup: deployment/environment.md
-      - IAM: deployment/iam.md
+      - Architecture: deployment/index.md
       - Compute & Networking: deployment/compute-network.md
       - Storage: deployment/storage.md
       - Logging & Monitoring: deployment/logging-monitoring.md
