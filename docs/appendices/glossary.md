@@ -3,7 +3,6 @@
 
 Based on definitions from [TEHDAS (2025)](https://tehdas.eu/public-consultations/). See also the highly relevant [UK TRE Glossary](https://glossary.uktre.org/en/latest/).
 
-
 ---
 
 **Anonymisation**  
