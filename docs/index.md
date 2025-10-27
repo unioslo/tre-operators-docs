@@ -20,10 +20,10 @@ The training addresses gaps in:
 
 | Blueprint Component | Training Module |
 | :--- | :--- |
-| Template Legal Agreements | Module 4: Legal and Ethical Frameworks |
 | Architecture Specifications | Module 1: Technical Foundation |
-| Operating Procedures | Module 3: Governance and Operational Workflows |
 | Interface Definitions | Module 2: Interoperability Protocols |
+| Operating Procedures | Module 3: Governance and Operational Workflows |
+| Template Legal Agreements | Module 4: Legal and Ethical Frameworks |
 | Glossary and Semantic Interoperability | Module 5: Terminology and Standards |
 
 ## Audience
