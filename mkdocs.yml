@@ -10,10 +10,7 @@ nav:
   - Home: index.md
   - EOSC-ENTRUST Overview: eosc-overview.md
   - TRE Fundamentals: fundamentals.md
-  - "Architecture":
-      - "Overview and Minimal Requirements": modules/architecture/index.md
-      - "TRE Components": modules/architecture/zones.md
-      - "Federation Services": modules/architecture/federation-services.md
+  - "Architecture": modules/architecture/index.md
   - "Interface Definitions":
       - "Overview of Interface Types": modules/interfaces/index.md
       - "Federated AAAI": modules/interfaces/aaai.md
