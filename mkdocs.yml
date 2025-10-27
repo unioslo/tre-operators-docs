@@ -16,9 +16,9 @@ nav:
       - "Federation Services": modules/architecture/federation-services.md
   - "Interface Definitions":
       - "Overview of Interface Types": modules/interfaces/index.md
-      - "Federated AAAI (OIDC, Identity Layers)": modules/interfaces/aaai.md
-      - "Cross-TRE Authorisation (ODRL/REGO Policy Exchange)": modules/interfaces/authorization.md
-      - "Secure Data Exchange and Auditing (SS/ELK)": modules/interfaces/data-audit.md
+      - "Federated AAAI": modules/interfaces/aaai.md
+      - "Cross-TRE Authorisation": modules/interfaces/authorization.md
+      - "Secure Data Exchange and Auditing": modules/interfaces/data-audit.md
   - "Operating Procedures":
       - "Overview and Transition to Consensus SOPs": modules/procedures/index.md
       - "User Handling and Training": modules/procedures/user-handling.md
