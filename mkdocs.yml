@@ -35,7 +35,7 @@ nav:
       - 4.3 EHDS Alignment, Permits, and Roles (SPE, HDABs): modules/legal/ehds.md
       - 4.4 Model Agreements (DTA, DUA) [Future Content]: modules/legal/agreements.md
 
-  - Module 5: Glossary and Semantic Interoperability: modules/glossary/index.md
+  - Module 5: Glossary and Semantic Interoperability: glossary.md
 
   - Appendices:
       - Reference Architectures (DARE UK, EOSC Node): appendices/reference-architecture.md
