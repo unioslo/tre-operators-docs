@@ -54,7 +54,7 @@ It is derived from the design principles and implementation experience of the **
 
 ### Architectural Overview
 
-![Generalized AAA Integration Architecture](../images/aaai_architecture.png)
+![Generalized AAA Integration Architecture](../../images/aaai_architecture.png)
 
 *Figure: Conceptual model showing how authentication, authorization, and auditing components interact within a TRE.*
 
