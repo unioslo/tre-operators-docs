@@ -1,33 +1,48 @@
 # Introduction
 
+Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Training Material. This guide is designed to help you build, operate, and maintain secure, compliant, and interoperable TREs.
 
-This documentation supports **Trusted Research Environment (TRE)** operators participating in the **Federated EOSC-ENTRUST** initiative.  
-It provides practical guidance for building, operating, and maintaining secure, compliant, and interoperable TREs across the federation. For definitions of key terms, see the [Glossary](appendices/glossary.md).
+## Learning Objectives
+- Understand TRE concepts and terminology
+- Set up and configure TRE architecture
+- Implement interfaces and operational procedures
+- Apply legal and compliance requirements
+- Integrate with federated TREs
 
-The goal is to:
+## Modules
 
-- Enable consistent implementation of TREs aligned with EOSC-ENTRUST standards. See [TRE Fundamentals](fundamentals.md).
-- Support new operators in deploying a TRE from the ground up. See [Deployment](deployment/index.md).
-- Provide existing operators with reference materials for governance, compliance, and integration. See [Compliance & Certification](compliance.md), [Federation Integration](federation.md), and [Operations & Maintenance](operations.md).
+1. [TRE Fundamentals](#module-1-tre-fundamentals)
+2. [Architecture & Setup](#module-2-architecture--setup)
+3. [Interfaces & Configuration](#module-3-interfaces--configuration)
+4. [Operations & Procedures](#module-4-operations--procedures)
+5. [Legal & Compliance](#module-5-legal--compliance)
+6. [Federation & Collaboration](#module-6-federation--collaboration)
+7. [Appendices & Resources](#module-7-appendices--resources)
 
-## Priority Areas
-The training addresses gaps in:
+---
 
-1.  **Federation Readiness:** Implementing federated AAAI, secure data transfer, cross-TRE authorisation, and federation governance.
-2.  **Legal and Ethical Harmonisation:** Aligning with national/international laws and preparing for frameworks like the European Health Data Space (EHDS).
-3.  **Operational Alignment:** Standardising operating procedures (SOPs), implementing core architecture components and aligning risk management.
+## Module 1: TRE Fundamentals
+- Key concepts and terminology ([Glossary](appendices/glossary.md))
+- Compliance basics ([TRE Fundamentals](fundamentals.md))
 
-| Blueprint Component | Training Module |
-| :--- | :--- |
-| Architecture Specifications | Module 1: Technical Foundation |
-| Interface Definitions | Module 2: Interoperability Protocols |
-| Operating Procedures | Module 3: Governance and Operational Workflows |
-| Template Legal Agreements | Module 4: Legal and Ethical Frameworks |
-| Glossary and Semantic Interoperability | Module 5: Terminology and Standards |
+## Module 2: Architecture & Setup
+- Zones and core components ([Architecture](modules/architecture/index.md))
+- AAA integration
 
-## Audience
+## Module 3: Interfaces & Configuration
+- Interface definitions ([Interfaces](modules/interfaces/index.md))
 
-- **TRE Operators** – responsible for deployment, maintenance, and compliance. See [Glossary](appendices/glossary.md#tre-operator).
-- **Infrastructure Teams** – managing compute, storage, IAM, and network security. See [Deployment](deployment/index.md).
-- **Policy and Compliance Officers** – overseeing data protection, auditing, and certification. See [Compliance & Certification](compliance.md).
-- **System Architects** – designing interoperable TREs within the EOSC-ENTRUST federation. See [Reference Architecture](appendices/reference-architecture.md).
+## Module 4: Operations & Procedures
+- Onboarding, monitoring, incident response ([Procedures](modules/procedures/index.md), [Operations](operations.md))
+
+## Module 5: Legal & Compliance
+- Agreements, certification, governance ([Legal](modules/legal/index.md), [Compliance](compliance.md))
+
+## Module 6: Federation & Collaboration
+- Federation integration ([Federation](federation.md))
+- Data sharing and collaboration
+
+## Module 7: Appendices & Resources
+- [Glossary](appendices/glossary.md)
+- [Reference Architecture](appendices/reference-architecture.md)
+- [Resources](appendices/resources.md)
