@@ -11,7 +11,7 @@ nav:
   - EOSC-ENTRUST Overview: eosc-overview.md
   - TRE Fundamentals: fundamentals.md
   - Module 1: Architecture Specifications (Technical Foundation):
-      - 1.1: Overview and Minimal Requirements: modules/architecture/index.md
+      - 1.1 Overview and Minimal Requirements: modules/architecture/index.md
   - Deployment Guide:
       - Architecture: deployment/index.md
   - Federation Integration: federation.md
