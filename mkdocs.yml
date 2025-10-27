@@ -10,24 +10,10 @@ nav:
   - Home: index.md
   - EOSC-ENTRUST Overview: eosc-overview.md
   - TRE Fundamentals: fundamentals.md
-  - "Architecture": modules/architecture/index.md
-  - "Interface Definitions":
-      - "Overview of Interface Types": modules/interfaces/index.md
-      - "Federated AAAI": modules/interfaces/aaai.md
-      - "Cross-TRE Authorisation": modules/interfaces/authorization.md
-      - "Secure Data Exchange and Auditing": modules/interfaces/data-audit.md
-  - "Operating Procedures":
-      - "Overview and Transition to Consensus SOPs": modules/procedures/index.md
-      - "User Handling and Training": modules/procedures/user-handling.md
-      - "Statistical Disclosure Control": modules/procedures/sdc.md
-      - "Risk Management and Service Alignment": modules/procedures/risk-management.md
-      - "Data Deletion and Archival Policies": modules/procedures/archiving.md
-  - "Template Legal Agreements":
-      - "Overview of Legal Interoperability": modules/legal/index.md
-      - "Multi-Jurisdictional Compliance and National Alignment": modules/legal/compliance.md
-      - "EHDS Alignment": modules/legal/ehds.md
-      - "Model Agreements": modules/legal/agreements.md
-
+  - Architecture: modules/architecture/index.md
+  - Interface Definitions: modules/interfaces/index.md
+  - Operating Procedures: modules/procedures/index.md
+  - Template Legal Agreements: modules/legal/index.md
   - Appendices:
       - Glossary: appendices/glossary.md
       - Reference Architecture: appendices/reference-architecture.md
