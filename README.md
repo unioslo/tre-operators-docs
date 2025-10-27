@@ -1,4 +1,4 @@
-# tre-operators-docs
-Documentation for Trusted Research Environment (TRE) operators in the context of Federated EOSC-ENTRUST. Includes deployment guides, federation integration, operations, and compliance.
+**Repository for the documentation, training and certification materials** for operators of Trusted Research Environments (TREs) in the federated EOSC‑ENTRUST network.
 
-[Guide](https://tre-operators-docs.readthedocs.io/en/latest/)
+
+The public guide is available at: [https://tre-operators-docs.readthedocs.io](https://tre-operators-docs.readthedocs.io)
