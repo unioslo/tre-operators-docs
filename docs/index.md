@@ -14,6 +14,7 @@ The goal is to:
 
 ## Priority Areas
 The training addresses gaps in:
+
 1.  **Federation Readiness:** Implementing federated AAAI, secure data transfer, cross-TRE authorisation, and federation governance.
 2.  **Legal and Ethical Harmonisation:** Aligning with national/international laws and preparing for frameworks like the European Health Data Space (EHDS).
 3.  **Operational Alignment:** Standardising operating procedures (SOPs), implementing core architecture components and aligning risk management.
