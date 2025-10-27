@@ -7,13 +7,16 @@ theme:
   name: readthedocs
 
 nav:
-  - Introduction: index.md
-
-  - Strategic Overview (EOSC-ENTRUST & DARE UK Blueprint): eosc-overview.md
-
-  - Module 1: Architecture Specifications (Technical Foundation):
-      - 1.1 Overview and Minimal Requirements: modules/architecture/index.md
-      - 1.2 TRE Functional Zones (RAZ, SDZ, QMZ): modules/architecture/zones.md
-      - 1.3 Core Federation Services (Registry, Security Server): modules/architecture/federation-services.md
-
-
+  - Home: index.md
+  - EOSC-ENTRUST Overview: eosc-overview.md
+  - TRE Fundamentals: fundamentals.md
+  - Deployment Guide:
+      - Architecture: deployment/index.md
+  - Federation Integration: federation.md
+  - Operations & Maintenance: operations.md
+  - Compliance & Certification: compliance.md
+  - Best Practices: best-practices.md
+  - Appendices:
+      - Glossary: appendices/glossary.md
+      - Reference Architecture: appendices/reference-architecture.md
+      - Resources: appendices/resources.md
