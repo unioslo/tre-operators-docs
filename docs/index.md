@@ -18,7 +18,7 @@ The training addresses gaps in:
 2.  **Legal and Ethical Harmonisation:** Aligning with national/international laws and preparing for frameworks like the European Health Data Space (EHDS).
 3.  **Operational Alignment:** Standardising operating procedures (SOPs), implementing core architecture components and aligning risk management.
 
-| Blueprint Component | Handbook Module |
+| Blueprint Component | Training Module |
 | :--- | :--- |
 | Template Legal Agreements | Module 4: Legal and Ethical Frameworks |
 | Architecture Specifications | Module 1: Technical Foundation |
