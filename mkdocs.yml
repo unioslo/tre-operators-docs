@@ -10,14 +10,34 @@ nav:
   - Home: index.md
   - EOSC-ENTRUST Overview: eosc-overview.md
   - TRE Fundamentals: fundamentals.md
-  - "Module 1: Architecture Specifications (Technical Foundation)":
+  - "Module 1: Architecture":
       - "1.1 Overview and Minimal Requirements": modules/architecture/index.md
-  - Deployment Guide:
-      - Architecture: deployment/index.md
-  - Federation Integration: federation.md
-  - Operations & Maintenance: operations.md
-  - Compliance & Certification: compliance.md
-  - Best Practices: best-practices.md
+      - "1.2 TRE Components": modules/architecture/zones.md
+      - "1.3 Federation Services": modules/architecture/federation-services.md
+  - "Module 2: Interface Definitions":
+      - "2.1 Overview of Interface Types": modules/interfaces/index.md
+      - "2.2 Federated AAAI (OIDC, Identity Layers)": modules/interfaces/aaai.md
+      - "2.3 Cross-TRE Authorisation (ODRL/REGO Policy Exchange)": modules/interfaces/authorization.md
+      - "2.4 Secure Data Exchange and Auditing (SS/ELK)": modules/interfaces/data-audit.md
+
+  # Training Focus: Operational Alignment (SOPs, Risk Management)
+  - "Module 3: Operating Procedures":
+      - "3.1 Overview and Transition to Consensus SOPs": modules/procedures/index.md
+      - "3.2 User Handling and Training": modules/procedures/user-handling.md
+      - "3.3 Statistical Disclosure Control": modules/procedures/sdc.md
+      - "3.4 Risk Management and Service Alignment": modules/procedures/risk-management.md
+      - "3.5 Data Deletion and Archival Policies": modules/procedures/archiving.md
+
+  # Training Focus: Legal and Ethical Harmonisation
+  - "Module 4: Template Legal Agreements":
+      - "4.1 Overview of Legal Interoperability": modules/legal/index.md
+      - "4.2 Multi-Jurisdictional Compliance and National Alignment": modules/legal/compliance.md
+      - "4.3 EHDS Alignment": modules/legal/ehds.md
+      - "4.4 Model Agreements": modules/legal/agreements.md
+
+  # Training Focus: Semantic Interoperability
+  - "Module 5: Glossary and Semantic Interoperability": modules/glossary/index.md
+
   - Appendices:
       - Glossary: appendices/glossary.md
       - Reference Architecture: appendices/reference-architecture.md
