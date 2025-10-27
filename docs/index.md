@@ -4,8 +4,6 @@
 This documentation supports **Trusted Research Environment (TRE)** operators participating in the **Federated EOSC-ENTRUST** initiative.  
 It provides practical guidance for building, operating, and maintaining secure, compliant, and interoperable TREs across the federation. For definitions of key terms, see the [Glossary](appendices/glossary.md).
 
-The ENTRUST Blueprint architecture is based on the **DARE UK Federated Architecture Blueprint** (Version 2.2). This architecture is grounded in the **Five Safes framework** (Safe Projects, Safe People, Safe Settings, Safe Data, Safe Outputs) to ensure trustworthy research on sensitive data. The Guide focuses on implementing the minimal requirements necessary to achieve federation.
-
 The goal is to:
 
 - Enable consistent implementation of TREs aligned with EOSC-ENTRUST standards. See [TRE Fundamentals](fundamentals.md).
