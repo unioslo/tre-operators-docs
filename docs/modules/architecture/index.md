@@ -11,14 +11,32 @@ The architecture follows the principle of **"start from where you are"** and pro
 
 Participants are the strategic capabilities forming the federation network.
 
-| Participant | Function | Key Components |
-| :--- | :--- | :--- |
-| **Trusted Research Environment (TRE)** | Primary vehicle for delivering sensitive data to researchers in a secure, controlled, and approved manner. | Research Analytics Zone (RAZ), Secure Data Zone (SDZ), Query Management Zone (QMZ). |
-| **Index Service** | Creates linkage spines to link distinct datasets at the individual level, enabling authorized joint datasets. | Pseudonymization service, Linkage spines registry. |
-| **Software Service** | Provides approved software artifacts, including environment configurations and research artifacts (workflows, containers). | Environment Artifacts, Research Artifacts. |
-| **Discovery Service** | Provides information (metadata) about features of the Federation to users outside the Federation, potentially querying the Registry. | Output Control process. |
-| **Job Submission Service** | Receives job requests (indirect queries) from researchers and manages forwarding and result handling. | Job Approval process, Output Control process. |
-| **Federation Services** | Provides coordinating functions: Registry, Trust, Accounting, Management, and Monitoring. | AAAI Capability, Registry. |
+
+### Federation Participants
+
+- **Trusted Research Environment (TRE)**
+    - *Function*: Primary vehicle for delivering sensitive data to researchers in a secure, controlled, and approved manner.
+    - *Key Components*: Research Analytics Zone (RAZ), Secure Data Zone (SDZ), Query Management Zone (QMZ).
+
+- **Index Service**
+    - *Function*: Creates linkage spines to link distinct datasets at the individual level, enabling authorized joint datasets.
+    - *Key Components*: Pseudonymization service, Linkage spines registry.
+
+- **Software Service**
+    - *Function*: Provides approved software artifacts, including environment configurations and research artifacts (workflows, containers).
+    - *Key Components*: Environment Artifacts, Research Artifacts.
+
+- **Discovery Service**
+    - *Function*: Provides information (metadata) about features of the Federation to users outside the Federation, potentially querying the Registry.
+    - *Key Components*: Output Control process.
+
+- **Job Submission Service**
+    - *Function*: Receives job requests (indirect queries) from researchers and manages forwarding and result handling.
+    - *Key Components*: Job Approval process, Output Control process.
+
+- **Federation Services**
+    - *Function*: Provides coordinating functions: Registry, Trust, Accounting, Management, and Monitoring.
+    - *Key Components*: AAAI Capability, Registry.
 
 ## Interoperability Requirement
 
