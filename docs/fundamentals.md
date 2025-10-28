@@ -16,11 +16,11 @@ A **Trusted Research Environment (TRE)** is a secure digital workspace that prov
 - **Controlled access**: User authentication and role-based permissions ensure only approved researchers can enter.
 - **Secure compute**: Analysis is performed within a segregated, auditable environment (often virtual desktops or containers).
 - **Governed outputs**: Results are checked before leaving the environment to ensure they do not compromise data subjects.
-- **Compliance**: Aligns with legal and ethical frameworks such as GDPR, ISO 27001, or national research governance. See [Compliance & Certification](../compliance.md).
+- **Compliance**: Aligns with legal and ethical frameworks such as GDPR, ISO 27001, or national research governance.
 
 ## Why TREs Matter
 
-TREs balance the need for research access with the obligation to protect sensitive data. They enable reproducible, large-scale studies while maintaining privacy and trust. For more on federation and interoperability, see [Federation Integration](../federation.md).
+TREs balance the need for research access with the obligation to protect sensitive data. They enable reproducible, large-scale studies while maintaining privacy and trust. For more on federation and interoperability, see [Federation Integration](./federation.md).
 
 ## TRE Architecture Overview
 
