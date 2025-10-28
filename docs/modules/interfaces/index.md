@@ -10,6 +10,7 @@ TREs exchange **Structured Data Objects** using a set of well-defined interface 
 ## Packaging Structured Data
 
 Always package objects exchanged between Participants in a standard way:
+
 - Use the **“Five Safes” RO-Crate standard** for all structured data objects.
 - Tag each object with metadata that indicates the **Project context** for traceability.
 
@@ -50,6 +51,7 @@ Select the interface type that matches your data flow and security needs:
 ## Federation Security and Compliance
 
 To maintain security and compliance:
+
 - Route all interface traffic through Security Servers.
 - Encrypt all data exchanges between Participants.
 - Tag all objects with project metadata for traceability.
