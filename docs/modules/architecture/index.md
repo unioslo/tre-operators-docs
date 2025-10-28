@@ -75,8 +75,8 @@ The SDZ supports the management, linkage, curation, ingress, and egress of resea
 
 The QMZ handles queries sent from other, remote TREs or external Job Submission services, typically sitting alongside an SDZ.
 
-*   **Direct Queries (Model 3):** A QMZ supporting direct queries **MUST** have an **External Presentation component** (e.g., a database view) and **MUST** support the incoming Query (direct) interface type.
-*   **Indirect Queries (Model 4):** A QMZ supporting indirect queries **MUST** include a **Job Controller component** and a **Job Executor component**. The Job Request **MUST** pass through a **Job Approval process**.
+*   **Direct Queries:** A QMZ supporting direct queries **MUST** have an **External Presentation component** (e.g., a database view) and **MUST** support the incoming Query (direct) interface type.
+*   **Indirect Queries:** A QMZ supporting indirect queries **MUST** include a **Job Controller component** and a **Job Executor component**. The Job Request **MUST** pass through a **Job Approval process**.
 *   **HPC:** A QMZ **MAY** provide a **High-Performance Computing (HPC) component** to support the execution of indirect query jobs.
 
 
