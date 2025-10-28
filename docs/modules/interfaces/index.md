@@ -57,7 +57,7 @@ This section details the protocols required for handling authorization decisions
 
 ### Authorization Decision Principle
 
-*   **Local Autonomy:** TREs **MUST** retain **full control over the final authorization decision**; they are unwilling to delegate this to a centralized federation service.
+*   **Local Autonomy:** TREs **MUST** retain **full control over the final authorization decision**.
 *   **Authorization Context:** Authorization relies heavily on the **Project** concept, which defines the context (members, datasets, duration) necessary for the TRE to make an access decision.
 
 ### Policy and Attribute Exchange
