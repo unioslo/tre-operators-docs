@@ -1,50 +1,60 @@
-# Overview of Interface Types
 
-Interoperability is achieved through the exchange of **Structured Data Objects** over a small number of defined **Interface Types**. Traffic to and from all interface services MUST route first through the Security Servers of the host Participant.
+# Interface Types: A Practical Guide
 
-## Structured Data Packaging
+This guide explains how TREs in the federation exchange data securely and efficiently. You will learn how to package data, use the right interface type, and ensure compliance with federation requirements.
 
-The Federation requires that all objects exchanged between Participants **MUST** be packaged in a standard way.
+## How Data Moves Between TREs
 
-*   **Recommended Standard:** The use of the **“Five Safes” RO-Crate standard** is suggested as the packaging format for all structured data objects.
-*   **Traceability:** All structured data objects exchanged **SHOULD** be tagged with a metadata record indicating the **Project context**.
+TREs exchange **Structured Data Objects** using a set of well-defined interface types. All traffic to and from interface services must route through the Security Servers of the host Participant, ensuring security and traceability.
 
-## Interface Types and Data Flow
+## Packaging Structured Data
 
-Interface services are classified by type, defining their security context and permitted external connections.
+Always package objects exchanged between Participants in a standard way:
+- Use the **“Five Safes” RO-Crate standard** for all structured data objects.
+- Tag each object with metadata that indicates the **Project context** for traceability.
 
+## Choosing the Right Interface Type
 
-### Interface Types
+Select the interface type that matches your data flow and security needs:
 
-- **Query (Direct)**
-    - *Function*: Supports queries where the executable query is fully contained in the payload (e.g., SQL).
-    - *Data Object(s)*: Query Object.
-    - *Connection Requirement*: MUST connect solely to other Query (Direct) services.
+- **Query (Direct):**
+    - Use this when your query is fully contained in the payload (e.g., SQL).
+    - Exchange a Query Object.
+    - Connect only to other Query (Direct) services.
 
-- **Query (Indirect)**
-    - *Function*: Supports queries referring to an external executable artifact (e.g., workflow URL).
-    - *Data Object(s)*: Job Request Object.
-    - *Connection Requirement*: MUST connect solely to other Query (Indirect) services.
+- **Query (Indirect):**
+    - Use this for queries that reference an external executable artifact (e.g., workflow URL).
+    - Exchange a Job Request Object.
+    - Connect only to other Query (Indirect) services.
 
-- **Data Ingress/Egress**
-    - *Function*: Moves complete sensitive Datasets or large extracts between Participants.
-    - *Data Object(s)*: Data Extract Object.
-    - *Connection Requirement*: Data Egress MUST connect solely to Data Ingress services.
+- **Data Ingress/Egress:**
+    - Use this to move complete sensitive datasets or large extracts between Participants.
+    - Exchange a Data Extract Object.
+    - Data Egress must connect only to Data Ingress services.
 
-- **Index**
-    - *Function*: Exchanges lists of personal/depersonalized identifiers and master linkage spines.
-    - *Data Object(s)*: Index Object.
-    - *Connection Requirement*: MUST connect solely to Index interface services.
+- **Index:**
+    - Use this to exchange lists of personal or depersonalized identifiers and master linkage spines.
+    - Exchange an Index Object.
+    - Connect only to Index interface services.
 
-- **Software**
-    - *Function*: Downloads approved software artifacts (environment or research) from a Software Service.
-    - *Data Object(s)*: Environment/Job Payload Artifact.
-    - *Connection Requirement*: MUST connect solely to Software interface services.
+- **Software:**
+    - Use this to download approved software artifacts (environment or research) from a Software Service.
+    - Exchange an Environment or Job Payload Artifact.
+    - Connect only to Software interface services.
 
-- **Response**
-    - *Function*: Encapsulates the results/answers to queries.
-    - *Data Object(s)*: Response Object.
-    - *Connection Requirement*: MUST connect solely to other Response services.
+- **Response:**
+    - Use this to encapsulate and send results or answers to queries.
+    - Exchange a Response Object.
+    - Connect only to other Response services.
+
+## Federation Security and Compliance
+
+To maintain security and compliance:
+- Route all interface traffic through Security Servers.
+- Encrypt all data exchanges between Participants.
+- Tag all objects with project metadata for traceability.
+
+By following these practices, you help ensure the integrity, confidentiality, and traceability of all data exchanged in the federation.
 
 ## Federated AAAI (Authentication, Authorization, and Auditing Infrastructure)
 

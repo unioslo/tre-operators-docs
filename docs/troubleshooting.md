@@ -1,14 +1,11 @@
 # Troubleshooting & FAQs
 
-This section provides solutions to common issues and frequently asked questions for TRE operators.
-
-## Summary
-Operators may encounter issues with user access, data egress, or system performance. This section helps resolve such problems quickly.
+This section helps you resolve common issues quickly as a TRE operator.
 
 ## Practical Example: User Access Issue
 **Problem:** Researcher cannot access the TRE workspace.
 **Solution:**
-1. Check IAM system for correct user credentials and role assignment.
+1. Check the IAM system for correct user credentials and role assignment.
 2. Verify network connectivity and firewall settings.
 3. Review audit logs for failed login attempts.
 
