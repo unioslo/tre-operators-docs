@@ -33,10 +33,10 @@ Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Trainin
 - Interface definitions ([Interfaces](modules/interfaces/index.md))
 
 ## Module 4: Operations & Procedures
-- Onboarding, monitoring, incident response ([Procedures](modules/procedures/index.md), [Operations](operations.md))
+- Onboarding, monitoring, incident response ([Procedures](modules/procedures/index.md))
 
 ## Module 5: Legal & Compliance
-- Agreements, certification, governance ([Legal](modules/legal/index.md), [Compliance](compliance.md))
+- Agreements, certification, governance ([Legal](modules/legal/index.md))
 
 ## Module 6: Federation & Collaboration
 - Federation integration ([Federation](federation.md))
