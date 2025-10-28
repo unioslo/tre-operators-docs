@@ -13,14 +13,38 @@ The Federation requires that all objects exchanged between Participants **MUST**
 
 Interface services are classified by type, defining their security context and permitted external connections.
 
-| Interface Type | Function | Data Object(s) | Connection Requirement |
-| :--- | :--- | :--- | :--- |
-| **Query (Direct)** | Supports queries where the executable query is fully contained in the payload (e.g., SQL). | Query Object. | MUST connect solely to other Query (Direct) services. |
-| **Query (Indirect)** | Supports queries referring to an external executable artifact (e.g., workflow URL). | Job Request Object. | MUST connect solely to other Query (Indirect) services. |
-| **Data Ingress/Egress** | Moves complete sensitive Datasets or large extracts between Participants. | Data Extract Object. | Data Egress **MUST** connect solely to Data Ingress services. |
-| **Index** | Exchanges lists of personal/depersonalized identifiers and master linkage spines. | Index Object. | MUST connect solely to Index interface services. |
-| **Software** | Downloads approved software artifacts (environment or research) from a Software Service. | Environment/Job Payload Artifact. | MUST connect solely to Software interface services. |
-| **Response** | Encapsulates the results/answers to queries. | Response Object. | MUST connect solely to other Response services. |
+
+### Interface Types
+
+- **Query (Direct)**
+    - *Function*: Supports queries where the executable query is fully contained in the payload (e.g., SQL).
+    - *Data Object(s)*: Query Object.
+    - *Connection Requirement*: MUST connect solely to other Query (Direct) services.
+
+- **Query (Indirect)**
+    - *Function*: Supports queries referring to an external executable artifact (e.g., workflow URL).
+    - *Data Object(s)*: Job Request Object.
+    - *Connection Requirement*: MUST connect solely to other Query (Indirect) services.
+
+- **Data Ingress/Egress**
+    - *Function*: Moves complete sensitive Datasets or large extracts between Participants.
+    - *Data Object(s)*: Data Extract Object.
+    - *Connection Requirement*: Data Egress MUST connect solely to Data Ingress services.
+
+- **Index**
+    - *Function*: Exchanges lists of personal/depersonalized identifiers and master linkage spines.
+    - *Data Object(s)*: Index Object.
+    - *Connection Requirement*: MUST connect solely to Index interface services.
+
+- **Software**
+    - *Function*: Downloads approved software artifacts (environment or research) from a Software Service.
+    - *Data Object(s)*: Environment/Job Payload Artifact.
+    - *Connection Requirement*: MUST connect solely to Software interface services.
+
+- **Response**
+    - *Function*: Encapsulates the results/answers to queries.
+    - *Data Object(s)*: Response Object.
+    - *Connection Requirement*: MUST connect solely to other Response services.
 
 ## Federated AAAI (Authentication, Authorization, and Auditing Infrastructure)
 
