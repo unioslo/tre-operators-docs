@@ -56,9 +56,8 @@ The RAZ provides the environment for the **Project Member** to gain direct acces
 
 *   **Mandatory Requirements:**
     *   An RAZ **MUST** have one or more **Project Environments**.
-    *   If an RAZ supports Project Environments with remote data presentations (Model 3), it **MUST** support the Query (direct) and incoming Response interface types.
+    *   If an RAZ supports Project Environments with remote data presentations, it **MUST** support the Query (direct) and incoming Response interface types.
 *   **Key ENTRUST Modification:** The ENTRUST RAZ model includes the **Principal Investigator (PI)** acting as both the **Output Approver** and **Input Approver** for the project environment. This modification avoids infrastructure scalability bottlenecks and clarifies legal responsibility, particularly where the TRE is not the data controller.
-*   **Training Requirement:** Two Drivers identified general user training, including **basic training in using the TRE’s project space**, as an essential requirement, leading to the inclusion of a dedicated **Train user** process within the TRE.
 *   **EHDS Alignment:** The RAZ is comparable to the European Health Data Space's (EHDS) **Secure Processing Environment (SPE)** concept.
 
 #### Secure Data Zone (SDZ)
