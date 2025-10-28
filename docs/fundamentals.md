@@ -4,11 +4,11 @@
 
 ## What is a TRE?
 
-A **Trusted Research Environment (TRE)**<sup>[[Glossary](appendices/glossary.md#tre-operator)]</sup> is a secure digital workspace that provides researchers with controlled access to sensitive data (such as health, social, or administrative records) while ensuring strict safeguards around privacy, security, and compliance. TREs function like protected reference libraries, giving approved researchers a single, secure location for both data and analytical tools. For definitions of key terms, see the [Glossary](appendices/glossary.md).
+A **Trusted Research Environment (TRE)** is a secure digital workspace that provides researchers with controlled access to sensitive data (such as health, social, or administrative records) while ensuring strict safeguards around privacy, security, and compliance. TREs function like protected reference libraries, giving approved researchers a single, secure location for both data and analytical tools. For definitions of key terms, see the [Glossary](appendices/glossary.md).
 
 ## EOSC-ENTRUST and the Blueprint
 
-**EOSC-ENTRUST** aims to create a European network of TREs for sensitive data and drive interoperability between them. This is achieved through a common blueprint for federated data access and analysis—the **EOSC-ENTRUST Blueprint & Interoperability Framework**. The blueprint incorporates lessons from the **DARE UK Federated Architecture Blueprint**, which uses the [Five Safes](appendices/glossary.md#five-safes) framework and data space design thinking.
+[**EOSC-ENTRUST**](https://eosc-entrust.eu/) aims to create a European network of TREs for sensitive data and drive interoperability between them. This is achieved through a common blueprint for federated data access and analysis—the [**EOSC-ENTRUST Blueprint & Interoperability Framework**](https://eosc.eu/roadmap/blueprint-architecture-for-trusted-research-environments-tres/). The blueprint incorporates lessons from the [**DARE UK Federated Architecture Blueprint**](https://dareuk.org.uk/how-we-work/federated-architecture-blueprint/), which uses the [Five Safes](appendices/glossary.md#five-safes) framework and data space design thinking.
 
 ## Core Characteristics of TREs
 
