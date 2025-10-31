@@ -16,6 +16,9 @@ Legal requirements drive the metadata standards within the Federation.
 *   **Accreditation Alignment:** Governance metadata **SHOULD align with UK Government accreditation requirements**.
 *   **Data Controller Role:** Dataset metadata **MUST** record information about the **Data Controllers** accountable for their use.
 
+*   Accreditation Alignment: Align governance metadata with UK Government accreditation requirements.
+*   Data Controller Role: Record information about the Data Controllers accountable for dataset use in the metadata.
+
 
 ## Multi-Jurisdictional Compliance and National Alignment
 
@@ -34,6 +37,9 @@ The legal roles of Data Controller and Data Processor must be clearly defined in
 *   **Project-Based Agreements:** Federation Governance is required to coordinate the **signing of multiple data use agreements with multiple TREs**, necessitating unified procedures and a single point of access.
 *   **Jurisdiction Awareness:** SOPs **SHOULD** address the issue and awareness of **data transfer to a 3rd country**.
 
+*   Project-Based Agreements: Coordinate the signing of multiple data use agreements with multiple TREs through Federation Governance, using unified procedures and a single point of access.
+*   Jurisdiction Awareness: Address the issue and awareness of data transfer to a 3rd country in SOPs.
+
 ### Data Classification
 
 Datasets should be classified based on harm and custodian to help TREs decide how to manage them.
@@ -49,6 +55,9 @@ This section addresses alignment with the European Health Data Space (EHDS), whi
 *   **Regulatory Context:** The almost finalized **European Health Data Space (EHDS) Act** will outline the requirements of **Secure Processing Environments (SPE)** for the secondary use of health data.
 *   **Architectural Equivalence:** The TRE **Research Analytics Zone (RAZ)** is comparable with the EHDS **Secure Processing Environment (SPE)**.
 
+*   Regulatory Context: The nearly finalized European Health Data Space (EHDS) Act outlines requirements for Secure Processing Environments (SPE) for secondary use of health data.
+*   Architectural Equivalence: The TRE Research Analytics Zone (RAZ) is comparable to the EHDS Secure Processing Environment (SPE).
+
 ### Health Data Access Bodies (HDABs)
 
 The EHDS will introduce **Health Data Access Bodies (HDABs)** responsible for receiving, evaluating, and issuing permits for health data access requests.
@@ -56,12 +65,18 @@ The EHDS will introduce **Health Data Access Bodies (HDABs)** responsible for re
 *   **Standardised Request:** Once implemented, the unified procedure for submitting and evaluating data access requests **SHOULD be in line with the EHDS regulation**.
 *   **Data Access Application Management System (DAAMS):** This system is the designated platform to request access to data under EHDS Regulation.
 
+*   Standardised Request: Align the unified procedure for submitting and evaluating data access requests with the EHDS regulation once implemented.
+*   Data Access Application Management System (DAAMS): Use DAAMS as the designated platform to request access to data under EHDS Regulation.
+
 ### Role Definitions under EHDS
 
 Clear definitions are needed for roles in the context of data access requests.
 
 *   **Project Host Role:** Where a Project spans multiple TREs, one TRE **MUST** be designated as the **Project host**.
 *   **Legal Responsibility:** Future regulations may clarify the legal responsibility of the TRE versus the PI concerning output approval, particularly when the TRE is not the data controller.
+
+*   Project Host Role: Designate one TRE as the Project host when a Project spans multiple TREs.
+*   Legal Responsibility: Future regulations may clarify the legal responsibility of the TRE versus the PI for output approval, especially when the TRE is not the data controller.
 
 ## Model Agreements (Future Content)
 
@@ -75,9 +90,16 @@ The goal is to develop standardized contractual documentation to facilitate fede
 *   **Data Use Agreements (DUA):** Model DUAs will outline access prerequisites, requirements, and obligations for researchers and TREs.
 *   **Project Context:** Agreements must enforce that research is conducted within an approved **Project context**, which defines the members, data access rights, and duration.
 
+*   Data Transfer Agreements (DTA): Use model DTA templates to cover necessary requirements specific to the data type being transferred.
+*   Data Use Agreements (DUA): Use model DUAs to outline access prerequisites, requirements, and obligations for researchers and TREs.
+*   Project Context: Ensure agreements enforce that research is conducted within an approved Project context, which defines the members, data access rights, and duration.
+
 ### Federation Governance Requirements
 
 The Federation Authority (FA) requires agreements to enforce compliance:
 
 *   **Rulebook:** Agreements must align with the **Federation Rulebook**, which outlines requirements for service onboarding, accreditation standards, and change management.
 *   **Metadata Integration:** Agreements should mandate the provision of required **Governance metadata** (Project and User metadata) that aligns with accreditation requirements.
+
+*   Rulebook: Align agreements with the Federation Rulebook, which outlines requirements for service onboarding, accreditation standards, and change management.
+*   Metadata Integration: Mandate the provision of required Governance metadata (Project and User metadata) in agreements to align with accreditation requirements.
