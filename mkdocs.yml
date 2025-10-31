@@ -13,6 +13,7 @@ nav:
   - Interface Definitions: modules/interfaces/index.md
   - Operating Procedures: modules/procedures/index.md
   - Template Legal Agreements: modules/legal/index.md
+  - Federation: federation.md
   - Appendices:
       - Glossary: appendices/glossary.md
       - Reference Architecture: appendices/reference-architecture.md
