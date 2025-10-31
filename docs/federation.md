@@ -27,5 +27,4 @@ Trust services are crucial for securing the foundational data exchange layer, su
 *   **Identities:** Federation Identities for **Projects**, **Project Members**, and **Datasets** **MUST** be globally recognizable and unique within the Federation.
 *   **Researcher Accreditation:** Best practice requires that all users of sensitive data be **trained or accredited** to an acceptable level ("Safe People").
 
-For definitions of federation-related terms, see the [Glossary](appendices/glossary.md). For architectural details, see [Reference Architecture](appendices/reference-architecture.md). For operational guidance, see [Operations & Maintenance](operations.md).
-
+For definitions of federation-related terms, see the [Glossary](appendices/glossary.md). For architectural details, see [Reference Architecture](appendices/reference-architecture.md).
