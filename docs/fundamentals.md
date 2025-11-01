@@ -29,11 +29,7 @@ Build TREs using core architectural components and controls:
 
 ![TRE Architecture](../images/tre_architecture_ops_docs.png)
 
-For a detailed overview, see [Reference Architecture](appendices/reference-architecture.md).
-
 ### Diagram Legend
-
-For definitions of abbreviations, see the [Glossary](appendices/glossary.md).
 
 | Abbreviation      | Description                                                        |
 |-------------------|--------------------------------------------------------------------|
@@ -43,6 +39,3 @@ For definitions of abbreviations, see the [Glossary](appendices/glossary.md).
 | **Egress**        | Controlled export of approved outputs after disclosure review       |
 | **SIEM**          | Security Information and Event Management – aggregates logs/alerts  |
 | **WSP**           | Workspace – secure compute environment (VMs, containers, VDI)      |
-
-For configuration examples, see [Config Examples](appendices/config-examples.md). For further reading, see [Resources](appendices/resources.md).
-
