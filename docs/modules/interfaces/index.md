@@ -58,81 +58,87 @@ To maintain security and compliance:
 
 By following these practices, you help ensure the integrity, confidentiality, and traceability of all data exchanged in the federation.
 
-## Federated AAAI (Authentication, Authorization, and Auditing Infrastructure)
+Here’s a streamlined, active-voice rewrite of the entire document in a logical flow. Content is preserved but phrased more clearly, without duplication or unnecessary wording.
 
-Federated AAAI provides a consistent, secure approach to identity and access across multiple TREs.
+---
 
-### EOSC AAAI Federation Requirements
+## Federated AAAI Overview
 
-EOSC Nodes, including TRE Providers, comply with Federation AAAI requirements.
+Federated AAAI provides a secure, consistent approach to identity, access, and auditing across multiple Trusted Research Environments (TREs).
 
-*   **Architecture:** Operate an **AARC Blueprint compliant AAAI infrastructure** on each Node.
-*   **Model:** Use a **"hub-and-spoke" model** in the EOSC AAAI Federation, with **MyAccessID** as the central hub providing the Trust & Identity Layers.
-*   **Protocols:** Support **OpenID Connect (OIDC)** and **OAuth 2.0** protocols.
-*   **Enrol:** Join the eduGAIN Federation as a Service Provider. Provide technical metadata (e.g., Redirect URIs, security endpoints) and confirm compliance with security requirements (e.g., Sirtfi) during registration.
-*   **Authenticate:** Require a separate multi-factor authentication (MFA) step to access secure services.
+---
 
-### Identity and Collaboration
+## Core Federation Requirements
 
-The AAAI system uses standardized identity claims to manage access based on collaborations and projects.
+All EOSC Nodes, including TRE Providers, must:
 
-*   **Project Context:** Grant access through membership in a collaboration or project. Assign a globally recognizable and unique Project Identity.
-*   **Attribute Exchange:** Use the AARC Blueprint Architecture (BPA) model to express a user’s membership in collaborations across administrative domains (AARC-G069), ensuring services can accurately determine user entitlement.
-*   **Cross-Node Workflow:** Enable cross-node workflows by using the central hub (MyAccessID) to perform token introspection when a service in EOSC Node Y receives an Access Token issued by EOSC Node X.
+* **Architecture:** Run an AAAI infrastructure compliant with the AARC Blueprint.
+* **Federation Model:** Use a hub-and-spoke model with **MyAccessID** as the central hub for trust and identity services.
+* **Protocols:** Support **OpenID Connect (OIDC)** and **OAuth 2.0**.
+* **Federation Membership:** Join **eduGAIN** as a Service Provider, submit technical metadata, and meet security requirements (e.g. Sirtfi).
+* **Authentication:** Enforce multi-factor authentication (MFA) for access to secure services.
 
-### User Certification
+---
 
-The AAAI system supports the "Safe People" principle through certified identity.
+## Identity, Collaboration, and Claims
 
-*   **Researcher Passport:** Record training in the AAAI capability, ideally acting as a **‘Researcher Passport’** to enable interoperability across the network.
-*   **Required Information:** Provide a web page listing all Collaborations/Projects supported by each Node, including their URN namespace, status, and jurisdiction.
+Access is based on collaboration and project membership.
+
+* **Project Identity:** Assign a globally unique Project ID and grant access through membership in that project.
+* **Attribute Exchange:** Use the AARC Blueprint model (AARC-G069) to express user roles and project membership across organisations so services can determine entitlement.
+* **Cross-Node Use:** When a user presents an Access Token from Node X to a service in Node Y, Node Y uses MyAccessID for token introspection.
+* **Researcher Certification:** Track user training and certification as a “Researcher Passport” to support the “Safe People” principle.
+* **Transparency:** Publish a web page listing supported collaborations or projects, including URNs, status, and jurisdiction.
+
+---
 
 ## Cross-TRE Authorisation
 
-This section describes the protocols for handling authorization decisions, especially for complex, fine-grained access across multiple TREs.
+Each TRE keeps full control over its final authorisation decision.
 
-### Authorization Decision Principle
+### Authorisation Context
 
-*   **Local Autonomy:** Each TRE retains **full control over the final authorization decision**.
-*   **Authorization Context:** Use the **Project** concept to define the context (members, datasets, duration) necessary for the TRE to make an access decision.
+* Use the **Project** as the unit defining access scope: members, datasets, duration.
+* Use OIDC UserInfo or OAuth 2.0 Token Introspection to answer general questions (e.g. “Is this user a member of Project X?”).
 
-### Policy and Attribute Exchange
+### Fine-Grained Authorisation
 
-Exchange authorization information via standard interfaces.
+For detailed access rules:
 
-*   **Project-Based Control:** Exchange information for general access control (e.g., is the user a member of Project X?) via the **OIDC User Info endpoint** or **OAuth 2.0 Token Introspection endpoint**.
-*   **Fine-Grained Control (REST APIs):** For detailed, context-sensitive authorization decisions:
-    *   Transmit request attributes (subject, object, action, environment) in **JSON format** over **REST APIs**.
-    *   Describe authorization policies using either **ODRL or REGO** language.
-    *   Provide policy bundles as **.tar.gz archives**.
+* Exchange request attributes (subject, object, action, environment) using **JSON over REST APIs**.
+* Define policies in **ODRL** or **REGO**.
+* Provide policy bundles as **.tar.gz** archives.
+* Each TRE aggregates policies from federation services and local sources using **Open Policy Agent (OPA)** before making a decision.
 
-*   Policy Enforcement: Aggregate policies from multiple sources (AAAIs and registries) using the TRE’s Open Policy Agent (OPA) component before making the final authorization decision.
+---
+
+## Secure Data and Workflow Exchange
 
 ### Data Flow Security
 
-Use authorization interfaces to exchange Structured Data Objects (Query Objects, Job Request Objects).
+* Use REST interfaces to exchange structured objects such as Query Objects or Job Request Objects.
+* **Query Objects** contain executable queries, usually no sensitive data (SDC green), and may leave the originating environment without output control.
+* Only **Data Manager** roles can invoke interfaces that expose sensitive metadata or data extracts.
 
-*   **Query Objects (Direct Queries):** Use these objects to contain the executable query. They typically do not contain sensitive data and are designated **“SDC green”**. Usually, you do not need output control before they leave their originating environment.
-*   **Data Manager Roles:** Allow only system actors in **Data Manager** roles to invoke interface types that exchange sensitive metadata or data extracts.
+---
 
-## Secure Data Exchange and Auditing
+## Encryption Requirements
 
-This section lists the mandatory requirements for ensuring the confidentiality, integrity, and traceability of data exchanged between Federation Participants.
+Encrypt all traffic between Federation Participants:
 
-### Mandatory Encryption
+* Data transfers (e.g. data extracts via ingress/egress)
+* Query exchanges (direct and indirect)
+* Index data
+* All interface traffic must route through each Participant’s Security Server.
 
-Encrypt all network traffic between Federation Participants to maintain a secure and trustworthy foundation.
+---
 
-*   Data Exchange: Encrypt all data exchanged between Federation Participants. This applies to large transfers of Data Extract Objects (via Data Ingress/Egress).
-*   Query Exchange: Encrypt all query exchanges (both direct and indirect) between Participants.
-*   Index Exchange: Encrypt all index data exchanged between Participants.
-*   Security Server Role: Route all traffic to and from interface services through the Security Servers of the host Participant.
+## Auditing and Accounting
 
-### Auditing and Accounting Infrastructure
+Maintain traceability and compliance (e.g. GDPR).
 
-Use a standardized auditing system to maintain accountability and address auditing requirements (e.g., GDPR compliance).
+* Use a central **ELK Stack** (Elasticsearch, Logstash, Kibana) as the federation’s auditing/accounting service. TREs may also run local ELK instances.
+* Submit all accounting data through an **ELK-compatible API**.
+* TREs and federation services must send audit logs to the central ELK stack.
+* Use the standard audit model to answer “who,” “what,” “when,” and “where” during audits.
 
-*   **Centralized Service:** Implement a centralized **ELK stack** (Elasticsearch, Logstash, Kibana) for the accounting/auditing federation service. TREs MAY deploy their own local ELK stack.
-*   **API Standard:** Use the **ELK compatible API** for all data submissions.
-*   **Mandatory Data Submission:** Send accounting information from TRE and federation services to an ELK stack.
-*   **Audit Model:** Use the prescribed accounting/auditing model for submitted information and make it available during the audit process to answer the basic questions: "who", "what", "when", "where".
