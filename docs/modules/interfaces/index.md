@@ -60,13 +60,13 @@ By following these practices, you help ensure the integrity, confidentiality, an
 
 ## Federated AAAI (Authentication, Authorization, and Auditing Infrastructure)
 
-Federated AAAI provides a consistent, secure approach to identity and access across multiple TREs, addressing the Federation Readiness training gap.
+Federated AAAI provides a consistent, secure approach to identity and access across multiple TREs.
 
 ### EOSC AAAI Federation Requirements
 
-EOSC Nodes, including TRE Providers, comply with Federation AAI requirements.
+EOSC Nodes, including TRE Providers, comply with Federation AAAI requirements.
 
-*   **Architecture:** Operate an **AARC Blueprint compliant AAI infrastructure** on each Node.
+*   **Architecture:** Operate an **AARC Blueprint compliant AAAI infrastructure** on each Node.
 *   **Model:** Use a **"hub-and-spoke" model** in the EOSC AAAI Federation, with **MyAccessID** as the central hub providing the Trust & Identity Layers.
 *   **Protocols:** Support **OpenID Connect (OIDC)** and **OAuth 2.0** protocols.
 *   **Enrolment:** Join the **eduGAIN Federation** as a Service Provider. Provide technical metadata (e.g., Redirect URIs, security endpoints) and confirm compliance with security requirements (e.g., Sirtfi) during registration.
@@ -77,7 +77,7 @@ EOSC Nodes, including TRE Providers, comply with Federation AAI requirements.
 
 ### Identity and Collaboration
 
-The AAI system uses standardized identity claims to manage access based on collaborations and projects.
+The AAAI system uses standardized identity claims to manage access based on collaborations and projects.
 
 *   **Project Context:** Grant access through membership in a collaboration or project. Assign a globally recognizable and unique **Project Identity**.
 
@@ -87,7 +87,7 @@ The AAI system uses standardized identity claims to manage access based on colla
 
 ### User Certification
 
-The AAI system supports the "Safe People" principle through certified identity.
+The AAAI system supports the "Safe People" principle through certified identity.
 
 *   **Researcher Passport:** Record training in the AAAI capability, ideally acting as a **‘Researcher Passport’** to enable interoperability across the network.
 *   **Required Information:** Provide a web page listing all Collaborations/Projects supported by each Node, including their URN namespace, status, and jurisdiction.
