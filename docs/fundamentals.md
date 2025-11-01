@@ -21,8 +21,6 @@ EOSC-ENTRUST creates a European network of TREs for sensitive data and promotes 
 
 ## Why TREs Matter
 
-TREs balance the need for research access with the obligation to protect sensitive data. They enable reproducible, large-scale studies while maintaining privacy and trust. For more on federation and interoperability, see [Federation Integration](./federation.md).
-
 TREs balance research access with the need to protect sensitive data. They support reproducible, large-scale studies while maintaining privacy and trust. For more on federation and interoperability, see [Federation Integration](./federation.md).
 
 ## TRE Architecture Overview
