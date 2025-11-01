@@ -15,6 +15,7 @@ Every Federation Participant runs a standard Security Server, which acts as the 
 Registry services record information about the Federation's elements. Register all Projects with the Federation Registry.
 
 The Registry records information in three categories:
+
 1. Infrastructure Metadata: Describe Participants and log operational data.
 2. Content Metadata (Dataset Metadata): Record catalogue-level information about datasets, such as Data Controller, name, and time coverage.
 3. Governance Metadata: Track users and activities, including Project metadata (title, host TRE, duration, authorised members) and User metadata (affiliation, accreditation status, training records).
