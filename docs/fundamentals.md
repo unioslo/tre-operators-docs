@@ -21,21 +21,4 @@ EOSC-ENTRUST creates a European network of TREs for sensitive data and promotes 
 
 ## Why TREs Matter
 
-TREs balance research access with the need to protect sensitive data. They support reproducible, large-scale studies while maintaining privacy and trust. For more on federation and interoperability, see [Federation Integration](./federation.md).
-
-## TRE Architecture Overview
-
-Build TREs using core architectural components and controls:
-
-![TRE Architecture](../images/tre_architecture_ops_docs.png)
-
-### Diagram Legend
-
-| Abbreviation      | Description                                                        |
-|-------------------|--------------------------------------------------------------------|
-| **AuthZ**         | Authorization service – enforces role- and attribute-based access   |
-| **DLP**           | Data Loss Prevention engine – enforces data egress policies         |
-| **DQ**            | Data Quality – validation and cleaning of incoming data             |
-| **Egress**        | Controlled export of approved outputs after disclosure review       |
-| **SIEM**          | Security Information and Event Management – aggregates logs/alerts  |
-| **WSP**           | Workspace – secure compute environment (VMs, containers, VDI)      |
+TREs balance research access with the need to protect sensitive data. They support reproducible, large-scale studies while maintaining privacy and trust. For more on federation and interoperability, see [Federation Integration](./federation.md). For an overview of the technical and organizational structure, see the [Reference Architecture](appendices/reference-architecture.md).
