@@ -14,12 +14,12 @@ Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Trainin
 
 **Understand TRE Fundamentals**
 
-   - Read the TRE Fundamentals section.
-   - Review key terminology in the Glossary.
+   - Read the ([TRE Fundamentals](fundamentals.md)) section.
+   - Review key terminology in the [Glossary](appendices/glossary.md).
 
 **Review Reference Architecture**
 
-   - Study the architecture diagrams and component descriptions.
+   - Study the ([Architecture](modules/architecture/index.md)) diagrams and component descriptions.
 
 **Prepare Legal Agreements**
 
@@ -50,7 +50,7 @@ Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Trainin
 
 **Consult Appendices**
 
-   - Use reference materials and resources for troubleshooting and support.
+   - Use reference material ([Reference Architecture](appendices/reference-architecture.md)) and [Resources](appendices/resources.md) for troubleshooting and support.
 
 ![Getting Started Flowchart](images/getting-started-tre.png)
 *Figure: TRE Getting Started Flowchart*
@@ -87,7 +87,7 @@ Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Trainin
 - Federation integration ([Federation](federation.md))
 - Data sharing and collaboration
 
-## Module 7: Appendices & Resources
+## Appendices & Resources
 
 - [Reference Architecture](appendices/reference-architecture.md)
 - [Resources](appendices/resources.md)
