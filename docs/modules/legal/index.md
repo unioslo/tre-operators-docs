@@ -4,12 +4,6 @@ This module defines the legal and ethical foundations for cross-border sensitive
 
 ---
 
-## Legal Fragmentation
-
-Sensitive data research is hindered by fragmented legal systems and inconsistent national rules.
-
----
-
 ## Legal Alignment and Governance Metadata
 
 Legal obligations directly shape the governance metadata required in the federation.
