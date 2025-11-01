@@ -73,7 +73,7 @@ All EOSC Nodes, including TRE Providers, must:
 * **Architecture:** Run an AAAI infrastructure compliant with the AARC Blueprint.
 * **Federation Model:** Use a hub-and-spoke model with **MyAccessID** as the central hub for trust and identity services.
 * **Protocols:** Support **OpenID Connect (OIDC)** and **OAuth 2.0**.
-* **Federation Membership:** Join **eduGAIN** as a Service Provider, submit technical metadata, and meet security requirements (e.g. Sirtfi).
+* **Federation Membership:** Join **eduGAIN** as a Service Provider, submit technical metadata, and meet security requirements.
 * **Authentication:** Enforce multi-factor authentication (MFA) for access to secure services.
 
 ---
