@@ -1,5 +1,4 @@
-
-# Interface Types: A Practical Guide
+# Module 3: Interfaces and Configuration: A Practical Guide
 
 This guide explains how TREs in the federation exchange data securely and efficiently. You will learn how to package data, use the right interface type, and ensure compliance with federation requirements.
 
