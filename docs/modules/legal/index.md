@@ -35,12 +35,6 @@ Roles must be explicit—including **Data Controller** and **Data Processor**, a
 * A single point of access should route project-based agreements to all relevant TREs.
 * TRE SOPs must address **data transfers to third countries** to ensure legal compliance.
 
-### Data Classification
-
-TREs should classify datasets to support risk-based decisions:
-
-* Classification based on **Data Subject**, **Data Custodian**, and **Harm Level (1–6)**.
-
 ---
 
 ## EHDS Alignment (Health Data)
