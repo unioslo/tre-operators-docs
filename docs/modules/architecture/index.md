@@ -61,7 +61,7 @@ The RAZ is comparable to the European Health Data Space's (EHDS) Secure Processi
 
 The SDZ manages, links, curates, ingresses, and egresses research-ready sensitive datasets.
 Include a Data Management function in the SDZ. Route all data movements to or from the SDZ through the Data Management function. Grant Data Manager and Output Approver roles access to the SDZ; do not grant access to other roles. Support the Data Egress and Data Ingress interface types in the SDZ for sending and receiving Data Extract Objects.
-The ENTRUST architecture includes the SDA as a specialized SDZ that stores published Curated Data and handles Data Access Requests to such published data. Assign unique IDs and accompanying metadata to Curated Data to enable credit attributions.
+The ENTRUST architecture includes the Secure Data Archive (SDA) as a specialized SDZ that stores published Curated Data and handles Data Access Requests to such published data. Assign unique IDs and accompanying metadata to Curated Data to enable credit attributions.
 
 #### Query Management Zone (QMZ)
 
