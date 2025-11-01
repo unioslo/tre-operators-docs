@@ -110,7 +110,6 @@ Exchange authorization information via standard interfaces.
     *   Transmit request attributes (subject, object, action, environment) in **JSON format** over **REST APIs**.
     *   Describe authorization policies using either **ODRL or REGO** language.
     *   Provide policy bundles as **.tar.gz archives**.
-*   **Policy Enforcement:** Use the TRE’s **Open Policy Agent (OPA) component** to aggregate policies from multiple sources (AAAIs and registries) before making the final authorization decision.
 
 *   Policy Enforcement: Aggregate policies from multiple sources (AAAIs and registries) using the TRE’s Open Policy Agent (OPA) component before making the final authorization decision.
 
@@ -118,10 +117,8 @@ Exchange authorization information via standard interfaces.
 
 Use authorization interfaces to exchange Structured Data Objects (Query Objects, Job Request Objects).
 
-*   **Query Objects (Direct Queries):** Use these objects to contain the executable query. They typically do not contain sensitive data and are designated **“SDC green”**. Usually, you do not need output control before they leave their originating environment (unless they encapsulate elements like partially trained neural networks).
-*   **Data Manager Roles:** Allow only system actors in **Data Manager** roles to invoke interface types that exchange sensitive metadata or data extracts (Index, Data Ingress/Egress).
-
-*   Data Manager Roles: Allow only system actors in Data Manager roles to invoke interface types that exchange sensitive metadata or data extracts (Index, Data Ingress/Egress).
+*   **Query Objects (Direct Queries):** Use these objects to contain the executable query. They typically do not contain sensitive data and are designated **“SDC green”**. Usually, you do not need output control before they leave their originating environment.
+*   **Data Manager Roles:** Allow only system actors in **Data Manager** roles to invoke interface types that exchange sensitive metadata or data extracts.
 
 ## Secure Data Exchange and Auditing
 
@@ -130,11 +127,6 @@ This section lists the mandatory requirements for ensuring the confidentiality, 
 ### Mandatory Encryption
 
 Encrypt all network traffic between Federation Participants to maintain a secure and trustworthy foundation.
-
-*   **Data Exchange:** Encrypt all data exchanged between Federation Participants. This applies to large transfers of Data Extract Objects (via Data Ingress/Egress).
-*   **Query Exchange:** Encrypt all query exchanges (both direct and indirect) between Participants.
-*   **Index Exchange:** Encrypt all index data exchanged between Participants.
-*   **Security Server Role:** Route all traffic to and from interface services through the **Security Servers** of the host Participant.
 
 *   Data Exchange: Encrypt all data exchanged between Federation Participants. This applies to large transfers of Data Extract Objects (via Data Ingress/Egress).
 *   Query Exchange: Encrypt all query exchanges (both direct and indirect) between Participants.
