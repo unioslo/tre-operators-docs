@@ -1,105 +1,84 @@
-# Template Legal Agreements (Legal and Ethical Frameworks)
+# Legal and Ethical Frameworks for Federation
 
-This module will address the foundational legal and ethical requirements for cross-border sensitive data federation. Content for template legal agreements, operating procedures, and interface definitions will be presented in future versions of the ENTRUST Blueprint.
+This module defines the legal and ethical foundations for cross-border sensitive data federation. Template legal agreements, operating procedures, and interface definitions will be published in future versions of the ENTRUST Blueprint.
 
-## The Challenge of Legal Fragmentation
+---
 
-*   The need for TRE federation arises from the fragmentation in the sensitive data research landscape.
-*   A key operational challenge is ensuring **Compliance with various national legal frameworks for data sharing**.
-*   The Federation Authority (FA) is responsible for agreeing on the setup of **Rules & Policies** that underpin what joining the Federation means.
+## Legal Fragmentation
 
-## Alignment with Governance Metadata
+Sensitive data research is hindered by fragmented legal systems and inconsistent national rules.
 
-Legal requirements drive the metadata standards within the Federation.
+---
 
-*   **Governance Metadata:** This metadata captures who has access to Federation assets for what purposes (e.g., Project metadata and User metadata).
-*   **Accreditation Alignment:** Governance metadata **SHOULD align with UK Government accreditation requirements**.
-*   **Data Controller Role:** Dataset metadata **MUST** record information about the **Data Controllers** accountable for their use.
+## Legal Alignment and Governance Metadata
 
-*   Accreditation Alignment: Align governance metadata with UK Government accreditation requirements.
-*   Data Controller Role: Record information about the Data Controllers accountable for dataset use in the metadata.
+Legal obligations directly shape the governance metadata required in the federation.
 
+* **Governance metadata** records who can access which assets and why (Project metadata, User metadata).
+* **Dataset metadata must record the Data Controller**, who is legally accountable for its use.
 
-## Multi-Jurisdictional Compliance and National Alignment
+---
 
-Federated sensitive data research requires formal agreements and clear definitions of responsibility across jurisdictions.
+## Multi-Jurisdictional Compliance
 
-### Data Sharing and Legal Roles
+Federation requires clear legal roles, agreements, and responsibilities across countries.
 
-The legal roles of Data Controller and Data Processor must be clearly defined in the agreements.
+### Legal Roles and Agreements
 
-*   **Data Sharing Agreement (DSA):** This formal agreement outlines the terms and conditions for sharing data, including licensing and access controls.
-*   **Data Transfer Agreement (DTA):** A TRE covering specific data types needs to provide a DTA template that covers necessary requirements specific to the data type. DTAs should be standardized per data type but flexible enough for different legal obligations.
-*   **Data Use Agreement (DUA):** This model agreement should include access prerequisites, requirements, and obligations for the user.
+Define legal responsibility using standard agreements:
+
+| Agreement                         | Purpose                                                                                |
+| --------------------------------- | -------------------------------------------------------------------------------------- |
+| **Data Sharing Agreement (DSA)**  | Sets overall conditions, licensing, and access rules for sharing data between parties. |
+| **Data Transfer Agreement (DTA)** | Template per data type; defines requirements for transferring data securely.           |
+| **Data Use Agreement (DUA)**      | Defines access conditions, user obligations, and permitted use of data.                |
+
+Roles must be explicit—including **Data Controller** and **Data Processor**, as defined in GDPR and national laws.
 
 ### Process Harmonisation
 
-*   **Project-Based Agreements:** Federation Governance is required to coordinate the **signing of multiple data use agreements with multiple TREs**, necessitating unified procedures and a single point of access.
-*   **Jurisdiction Awareness:** SOPs **SHOULD** address the issue and awareness of **data transfer to a 3rd country**.
-
-*   Project-Based Agreements: Coordinate the signing of multiple data use agreements with multiple TREs through Federation Governance, using unified procedures and a single point of access.
-*   Jurisdiction Awareness: Address the issue and awareness of data transfer to a 3rd country in SOPs.
+* The Federation Governance actor must coordinate and simplify the signing of multiple DUAs across TREs.
+* A single point of access should route project-based agreements to all relevant TREs.
+* TRE SOPs must address **data transfers to third countries** to ensure legal compliance.
 
 ### Data Classification
 
-Datasets should be classified based on harm and custodian to help TREs decide how to manage them.
+TREs should classify datasets to support risk-based decisions:
 
-*   Datasets should be classified by **Data subject**, **Data custodian**, and **“Harm”** (using a scale of 1-6).
+* Classification based on **Data Subject**, **Data Custodian**, and **Harm Level (1–6)**.
 
-## EHDS Alignment, Permits, and Roles
+---
 
-This section addresses alignment with the European Health Data Space (EHDS), which will impact how health data are accessed and managed in the federation.
+## EHDS Alignment (Health Data)
 
-### EHDS and SPE Alignment
+The European Health Data Space (EHDS) introduces new rules for secondary health data use.
 
-*   **Regulatory Context:** The almost finalized **European Health Data Space (EHDS) Act** will outline the requirements of **Secure Processing Environments (SPE)** for the secondary use of health data.
-*   **Architectural Equivalence:** The TRE **Research Analytics Zone (RAZ)** is comparable with the EHDS **Secure Processing Environment (SPE)**.
+### EHDS and Secure Processing Environments (SPE)
 
-*   Regulatory Context: The nearly finalized European Health Data Space (EHDS) Act outlines requirements for Secure Processing Environments (SPE) for secondary use of health data.
-*   Architectural Equivalence: The TRE Research Analytics Zone (RAZ) is comparable to the EHDS Secure Processing Environment (SPE).
+* The upcoming **EHDS Act** defines requirements for **Secure Processing Environments (SPE)**.
+* The TRE **Research Analytics Zone (RAZ)** is functionally equivalent to an EHDS SPE.
 
 ### Health Data Access Bodies (HDABs)
 
-The EHDS will introduce **Health Data Access Bodies (HDABs)** responsible for receiving, evaluating, and issuing permits for health data access requests.
+* EHDS will create **Health Data Access Bodies (HDABs)** to evaluate and permit access to health data.
+* Once operational, access requests in the federation should follow the EHDS procedures.
+* The **Data Access Application Management System (DAAMS)** will be the official platform for submitting EHDS access requests.
 
-*   **Standardised Request:** Once implemented, the unified procedure for submitting and evaluating data access requests **SHOULD be in line with the EHDS regulation**.
-*   **Data Access Application Management System (DAAMS):** This system is the designated platform to request access to data under EHDS Regulation.
+### Roles under EHDS
 
-*   Standardised Request: Align the unified procedure for submitting and evaluating data access requests with the EHDS regulation once implemented.
-*   Data Access Application Management System (DAAMS): Use DAAMS as the designated platform to request access to data under EHDS Regulation.
+* When a project spans multiple TREs, one TRE **must act as the Project Host**.
+* Future guidance will clarify legal responsibility between the TRE and PI for output approvals, especially when the TRE is not the Data Controller.
 
-### Role Definitions under EHDS
-
-Clear definitions are needed for roles in the context of data access requests.
-
-*   **Project Host Role:** Where a Project spans multiple TREs, one TRE **MUST** be designated as the **Project host**.
-*   **Legal Responsibility:** Future regulations may clarify the legal responsibility of the TRE versus the PI concerning output approval, particularly when the TRE is not the data controller.
-
-*   Project Host Role: Designate one TRE as the Project host when a Project spans multiple TREs.
-*   Legal Responsibility: Future regulations may clarify the legal responsibility of the TRE versus the PI for output approval, especially when the TRE is not the data controller.
+---
 
 ## Model Agreements (Future Content)
 
-This module will contain model agreements (Template Legal Agreements), which are key components of the ENTRUST Blueprint but are reserved for future versions.
+Upcoming versions of the Blueprint will include complete template agreements.
 
-### Legal Standardization Goals
 
-The goal is to develop standardized contractual documentation to facilitate federation:
+---
 
-*   **Data Transfer Agreements (DTA):** Model DTA templates will cover necessary requirements specific to the data type being transferred.
-*   **Data Use Agreements (DUA):** Model DUAs will outline access prerequisites, requirements, and obligations for researchers and TREs.
-*   **Project Context:** Agreements must enforce that research is conducted within an approved **Project context**, which defines the members, data access rights, and duration.
+## Final Notes
 
-*   Data Transfer Agreements (DTA): Use model DTA templates to cover necessary requirements specific to the data type being transferred.
-*   Data Use Agreements (DUA): Use model DUAs to outline access prerequisites, requirements, and obligations for researchers and TREs.
-*   Project Context: Ensure agreements enforce that research is conducted within an approved Project context, which defines the members, data access rights, and duration.
-
-### Federation Governance Requirements
-
-The Federation Authority (FA) requires agreements to enforce compliance:
-
-*   **Rulebook:** Agreements must align with the **Federation Rulebook**, which outlines requirements for service onboarding, accreditation standards, and change management.
-*   **Metadata Integration:** Agreements should mandate the provision of required **Governance metadata** (Project and User metadata) that aligns with accreditation requirements.
-
-*   Rulebook: Align agreements with the Federation Rulebook, which outlines requirements for service onboarding, accreditation standards, and change management.
-*   Metadata Integration: Mandate the provision of required Governance metadata (Project and User metadata) in agreements to align with accreditation requirements.
+* No templates are provided at this stage—this module defines the legal structure only.
+* Future updates will supply reusable agreements to reduce negotiation time across TREs and jurisdictions.
