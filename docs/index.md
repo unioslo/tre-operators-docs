@@ -3,6 +3,7 @@
 Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Training Material. This guide is designed to help you build, operate, and maintain secure, compliant, and interoperable TREs.
 
 ## Learning Objectives
+
 - Understand TRE concepts and terminology
 - Set up and configure TRE architecture
 - Implement interfaces and operational procedures
@@ -12,34 +13,43 @@ Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Trainin
 ## Getting Started Checklist
 
 1. **Understand TRE Fundamentals**
-   - Read the TRE Fundamentals section.
-   - Review key terminology in the Glossary.
+
+   [ ] Read the TRE Fundamentals section.
+   [ ] Review key terminology in the Glossary.
 
 2. **Review Reference Architecture**
+
    - Study the architecture diagrams and component descriptions.
 
 3. **Prepare Legal Agreements**
+
    - Download and adapt template legal agreements (DSA, DTA, DUA).
 
 4. **Set Up Core Infrastructure**
+
    - Deploy Security Server.
    - Register with Federation Registry.
    - Configure Trust Services and AAAI.
 
 5. **Implement Interfaces**
+
    - Integrate required APIs and data exchange protocols.
 
 6. **Establish Operating Procedures**
+
    - Document operational tasks and maintenance routines.
 
 7. **Connect to Federation**
+
    - Ensure compliance with federation requirements.
    - Test inter-TRE connectivity.
 
 8. **Train and Accredit Users**
+
    - Verify researcher accreditation and training records.
 
 9. **Consult Appendices**
+
    - Use reference materials and resources for troubleshooting and support.
 
 ![Getting Started Flowchart](images/getting-started-tre.png)
