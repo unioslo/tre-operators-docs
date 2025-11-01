@@ -69,19 +69,14 @@ EOSC Nodes, including TRE Providers, comply with Federation AAAI requirements.
 *   **Architecture:** Operate an **AARC Blueprint compliant AAAI infrastructure** on each Node.
 *   **Model:** Use a **"hub-and-spoke" model** in the EOSC AAAI Federation, with **MyAccessID** as the central hub providing the Trust & Identity Layers.
 *   **Protocols:** Support **OpenID Connect (OIDC)** and **OAuth 2.0** protocols.
-*   **Enrolment:** Join the **eduGAIN Federation** as a Service Provider. Provide technical metadata (e.g., Redirect URIs, security endpoints) and confirm compliance with security requirements (e.g., Sirtfi) during registration.
-*   **Authentication:** Require a separate **multi-factor authentication (MFA) step** to access secure services.
-
-*   Enrol: Join the eduGAIN Federation as a Service Provider. Provide technical metadata (e.g., Redirect URIs, security endpoints) and confirm compliance with security requirements (e.g., Sirtfi) during registration.
-*   Authenticate: Require a separate multi-factor authentication (MFA) step to access secure services.
+*   **Enrol:** Join the eduGAIN Federation as a Service Provider. Provide technical metadata (e.g., Redirect URIs, security endpoints) and confirm compliance with security requirements (e.g., Sirtfi) during registration.
+*   **Authenticate:** Require a separate multi-factor authentication (MFA) step to access secure services.
 
 ### Identity and Collaboration
 
 The AAAI system uses standardized identity claims to manage access based on collaborations and projects.
 
-*   **Project Context:** Grant access through membership in a collaboration or project. Assign a globally recognizable and unique **Project Identity**.
-
-*   Project Context: Grant access through membership in a collaboration or project. Assign a globally recognizable and unique Project Identity.
+*   **Project Context:** Grant access through membership in a collaboration or project. Assign a globally recognizable and unique Project Identity.
 *   **Attribute Exchange:** Use the AARC Blueprint Architecture (BPA) model to express a user’s membership in collaborations across administrative domains (AARC-G069), ensuring services can accurately determine user entitlement.
 *   **Cross-Node Workflow:** Enable cross-node workflows by using the central hub (MyAccessID) to perform token introspection when a service in EOSC Node Y receives an Access Token issued by EOSC Node X.
 
@@ -141,6 +136,3 @@ Use a standardized auditing system to maintain accountability and address auditi
 *   **API Standard:** Use the **ELK compatible API** for all data submissions.
 *   **Mandatory Data Submission:** Send accounting information from TRE and federation services to an ELK stack.
 *   **Audit Model:** Use the prescribed accounting/auditing model for submitted information and make it available during the audit process to answer the basic questions: "who", "what", "when", "where".
-
-*   Mandatory Data Submission: Send accounting information from TRE and federation services to an ELK stack.
-*   Audit Model: Use the prescribed accounting/auditing model for submitted information and make it available during the audit process to answer the basic questions: "who", "what", "when", "where".

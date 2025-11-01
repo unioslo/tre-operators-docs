@@ -95,7 +95,7 @@ Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Trainin
 
 ## Disclaimer
 
-This site was partially generated and improved using GitHub Copilot. Specific tasks performed by Copilot include:
+This documentation was partially generated and improved using GitHub Copilot. Specific tasks performed by Copilot in this file include:
 
 - Rewriting sections to use active voice for clarity and directness
 - Formatting checklists for better compatibility with documentation tools
