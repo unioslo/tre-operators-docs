@@ -6,11 +6,7 @@
 
 A **Trusted Research Environment (TRE)** is a secure digital workspace that provides researchers with controlled access to sensitive data (such as health, social, or administrative records) while ensuring strict safeguards around privacy, security, and compliance. TREs function like protected reference libraries, giving approved researchers a single, secure location for both data and analytical tools. For definitions of key terms, see the [Glossary](appendices/glossary.md).
 
-A Trusted Research Environment (TRE) is a secure digital workspace. It gives researchers controlled access to sensitive data, such as health, social, or administrative records, and protects privacy, security, and compliance. TREs work like protected reference libraries, providing approved researchers a single, secure location for data and analytical tools. For definitions of key terms, see the [Glossary](appendices/glossary.md).
-
 ## EOSC-ENTRUST and the Blueprint
-
-[**EOSC-ENTRUST**](https://eosc-entrust.eu/) aims to create a European network of TREs for sensitive data and drive interoperability between them. This is achieved through a common blueprint for federated data access and analysis—the [**EOSC-ENTRUST Blueprint & Interoperability Framework**](https://eosc.eu/roadmap/blueprint-architecture-for-trusted-research-environments-tres/). The blueprint incorporates lessons from the [**DARE UK Federated Architecture Blueprint**](https://dareuk.org.uk/how-we-work/federated-architecture-blueprint/), which uses the [Five Safes](appendices/glossary.md#five-safes) framework and data space design thinking.
 
 EOSC-ENTRUST creates a European network of TREs for sensitive data and promotes interoperability. It uses a common blueprint for federated data access and analysis, based on lessons from the DARE UK Federated Architecture Blueprint and the Five Safes framework.
 
