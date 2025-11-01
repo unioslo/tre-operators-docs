@@ -14,8 +14,8 @@ Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Trainin
 
 1. **Understand TRE Fundamentals**
 
-   [ ] Read the TRE Fundamentals section.
-   [ ] Review key terminology in the Glossary.
+   - Read the TRE Fundamentals section.
+   - Review key terminology in the Glossary.
 
 2. **Review Reference Architecture**
 
