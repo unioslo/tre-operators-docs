@@ -40,8 +40,6 @@ Participants are the strategic capabilities forming the federation network.
 
 ## Interoperability Requirement
 
-The federation must maintain integrity, non-repudiation, and traceability. All Projects **MUST** be registered with the Federation's Registry services, and Project Identities **MUST** be globally recognizable and unique.
-
 Maintain integrity, non-repudiation, and traceability in the federation. Register all Projects with the Federation's Registry services, and assign globally recognizable and unique Project Identities.
 
 For the definition and core characteristics of a Trusted Research Environment (TRE), see [TRE Fundamentals](../../fundamentals.md).
@@ -54,14 +52,6 @@ The TRE model is divided into three functional zones, reflecting different gover
 
 #### Research Analytics Zone (RAZ)
 
-The RAZ provides the environment for the **Project Member** to gain direct access to approved data for analysis.
-
-*   **Mandatory Requirements:**
-    *   An RAZ **MUST** have one or more **Project Environments**.
-    *   If an RAZ supports Project Environments with remote data presentations, it **MUST** support the Query (direct) and incoming Response interface types.
-*   **Key ENTRUST Modification:** The ENTRUST RAZ model includes the **Principal Investigator (PI)** acting as both the **Output Approver** and **Input Approver** for the project environment. This modification avoids infrastructure scalability bottlenecks and clarifies legal responsibility, particularly where the TRE is not the data controller.
-*   **EHDS Alignment:** The RAZ is comparable to the European Health Data Space's (EHDS) **Secure Processing Environment (SPE)** concept.
-
 The RAZ provides the environment for Project Members to access approved data for analysis.
 Include one or more Project Environments in the RAZ. If the RAZ supports remote data presentations, support the Query (direct) and incoming Response interface types.
 The ENTRUST RAZ model includes the Principal Investigator (PI) acting as both the Output Approver and Input Approver for the project environment. This modification avoids infrastructure scalability bottlenecks and clarifies legal responsibility, especially where the TRE is not the data controller.
@@ -69,26 +59,11 @@ The RAZ is comparable to the European Health Data Space's (EHDS) Secure Processi
 
 #### Secure Data Zone (SDZ)
 
-The SDZ supports the management, linkage, curation, ingress, and egress of research-ready sensitive datasets.
-
-*   **Mandatory Requirements:**
-    *   An SDZ **MUST** have a **Data Management function**.
-    *   All data movements to or from the SDZ **MUST** pass through the Data Management function.
-    *   **Data Manager** and **Output Approver** roles **SHALL** be granted access to the SDZ; all other roles **SHALL NOT** be granted access.
-    *   The SDZ **SHOULD** support the Data Egress and Data Ingress interface types for sending and receiving Data Extract Objects.
-*   **Specialized SDZ: Secure Data Archive (SDA):** The ENTRUST architecture includes the SDA as a specialized SDZ storing **published Curated Data** and handling Data Access Requests to such published data. Curated Data should have unique IDs and accompanying metadata to enable credit attributions.
-
 The SDZ manages, links, curates, ingresses, and egresses research-ready sensitive datasets.
 Include a Data Management function in the SDZ. Route all data movements to or from the SDZ through the Data Management function. Grant Data Manager and Output Approver roles access to the SDZ; do not grant access to other roles. Support the Data Egress and Data Ingress interface types in the SDZ for sending and receiving Data Extract Objects.
 The ENTRUST architecture includes the SDA as a specialized SDZ that stores published Curated Data and handles Data Access Requests to such published data. Assign unique IDs and accompanying metadata to Curated Data to enable credit attributions.
 
 #### Query Management Zone (QMZ)
-
-The QMZ handles queries sent from other, remote TREs or external Job Submission services, typically sitting alongside an SDZ.
-
-*   **Direct Queries:** A QMZ supporting direct queries **MUST** have an **External Presentation component** (e.g., a database view) and **MUST** support the incoming Query (direct) interface type.
-*   **Indirect Queries:** A QMZ supporting indirect queries **MUST** include a **Job Controller component** and a **Job Executor component**. The Job Request **MUST** pass through a **Job Approval process**.
-*   **HPC:** A QMZ **MAY** provide a **High-Performance Computing (HPC) component** to support the execution of indirect query jobs.
 
 The QMZ handles queries sent from other, remote TREs or external Job Submission services, typically sitting alongside an SDZ.
 For direct queries, include an External Presentation component (e.g., a database view) and support the incoming Query (direct) interface type. For indirect queries, include a Job Controller component and a Job Executor component, and route the Job Request through a Job Approval process. Provide a High-Performance Computing (HPC) component in the QMZ to support the execution of indirect query jobs.
