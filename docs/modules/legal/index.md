@@ -69,4 +69,3 @@ Upcoming versions of the Blueprint will include complete template agreements.
 ## Final Notes
 
 * No templates are provided at this stage—this module defines the legal structure only.
-* Future updates will supply reusable agreements to reduce negotiation time across TREs and jurisdictions.
