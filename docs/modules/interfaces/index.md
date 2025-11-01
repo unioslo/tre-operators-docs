@@ -58,8 +58,6 @@ To maintain security and compliance:
 
 By following these practices, you help ensure the integrity, confidentiality, and traceability of all data exchanged in the federation.
 
-Here’s a streamlined, active-voice rewrite of the entire document in a logical flow. Content is preserved but phrased more clearly, without duplication or unnecessary wording.
-
 ---
 
 ## Federated AAAI Overview
