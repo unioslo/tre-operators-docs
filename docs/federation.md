@@ -1,4 +1,4 @@
-# Federation Integration
+# Module 6: Federation & Collaboration
 
 Core Services define the Federation and provide common functions for coordinated and secure operation.
 
