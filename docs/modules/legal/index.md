@@ -1,4 +1,6 @@
-# Legal and Ethical Frameworks for Federation
+# Module 5: Legal and Compliance
+
+## Ethical Frameworks for Federation
 
 This module defines the legal and ethical foundations for cross-border sensitive data federation. Template legal agreements, operating procedures, and interface definitions will be published in future versions of the ENTRUST Blueprint.
 
