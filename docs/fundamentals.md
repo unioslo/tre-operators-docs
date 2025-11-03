@@ -1,6 +1,6 @@
 
 
-# TRE Fundamentals
+# Module 1: TRE Fundamentals
 
 ## What is a TRE?
 
