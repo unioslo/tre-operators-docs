@@ -1,4 +1,4 @@
-# Operating Procedures
+# Module 4: Operations & Procedures
 
 This module defines consensus-based Standard Operating Procedures (SOPs) required for operational alignment across the federation.
 
