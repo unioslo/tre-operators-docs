@@ -1,5 +1,5 @@
 
-# Architecture Overview
+# Module 2: Architecture & setup
 
 This section introduces the infrastructure layer of the ENTRUST Blueprint, detailing the Participants and the minimal requirements for creating a trustworthy federation.
 
