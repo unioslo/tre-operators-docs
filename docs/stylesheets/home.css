@@ -61,10 +61,10 @@
 }
 
 .tre-hero-link {
-  background: var(--tre-primary);
+  background: #ffffff;
   border: 1px solid var(--tre-primary);
   border-radius: 999px;
-  color: #ffffff;
+  color: var(--tre-primary);
   display: inline-flex;
   gap: 0.4rem;
   font-size: 0.86rem;
@@ -77,6 +77,7 @@
 }
 
 .tre-hero-link:hover {
+  background: var(--tre-primary);
   box-shadow: var(--tre-shadow);
   color: #ffffff;
   transform: translateY(-2px);
@@ -88,7 +89,7 @@
 }
 
 .tre-hero-link-secondary:hover {
-  color: var(--tre-primary);
+  color: #ffffff;
 }
 
 .tre-hero-side {
