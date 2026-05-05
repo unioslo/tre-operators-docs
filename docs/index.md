@@ -5,9 +5,9 @@
 		<p class="tre-lead">Build, operate, and maintain secure, compliant, and interoperable Trusted Research Environments across federated infrastructures.</p>
 
 		<div class="tre-hero-actions">
-			<a class="tre-hero-link" href="fundamentals.md"><i class="fa-solid fa-book-open tre-icon-inline" aria-hidden="true"></i>Start with fundamentals</a>
-			<a class="tre-hero-link tre-hero-link-secondary" href="modules/architecture/index.md"><i class="fa-solid fa-diagram-project tre-icon-inline" aria-hidden="true"></i>View architecture</a>
-			<a class="tre-hero-link tre-hero-link-secondary" href="federation.md"><i class="fa-solid fa-globe tre-icon-inline" aria-hidden="true"></i>Read federation guide</a>
+			<a class="tre-hero-link" href="fundamentals/"><i class="fa-solid fa-book-open tre-icon-inline" aria-hidden="true"></i>Start with fundamentals</a>
+			<a class="tre-hero-link tre-hero-link-secondary" href="modules/architecture/"><i class="fa-solid fa-diagram-project tre-icon-inline" aria-hidden="true"></i>View architecture</a>
+			<a class="tre-hero-link tre-hero-link-secondary" href="federation/"><i class="fa-solid fa-globe tre-icon-inline" aria-hidden="true"></i>Read federation guide</a>
 		</div>
 	</div>
 
@@ -27,19 +27,19 @@
 	<article class="tre-summary-card">
 		<h2><i class="fa-solid fa-compass tre-icon-heading" aria-hidden="true"></i>Start Here</h2>
 		<p>Understand the TRE model, terminology, and core expectations before setup.</p>
-		<a href="fundamentals.md"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Open fundamentals</a>
+		<a href="fundamentals/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Open fundamentals</a>
 	</article>
 
 	<article class="tre-summary-card">
 		<h2><i class="fa-solid fa-server tre-icon-heading" aria-hidden="true"></i>Deploy Core Services</h2>
 		<p>Review the architecture, federation dependencies, and trust components.</p>
-		<a href="modules/architecture/index.md"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Open architecture</a>
+		<a href="modules/architecture/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Open architecture</a>
 	</article>
 
 	<article class="tre-summary-card">
 		<h2><i class="fa-solid fa-scale-balanced tre-icon-heading" aria-hidden="true"></i>Operate and Govern</h2>
 		<p>Use the procedures and legal modules to support onboarding, monitoring, and compliance.</p>
-		<a href="modules/procedures/index.md"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Open procedures</a>
+		<a href="modules/procedures/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Open procedures</a>
 	</article>
 </div>
 
@@ -58,15 +58,15 @@
 	<article class="tre-card tre-step-card">
 		<h3><span class="tre-card-number">1</span><i class="fa-solid fa-book tre-icon-heading" aria-hidden="true"></i>Understand TRE Fundamentals</h3>
 		<ul>
-			<li>Read <a href="fundamentals.md">TRE Fundamentals</a>.</li>
-			<li>Review key terminology in the <a href="appendices/glossary.md">Glossary</a>.</li>
+			<li>Read <a href="fundamentals/">TRE Fundamentals</a>.</li>
+			<li>Review key terminology in the <a href="appendices/glossary/">Glossary</a>.</li>
 		</ul>
 	</article>
 
 	<article class="tre-card tre-step-card">
 		<h3><span class="tre-card-number">2</span><i class="fa-solid fa-sitemap tre-icon-heading" aria-hidden="true"></i>Review Reference Architecture</h3>
 		<ul>
-			<li>Study <a href="modules/architecture/index.md">Architecture</a> diagrams and component descriptions.</li>
+			<li>Study <a href="modules/architecture/">Architecture</a> diagrams and component descriptions.</li>
 		</ul>
 	</article>
 
@@ -118,7 +118,7 @@
 	<article class="tre-card tre-step-card">
 		<h3><span class="tre-card-number">9</span><i class="fa-solid fa-folder-open tre-icon-heading" aria-hidden="true"></i>Consult Appendices</h3>
 		<ul>
-			<li>Use <a href="appendices/reference-architecture.md">Reference Architecture</a> and <a href="appendices/resources.md">Resources</a> for troubleshooting and support.</li>
+			<li>Use <a href="appendices/reference-architecture/">Reference Architecture</a> and <a href="appendices/resources/">Resources</a> for troubleshooting and support.</li>
 		</ul>
 	</article>
 
@@ -131,16 +131,16 @@
 	<article class="tre-card tre-module-card">
 		<h3><i class="fa-solid fa-book-open-reader tre-icon-heading" aria-hidden="true"></i>Module 1: TRE Fundamentals</h3>
 		<ul>
-			<li>Compliance basics: <a href="fundamentals.md">TRE Fundamentals</a></li>
+			<li>Compliance basics: <a href="fundamentals/">TRE Fundamentals</a></li>
 			<li>Key concepts and terminology</li>
-			<li><a href="appendices/glossary.md">Glossary</a></li>
+			<li><a href="appendices/glossary/">Glossary</a></li>
 		</ul>
 	</article>
 
 	<article class="tre-card tre-module-card">
 		<h3><i class="fa-solid fa-diagram-project tre-icon-heading" aria-hidden="true"></i>Module 2: Architecture and Setup</h3>
 		<ul>
-			<li>Zones and core components: <a href="modules/architecture/index.md">Architecture</a></li>
+			<li>Zones and core components: <a href="modules/architecture/">Architecture</a></li>
 			<li>AAA integration</li>
 		</ul>
 	</article>
@@ -148,28 +148,28 @@
 	<article class="tre-card tre-module-card">
 		<h3><i class="fa-solid fa-code-branch tre-icon-heading" aria-hidden="true"></i>Module 3: Interfaces and Configuration</h3>
 		<ul>
-			<li>Interface definitions: <a href="modules/interfaces/index.md">Interfaces</a></li>
+			<li>Interface definitions: <a href="modules/interfaces/">Interfaces</a></li>
 		</ul>
 	</article>
 
 	<article class="tre-card tre-module-card">
 		<h3><i class="fa-solid fa-gears tre-icon-heading" aria-hidden="true"></i>Module 4: Operations and Procedures</h3>
 		<ul>
-			<li>Onboarding, monitoring, incident response: <a href="modules/procedures/index.md">Procedures</a></li>
+			<li>Onboarding, monitoring, incident response: <a href="modules/procedures/">Procedures</a></li>
 		</ul>
 	</article>
 
 	<article class="tre-card tre-module-card">
 		<h3><i class="fa-solid fa-scale-balanced tre-icon-heading" aria-hidden="true"></i>Module 5: Legal and Compliance</h3>
 		<ul>
-			<li>Agreements, certification, governance: <a href="modules/legal/index.md">Legal</a></li>
+			<li>Agreements, certification, governance: <a href="modules/legal/">Legal</a></li>
 		</ul>
 	</article>
 
 	<article class="tre-card tre-module-card">
 		<h3><i class="fa-solid fa-people-arrows tre-icon-heading" aria-hidden="true"></i>Module 6: Federation and Collaboration</h3>
 		<ul>
-			<li>Federation integration: <a href="federation.md">Federation</a></li>
+			<li>Federation integration: <a href="federation/">Federation</a></li>
 			<li>Data sharing and collaboration</li>
 		</ul>
 	</article>
