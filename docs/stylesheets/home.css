@@ -368,3 +368,18 @@ li {
 .wy-side-nav-search .wy-form input[type="text"]:focus {
   border-color: #9eb8cf;
 }
+
+.wy-nav-side,
+.wy-menu,
+.wy-menu-vertical {
+  background: #133a5e;
+}
+
+.wy-menu-vertical a {
+  color: #e6f1fb;
+}
+
+.wy-menu-vertical a:hover {
+  background: #1a4c78;
+  color: #ffffff;
+}
