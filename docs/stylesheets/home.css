@@ -105,8 +105,11 @@
 }
 
 .tre-hero-panel h2 {
+  align-items: center;
   border-bottom: 0;
+  display: flex;
   font-size: 1rem;
+  gap: 0.55rem;
   margin: 0 0 0.8rem;
   padding-bottom: 0;
 }
@@ -140,8 +143,11 @@
 }
 
 .tre-summary-card h2 {
+  align-items: center;
   border-bottom: 0;
+  display: flex;
   font-size: 1rem;
+  gap: 0.55rem;
   margin: 0 0 0.45rem;
   padding-bottom: 0;
 }
