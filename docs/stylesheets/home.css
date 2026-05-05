@@ -335,3 +335,26 @@ li {
 [data-ea-type] {
   display: none !important;
 }
+
+.wy-side-nav-search {
+  background: #133a5e;
+}
+
+.wy-side-nav-search > a,
+.wy-side-nav-search .wy-dropdown > a {
+  color: #ffffff;
+}
+
+.wy-side-nav-search .wy-form input[type="text"] {
+  background: #133a5e;
+  border: 1px solid #5f7f9b;
+  color: #ffffff;
+}
+
+.wy-side-nav-search .wy-form input[type="text"]::placeholder {
+  color: #c9d8e6;
+}
+
+.wy-side-nav-search .wy-form input[type="text"]:focus {
+  border-color: #9eb8cf;
+}
