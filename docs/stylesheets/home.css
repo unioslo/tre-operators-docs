@@ -313,3 +313,11 @@ li {
     padding: 0.9rem;
   }
 }
+
+.ethical-rtd,
+.ethical-sidebar,
+#rtd-footer-container,
+[data-ea-publisher],
+[data-ea-type] {
+  display: none !important;
+}
