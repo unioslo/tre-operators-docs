@@ -55,9 +55,10 @@
 
 .tre-hero-actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 0.75rem;
   margin-top: 1.2rem;
+  overflow-x: auto;
 }
 
 .tre-hero-link {
@@ -70,6 +71,7 @@
   font-weight: 700;
   align-items: center;
   padding: 0.72rem 1rem;
+  white-space: nowrap;
   text-decoration: none;
   transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
 }
@@ -290,7 +292,7 @@ li {
   }
 
   .tre-hero-actions {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .tre-hero-link {
