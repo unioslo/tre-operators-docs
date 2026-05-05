@@ -383,3 +383,25 @@ li {
   background: #1a4c78;
   color: #ffffff;
 }
+
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.current > a:hover {
+  background: #1a4c78;
+  border-color: #5f7f9b;
+  color: #ffffff;
+}
+
+.wy-menu-vertical li.current > ul {
+  background: #163f66;
+}
+
+.wy-menu-vertical li.current ul li a {
+  background: transparent;
+  color: #d9e8f6;
+}
+
+.wy-menu-vertical li.current ul li a:hover,
+.wy-menu-vertical li.current ul li.current > a {
+  background: #245786;
+  color: #ffffff;
+}
