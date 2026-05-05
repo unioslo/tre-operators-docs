@@ -380,13 +380,13 @@ li {
 }
 
 .wy-menu-vertical a:hover {
-  background: #1a4c78;
+  background: rgba(255, 255, 255, 0.08);
   color: #ffffff;
 }
 
 .wy-menu-vertical li.current > a,
 .wy-menu-vertical li.current > a:hover {
-  background: #1a4c78;
+  background: rgba(255, 255, 255, 0.1);
   border-color: #5f7f9b;
   color: #ffffff;
 }
@@ -410,12 +410,12 @@ li {
 
 .wy-menu-vertical li.current ul li a:hover,
 .wy-menu-vertical li.current ul li.current > a {
-  background: #245786;
+  background: rgba(255, 255, 255, 0.09);
   color: #ffffff;
 }
 
 .wy-menu-vertical li.current ul li.current ul li a:hover,
 .wy-menu-vertical li.current ul li.current ul li.current > a {
-  background: #2d6798;
+  background: rgba(255, 255, 255, 0.12);
   color: #ffffff;
 }
