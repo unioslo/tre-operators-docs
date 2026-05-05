@@ -1,6 +1,12 @@
+<section class="tre-hero">
+
 # Introduction
 
-Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Training Material. This guide is designed to help you build, operate, and maintain secure, compliant, and interoperable TREs.
+Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Training Material. This guide helps you build, operate, and maintain secure, compliant, and interoperable TREs.
+
+</section>
+
+<section class="tre-objectives">
 
 ## Learning Objectives
 
@@ -10,84 +16,154 @@ Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Trainin
 - Apply legal and compliance requirements
 - Integrate with federated TREs
 
+</section>
+
+<section class="tre-checklist">
+
 ## Getting Started Checklist
 
-**Understand TRE Fundamentals**
+<div class="tre-step-grid">
 
-   - Read the ([TRE Fundamentals](fundamentals.md)) section.
-   - Review key terminology in the [Glossary](appendices/glossary.md).
+<div class="tre-step">
+<h3>1. Understand TRE Fundamentals</h3>
 
-**Review Reference Architecture**
+- Read [TRE Fundamentals](fundamentals.md).
+- Review key terminology in the [Glossary](appendices/glossary.md).
 
-   - Study the ([Architecture](modules/architecture/index.md)) diagrams and component descriptions.
+</div>
 
-**Prepare Legal Agreements**
+<div class="tre-step">
+<h3>2. Review Reference Architecture</h3>
 
-   - Download and adapt template legal agreements (DSA, DTA, DUA).
+- Study [Architecture](modules/architecture/index.md) diagrams and component descriptions.
 
-**Set Up Core Infrastructure**
+</div>
 
-   - Deploy Security Server.
-   - Register with Federation Registry.
-   - Configure Trust Services and AAAI.
+<div class="tre-step">
+<h3>3. Prepare Legal Agreements</h3>
 
-**Implement Interfaces**
+- Download and adapt template legal agreements (DSA, DTA, DUA).
 
-   - Integrate required APIs and data exchange protocols.
+</div>
 
-**Establish Operating Procedures**
+<div class="tre-step">
+<h3>4. Set Up Core Infrastructure</h3>
 
-   - Document operational tasks and maintenance routines.
+- Deploy Security Server.
+- Register with Federation Registry.
+- Configure Trust Services and AAAI.
 
-**Connect to Federation**
+</div>
 
-   - Ensure compliance with federation requirements.
-   - Test inter-TRE connectivity.
+<div class="tre-step">
+<h3>5. Implement Interfaces</h3>
 
-**Train and Accredit Users**
+- Integrate required APIs and data exchange protocols.
 
-   - Verify researcher accreditation and training records.
+</div>
 
-**Consult Appendices**
+<div class="tre-step">
+<h3>6. Establish Operating Procedures</h3>
 
-   - Use reference material ([Reference Architecture](appendices/reference-architecture.md)) and [Resources](appendices/resources.md) for troubleshooting and support.
+- Document operational tasks and maintenance routines.
+
+</div>
+
+<div class="tre-step">
+<h3>7. Connect to Federation</h3>
+
+- Ensure compliance with federation requirements.
+- Test inter-TRE connectivity.
+
+</div>
+
+<div class="tre-step">
+<h3>8. Train and Accredit Users</h3>
+
+- Verify researcher accreditation and training records.
+
+</div>
+
+<div class="tre-step">
+<h3>9. Consult Appendices</h3>
+
+- Use [Reference Architecture](appendices/reference-architecture.md) and [Resources](appendices/resources.md) for troubleshooting and support.
+
+</div>
+
+</div>
+
+</section>
+
+<section class="tre-flow">
 
 ![Getting Started Flowchart](images/getting-started-tre.png)
-*Figure: TRE Getting Started Flowchart*
+
+<p>Figure: TRE Getting Started Flowchart</p>
+
+</section>
+
+<section class="tre-modules">
 
 ## Modules
 
----
+<div class="tre-module-grid">
 
-## Module 1: TRE Fundamentals
+<div class="tre-module">
+<h3>Module 1: TRE Fundamentals</h3>
 
-- Compliance basics ([TRE Fundamentals](fundamentals.md))
+- Compliance basics: [TRE Fundamentals](fundamentals.md)
 - Key concepts and terminology
 - [Glossary](appendices/glossary.md)
 
-## Module 2: Architecture & Setup
+</div>
 
-- Zones and core components ([Architecture](modules/architecture/index.md))
+<div class="tre-module">
+<h3>Module 2: Architecture and Setup</h3>
+
+- Zones and core components: [Architecture](modules/architecture/index.md)
 - AAA integration
 
-## Module 3: Interfaces & Configuration
+</div>
 
-- Interface definitions ([Interfaces](modules/interfaces/index.md))
+<div class="tre-module">
+<h3>Module 3: Interfaces and Configuration</h3>
 
-## Module 4: Operations & Procedures
+- Interface definitions: [Interfaces](modules/interfaces/index.md)
 
-- Onboarding, monitoring, incident response ([Procedures](modules/procedures/index.md))
+</div>
 
-## Module 5: Legal & Compliance
+<div class="tre-module">
+<h3>Module 4: Operations and Procedures</h3>
 
-- Agreements, certification, governance ([Legal](modules/legal/index.md))
+- Onboarding, monitoring, incident response: [Procedures](modules/procedures/index.md)
 
-## Module 6: Federation & Collaboration
+</div>
 
-- Federation integration ([Federation](federation.md))
+<div class="tre-module">
+<h3>Module 5: Legal and Compliance</h3>
+
+- Agreements, certification, governance: [Legal](modules/legal/index.md)
+
+</div>
+
+<div class="tre-module">
+<h3>Module 6: Federation and Collaboration</h3>
+
+- Federation integration: [Federation](federation.md)
 - Data sharing and collaboration
 
-## Appendices & Resources
+</div>
+
+</div>
+
+</section>
+
+<section class="tre-appendices">
+
+## Appendices and Resources
 
 - [Reference Architecture](appendices/reference-architecture.md)
 - [Resources](appendices/resources.md)
+
+</section>

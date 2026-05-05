@@ -6,6 +6,9 @@ use_directory_urls: true
 theme:
   name: readthedocs
 
+extra_css:
+  - stylesheets/home.css
+
 nav:
   - Home: index.md
   - TRE Fundamentals: fundamentals.md
