@@ -338,6 +338,14 @@ li {
 
 .wy-side-nav-search {
   background: #133a5e;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.wy-side-nav-search .wy-form {
+  background: #133a5e;
+  margin: 0;
+  padding: 0;
 }
 
 .wy-side-nav-search > a,
@@ -348,7 +356,9 @@ li {
 .wy-side-nav-search .wy-form input[type="text"] {
   background: #133a5e;
   border: 1px solid #5f7f9b;
+  box-shadow: none;
   color: #ffffff;
+  margin-bottom: 0;
 }
 
 .wy-side-nav-search .wy-form input[type="text"]::placeholder {
