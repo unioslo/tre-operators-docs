@@ -10,6 +10,12 @@
   --tre-rtd-blue: #133a5e;
   --tre-primary: #00509e;
   --tre-primary-strong: #0b3b75;
+  --tre-nav-hover: #1a476f;
+  --tre-nav-current: #1d4f7c;
+  --tre-nav-submenu: #163f66;
+  --tre-nav-submenu-deep: #1a496f;
+  --tre-nav-sub-hover: #215887;
+  --tre-nav-sub-hover-deep: #286396;
   --tre-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
   --tre-shadow-hover: 0 16px 30px rgba(15, 23, 42, 0.12);
 }
@@ -380,23 +386,23 @@ li {
 }
 
 .wy-menu-vertical a:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--tre-nav-hover);
   color: #ffffff;
 }
 
 .wy-menu-vertical li.current > a,
 .wy-menu-vertical li.current > a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--tre-nav-current);
   border-color: #5f7f9b;
   color: #ffffff;
 }
 
 .wy-menu-vertical li.current > ul {
-  background: #163f66;
+  background: var(--tre-nav-submenu);
 }
 
 .wy-menu-vertical li.current ul li.current > ul {
-  background: #1b4a74;
+  background: var(--tre-nav-submenu-deep);
 }
 
 .wy-menu-vertical li.current ul li a {
@@ -410,12 +416,12 @@ li {
 
 .wy-menu-vertical li.current ul li a:hover,
 .wy-menu-vertical li.current ul li.current > a {
-  background: rgba(255, 255, 255, 0.09);
+  background: var(--tre-nav-sub-hover);
   color: #ffffff;
 }
 
 .wy-menu-vertical li.current ul li.current ul li a:hover,
 .wy-menu-vertical li.current ul li.current ul li.current > a {
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--tre-nav-sub-hover-deep);
   color: #ffffff;
 }
