@@ -124,10 +124,6 @@
 
 </div>
 
-![Getting Started Flowchart](images/getting-started-tre.png)
-
-*Figure: TRE Getting Started Flowchart*
-
 ## Modules
 
 <div class="tre-card-grid tre-card-grid-modules">
