@@ -7,6 +7,7 @@
   --tre-surface: #f8fbff;
   --tre-line: #dbe3ee;
   --tre-line-strong: #c6d4ea;
+  --tre-rtd-blue: #2980b9;
   --tre-primary: #00509e;
   --tre-primary-strong: #0b3b75;
   --tre-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
@@ -97,8 +98,8 @@
 }
 
 .tre-hero-panel {
-  background: var(--tre-surface);
-  border: 1px solid var(--tre-line);
+  background: var(--tre-rtd-blue);
+  border: 1px solid #1f6997;
   border-radius: 14px;
   padding: 1rem;
   width: 100%;
@@ -107,6 +108,7 @@
 .tre-hero-panel h2 {
   align-items: center;
   border-bottom: 0;
+  color: #ffffff;
   display: flex;
   font-size: 1rem;
   gap: 0.55rem;
@@ -122,9 +124,15 @@
 
 .tre-hero-panel li {
   align-items: flex-start;
+  color: #eaf6ff;
   display: flex;
   gap: 0.55rem;
   margin-bottom: 0.55rem;
+}
+
+.tre-hero-panel .tre-icon-heading,
+.tre-hero-panel .tre-icon-list {
+  color: #d9f1ff;
 }
 
 .tre-summary-grid {
