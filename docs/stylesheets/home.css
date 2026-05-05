@@ -395,13 +395,27 @@ li {
   background: #163f66;
 }
 
+.wy-menu-vertical li.current ul li.current > ul {
+  background: #1b4a74;
+}
+
 .wy-menu-vertical li.current ul li a {
   background: transparent;
   color: #d9e8f6;
 }
 
+.wy-menu-vertical li.current ul li.current ul li a {
+  color: #e6f1fb;
+}
+
 .wy-menu-vertical li.current ul li a:hover,
 .wy-menu-vertical li.current ul li.current > a {
   background: #245786;
+  color: #ffffff;
+}
+
+.wy-menu-vertical li.current ul li.current ul li a:hover,
+.wy-menu-vertical li.current ul li.current ul li.current > a {
+  background: #2d6798;
   color: #ffffff;
 }
