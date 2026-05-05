@@ -1,6 +1,47 @@
-# Introduction
+<section class="tre-hero">
+	<div class="tre-hero-main">
+		<p class="tre-eyebrow">EOSC-ENTRUST Documentation</p>
+		<h1>TRE Operators Guide</h1>
+		<p class="tre-lead">Build, operate, and maintain secure, compliant, and interoperable Trusted Research Environments across federated infrastructures.</p>
 
-Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Training Material. This guide helps you build, operate, and maintain secure, compliant, and interoperable TREs.
+		<div class="tre-hero-actions">
+			<a class="tre-hero-link" href="fundamentals.md">Start with fundamentals</a>
+			<a class="tre-hero-link tre-hero-link-secondary" href="modules/architecture/index.md">View architecture</a>
+			<a class="tre-hero-link tre-hero-link-secondary" href="federation.md">Read federation guide</a>
+		</div>
+	</div>
+
+	<div class="tre-hero-side">
+		<div class="tre-hero-panel">
+			<h2>At a Glance</h2>
+			<ul>
+				<li>6 core modules</li>
+				<li>9 setup steps</li>
+				<li>Architecture, interfaces, legal, and operations guidance</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<div class="tre-summary-grid">
+	<article class="tre-summary-card">
+		<h2>Start Here</h2>
+		<p>Understand the TRE model, terminology, and core expectations before setup.</p>
+		<a href="fundamentals.md">Open fundamentals</a>
+	</article>
+
+	<article class="tre-summary-card">
+		<h2>Deploy Core Services</h2>
+		<p>Review the architecture, federation dependencies, and trust components.</p>
+		<a href="modules/architecture/index.md">Open architecture</a>
+	</article>
+
+	<article class="tre-summary-card">
+		<h2>Operate and Govern</h2>
+		<p>Use the procedures and legal modules to support onboarding, monitoring, and compliance.</p>
+		<a href="modules/procedures/index.md">Open procedures</a>
+	</article>
+</div>
 
 ## Learning Objectives
 
@@ -12,28 +53,76 @@ Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Trainin
 
 ## Getting Started Checklist
 
-1. **Understand TRE Fundamentals**
-	- Read [TRE Fundamentals](fundamentals.md).
-	- Review key terminology in the [Glossary](appendices/glossary.md).
-2. **Review Reference Architecture**
-	- Study [Architecture](modules/architecture/index.md) diagrams and component descriptions.
-3. **Prepare Legal Agreements**
-	- Download and adapt template legal agreements (DSA, DTA, DUA).
-4. **Set Up Core Infrastructure**
-	- Deploy Security Server.
-	- Register with Federation Registry.
-	- Configure Trust Services and AAAI.
-5. **Implement Interfaces**
-	- Integrate required APIs and data exchange protocols.
-6. **Establish Operating Procedures**
-	- Document operational tasks and maintenance routines.
-7. **Connect to Federation**
-	- Ensure compliance with federation requirements.
-	- Test inter-TRE connectivity.
-8. **Train and Accredit Users**
-	- Verify researcher accreditation and training records.
-9. **Consult Appendices**
-	- Use [Reference Architecture](appendices/reference-architecture.md) and [Resources](appendices/resources.md) for troubleshooting and support.
+<div class="tre-card-grid tre-card-grid-steps">
+
+	<article class="tre-card tre-step-card">
+		<h3><span class="tre-card-number">1</span>Understand TRE Fundamentals</h3>
+		<ul>
+			<li>Read <a href="fundamentals.md">TRE Fundamentals</a>.</li>
+			<li>Review key terminology in the <a href="appendices/glossary.md">Glossary</a>.</li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-step-card">
+		<h3><span class="tre-card-number">2</span>Review Reference Architecture</h3>
+		<ul>
+			<li>Study <a href="modules/architecture/index.md">Architecture</a> diagrams and component descriptions.</li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-step-card">
+		<h3><span class="tre-card-number">3</span>Prepare Legal Agreements</h3>
+		<ul>
+			<li>Download and adapt template legal agreements (DSA, DTA, DUA).</li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-step-card">
+		<h3><span class="tre-card-number">4</span>Set Up Core Infrastructure</h3>
+		<ul>
+			<li>Deploy Security Server.</li>
+			<li>Register with Federation Registry.</li>
+			<li>Configure Trust Services and AAAI.</li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-step-card">
+		<h3><span class="tre-card-number">5</span>Implement Interfaces</h3>
+		<ul>
+			<li>Integrate required APIs and data exchange protocols.</li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-step-card">
+		<h3><span class="tre-card-number">6</span>Establish Operating Procedures</h3>
+		<ul>
+			<li>Document operational tasks and maintenance routines.</li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-step-card">
+		<h3><span class="tre-card-number">7</span>Connect to Federation</h3>
+		<ul>
+			<li>Ensure compliance with federation requirements.</li>
+			<li>Test inter-TRE connectivity.</li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-step-card">
+		<h3><span class="tre-card-number">8</span>Train and Accredit Users</h3>
+		<ul>
+			<li>Verify researcher accreditation and training records.</li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-step-card">
+		<h3><span class="tre-card-number">9</span>Consult Appendices</h3>
+		<ul>
+			<li>Use <a href="appendices/reference-architecture.md">Reference Architecture</a> and <a href="appendices/resources.md">Resources</a> for troubleshooting and support.</li>
+		</ul>
+	</article>
+
+</div>
 
 ![Getting Started Flowchart](images/getting-started-tre.png)
 
@@ -41,33 +130,55 @@ Welcome to the EOSC-ENTRUST Trusted Research Environment (TRE) Operators Trainin
 
 ## Modules
 
-### Module 1: TRE Fundamentals
+<div class="tre-card-grid tre-card-grid-modules">
 
-- Compliance basics: [TRE Fundamentals](fundamentals.md)
-- Key concepts and terminology
-- [Glossary](appendices/glossary.md)
+	<article class="tre-card tre-module-card">
+		<h3>Module 1: TRE Fundamentals</h3>
+		<ul>
+			<li>Compliance basics: <a href="fundamentals.md">TRE Fundamentals</a></li>
+			<li>Key concepts and terminology</li>
+			<li><a href="appendices/glossary.md">Glossary</a></li>
+		</ul>
+	</article>
 
-### Module 2: Architecture and Setup
+	<article class="tre-card tre-module-card">
+		<h3>Module 2: Architecture and Setup</h3>
+		<ul>
+			<li>Zones and core components: <a href="modules/architecture/index.md">Architecture</a></li>
+			<li>AAA integration</li>
+		</ul>
+	</article>
 
-- Zones and core components: [Architecture](modules/architecture/index.md)
-- AAA integration
+	<article class="tre-card tre-module-card">
+		<h3>Module 3: Interfaces and Configuration</h3>
+		<ul>
+			<li>Interface definitions: <a href="modules/interfaces/index.md">Interfaces</a></li>
+		</ul>
+	</article>
 
-### Module 3: Interfaces and Configuration
+	<article class="tre-card tre-module-card">
+		<h3>Module 4: Operations and Procedures</h3>
+		<ul>
+			<li>Onboarding, monitoring, incident response: <a href="modules/procedures/index.md">Procedures</a></li>
+		</ul>
+	</article>
 
-- Interface definitions: [Interfaces](modules/interfaces/index.md)
+	<article class="tre-card tre-module-card">
+		<h3>Module 5: Legal and Compliance</h3>
+		<ul>
+			<li>Agreements, certification, governance: <a href="modules/legal/index.md">Legal</a></li>
+		</ul>
+	</article>
 
-### Module 4: Operations and Procedures
+	<article class="tre-card tre-module-card">
+		<h3>Module 6: Federation and Collaboration</h3>
+		<ul>
+			<li>Federation integration: <a href="federation.md">Federation</a></li>
+			<li>Data sharing and collaboration</li>
+		</ul>
+	</article>
 
-- Onboarding, monitoring, incident response: [Procedures](modules/procedures/index.md)
-
-### Module 5: Legal and Compliance
-
-- Agreements, certification, governance: [Legal](modules/legal/index.md)
-
-### Module 6: Federation and Collaboration
-
-- Federation integration: [Federation](federation.md)
-- Data sharing and collaboration
+</div>
 
 ## Appendices and Resources
 
