@@ -87,6 +87,10 @@
   color: var(--tre-primary);
 }
 
+.tre-hero-link-secondary:hover {
+  color: var(--tre-primary);
+}
+
 .tre-hero-side {
   display: flex;
 }
