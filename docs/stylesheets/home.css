@@ -3,10 +3,10 @@
 :root {
   --tre-ink: #0f172a;
   --tre-soft-ink: #334155;
-  --tre-paper: #ffffff;
-  --tre-surface: #f8fbff;
-  --tre-line: #dbe3ee;
-  --tre-line-strong: #c6d4ea;
+  --tre-paper: #f6faff;
+  --tre-surface: #eaf2fb;
+  --tre-line: #cfdff2;
+  --tre-line-strong: #b8cfea;
   --tre-rtd-blue: #133a5e;
   --tre-primary: #00509e;
   --tre-primary-strong: #0b3b75;
@@ -27,7 +27,7 @@
 }
 
 .wy-nav-content-wrap {
-  background: #f5f8fc;
+  background: #e2ecf8;
 }
 
 .tre-hero {
@@ -68,7 +68,7 @@
 }
 
 .tre-hero-link {
-  background: #ffffff;
+  background: var(--tre-paper);
   border: 1px solid var(--tre-primary);
   border-radius: 999px;
   color: var(--tre-primary);
@@ -91,7 +91,7 @@
 }
 
 .tre-hero-link-secondary {
-  background: #ffffff;
+  background: var(--tre-paper);
   color: var(--tre-primary);
 }
 
@@ -383,6 +383,18 @@ li {
 
 .wy-menu-vertical a {
   color: #e6f1fb;
+}
+
+.wy-menu-vertical .toctree-expand {
+  color: #ffffff !important;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.wy-menu-vertical li.current > a .toctree-expand,
+.wy-menu-vertical li > a:hover .toctree-expand,
+.wy-menu-vertical li.current ul li.current > a .toctree-expand {
+  color: #ffffff !important;
 }
 
 .wy-menu-vertical a:hover {
