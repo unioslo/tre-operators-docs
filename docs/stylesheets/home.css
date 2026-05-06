@@ -520,6 +520,38 @@ li {
   color: var(--tre-nav-text-hover) !important;
 }
 
+/* Explicit level-3/4 hard override to remove any remaining RTD gray defaults. */
+.wy-menu-vertical li.toctree-l3,
+.wy-menu-vertical li.toctree-l4,
+.wy-menu-vertical li.toctree-l3.current,
+.wy-menu-vertical li.toctree-l4.current {
+  background: transparent !important;
+}
+
+.wy-menu-vertical li.toctree-l3 > a,
+.wy-menu-vertical li.toctree-l4 > a,
+.wy-menu-vertical li.toctree-l3 > a:link,
+.wy-menu-vertical li.toctree-l4 > a:link,
+.wy-menu-vertical li.toctree-l3 > a:visited,
+.wy-menu-vertical li.toctree-l4 > a:visited,
+.wy-menu-vertical li.toctree-l3 > a:focus,
+.wy-menu-vertical li.toctree-l4 > a:focus,
+.wy-menu-vertical li.toctree-l3 > a:active,
+.wy-menu-vertical li.toctree-l4 > a:active {
+  background: transparent !important;
+  color: var(--tre-nav-text-strong) !important;
+}
+
+.wy-menu-vertical li.toctree-l3 > a:hover,
+.wy-menu-vertical li.toctree-l4 > a:hover,
+.wy-menu-vertical li.toctree-l3.current > a,
+.wy-menu-vertical li.toctree-l4.current > a,
+.wy-menu-vertical li.toctree-l3.current > a:hover,
+.wy-menu-vertical li.toctree-l4.current > a:hover {
+  background: var(--tre-nav-sub-hover-deep) !important;
+  color: var(--tre-nav-text-hover) !important;
+}
+
 .rst-versions,
 .wy-side-nav-search + .wy-menu + .rst-versions {
   background: var(--tre-nav-submenu);
@@ -539,4 +571,50 @@ li {
 
 .rst-versions a:hover {
   color: #9ec6ea;
+}
+
+/* Global menu normalization: remove gray from all levels and states. */
+.wy-nav-side .wy-menu-vertical,
+.wy-nav-side .wy-menu-vertical ul,
+.wy-nav-side .wy-menu-vertical li,
+.wy-nav-side .wy-menu-vertical li a,
+.wy-nav-side .wy-menu-vertical li a:link,
+.wy-nav-side .wy-menu-vertical li a:visited,
+.wy-nav-side .wy-menu-vertical li a:focus,
+.wy-nav-side .wy-menu-vertical li a:active,
+.wy-nav-side .wy-menu-vertical li span,
+.wy-nav-side .wy-menu-vertical .toctree-expand,
+.wy-nav-side .wy-menu-vertical .caption,
+.wy-nav-side .wy-menu-vertical .caption-text {
+  background: transparent !important;
+  color: var(--tre-nav-text) !important;
+  border-color: var(--tre-nav-border) !important;
+}
+
+.wy-nav-side .wy-menu-vertical li.current > a,
+.wy-nav-side .wy-menu-vertical li.current > a:link,
+.wy-nav-side .wy-menu-vertical li.current > a:visited,
+.wy-nav-side .wy-menu-vertical li.current > a:focus,
+.wy-nav-side .wy-menu-vertical li.current > a:active,
+.wy-nav-side .wy-menu-vertical li.current ul li.current > a,
+.wy-nav-side .wy-menu-vertical li.current ul li.current > a:link,
+.wy-nav-side .wy-menu-vertical li.current ul li.current > a:visited {
+  background: var(--tre-nav-current) !important;
+  color: var(--tre-nav-text-strong) !important;
+}
+
+.wy-nav-side .wy-menu-vertical li a:hover,
+.wy-nav-side .wy-menu-vertical li.current ul li a:hover,
+.wy-nav-side .wy-menu-vertical li.current ul li.current ul li a:hover,
+.wy-nav-side .wy-menu-vertical li.current ul li.current > a:hover {
+  background: var(--tre-nav-sub-hover-deep) !important;
+  color: var(--tre-nav-text-hover) !important;
+}
+
+.wy-nav-side .wy-menu-vertical .toctree-expand,
+.wy-nav-side .wy-menu-vertical li a:hover .toctree-expand,
+.wy-nav-side .wy-menu-vertical li.current > a .toctree-expand,
+.wy-nav-side .wy-menu-vertical li.current ul li.current > a .toctree-expand {
+  color: var(--tre-nav-text-hover) !important;
+  opacity: 1 !important;
 }
