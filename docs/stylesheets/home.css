@@ -437,3 +437,24 @@ li {
   background: var(--tre-nav-sub-hover-deep);
   color: #ffffff;
 }
+
+.rst-versions,
+.wy-side-nav-search + .wy-menu + .rst-versions {
+  background: #0f314e;
+  border-top: 1px solid #3f6382;
+  color: #d9e8f6;
+}
+
+.rst-versions .rst-current-version {
+  background: #133a5e;
+  color: #e6f1fb;
+}
+
+.rst-versions a,
+.rst-versions .rst-other-versions small {
+  color: #d9e8f6;
+}
+
+.rst-versions a:hover {
+  color: #ffffff;
+}
