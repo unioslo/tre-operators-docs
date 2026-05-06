@@ -390,6 +390,29 @@ li {
   color: var(--tre-nav-text-strong);
 }
 
+.wy-menu-vertical a:visited,
+.wy-menu-vertical a:focus,
+.wy-menu-vertical a:active,
+.wy-menu-vertical li.toctree-l1 > a,
+.wy-menu-vertical li.toctree-l2 > a,
+.wy-menu-vertical li.toctree-l3 > a,
+.wy-menu-vertical li.toctree-l4 > a,
+.wy-menu-vertical li.toctree-l5 > a,
+.wy-menu-vertical li.toctree-l6 > a,
+.wy-menu-vertical li.current a,
+.wy-menu-vertical li.current ul li a:visited,
+.wy-menu-vertical li.current ul li a:focus,
+.wy-menu-vertical li.current ul li a:active {
+  color: var(--tre-nav-text) !important;
+}
+
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.current > a:visited,
+.wy-menu-vertical li.current > a:focus,
+.wy-menu-vertical li.current > a:active {
+  color: var(--tre-nav-text-hover) !important;
+}
+
 .wy-menu-vertical .toctree-expand {
   color: var(--tre-nav-text-strong) !important;
   font-weight: 700;
