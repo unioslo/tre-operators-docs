@@ -488,6 +488,38 @@ li {
   color: var(--tre-nav-text-hover);
 }
 
+/* Final normalization: force all menu levels and states onto blue palette. */
+.wy-menu-vertical li a,
+.wy-menu-vertical li a:link,
+.wy-menu-vertical li a:visited,
+.wy-menu-vertical li a:focus,
+.wy-menu-vertical li a:active,
+.wy-menu-vertical li.toctree-l1 > a,
+.wy-menu-vertical li.toctree-l2 > a,
+.wy-menu-vertical li.toctree-l3 > a,
+.wy-menu-vertical li.toctree-l4 > a,
+.wy-menu-vertical li.toctree-l5 > a,
+.wy-menu-vertical li.toctree-l6 > a {
+  color: var(--tre-nav-text) !important;
+}
+
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.current > a:link,
+.wy-menu-vertical li.current > a:visited,
+.wy-menu-vertical li.current > a:focus,
+.wy-menu-vertical li.current > a:active,
+.wy-menu-vertical li.current ul li.current > a,
+.wy-menu-vertical li.current ul li.current > a:link,
+.wy-menu-vertical li.current ul li.current > a:visited {
+  color: var(--tre-nav-text-strong) !important;
+}
+
+.wy-menu-vertical li a:hover,
+.wy-menu-vertical li.current ul li a:hover,
+.wy-menu-vertical li.current ul li.current ul li a:hover {
+  color: var(--tre-nav-text-hover) !important;
+}
+
 .rst-versions,
 .wy-side-nav-search + .wy-menu + .rst-versions {
   background: var(--tre-nav-submenu);
