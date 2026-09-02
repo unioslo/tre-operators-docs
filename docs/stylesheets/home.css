@@ -1,54 +1,28 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
 
-/* EOSC Corporate Design Manual v.1 / 2022-09: Lively Green, Mild Pink, Warm Black, Light Grey */
 :root {
-  --tre-ink: #040204;
-  --tre-soft-ink: #646363;
-  --tre-paper: #ffffff;
-  --tre-surface: #f2f2f1;
-  --tre-line: #e4e4e3;
-  --tre-line-strong: #c9c9c8;
-  --tre-primary: #008691;
-  --tre-primary-strong: #00636b;
-  --tre-accent: #ff5b7f;
-  --tre-nav-base: #040204;
-  --tre-nav-border: #2b2b2c;
-  --tre-nav-text: #cfcfcf;
-  --tre-nav-text-strong: #ffffff;
-  --tre-nav-text-hover: #5fd0da;
-  --tre-nav-hover: #171718;
-  --tre-nav-current: #00636b;
-  --tre-nav-submenu: #121212;
-  --tre-nav-submenu-deep: #1c1c1d;
-  --tre-nav-sub-hover: #00747f;
-  --tre-nav-sub-hover-deep: #008691;
-  --tre-shadow: 0 8px 24px rgba(4, 2, 4, 0.08);
-  --tre-shadow-hover: 0 16px 30px rgba(4, 2, 4, 0.12);
-  --tre-font-headline: "Quicksand", sans-serif;
-  --tre-font-body: "Roboto", sans-serif;
-}
-
-body,
-.wy-nav-content,
-.wy-menu-vertical a,
-p,
-li {
-  font-family: var(--tre-font-body);
-}
-
-h1 {
-  font-family: var(--tre-font-headline);
-  font-weight: 300;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--tre-font-body);
-  font-weight: 300;
+  --tre-ink: #0f172a;
+  --tre-soft-ink: #334155;
+  --tre-paper: #f6faff;
+  --tre-surface: #eaf2fb;
+  --tre-line: #cfdff2;
+  --tre-line-strong: #b8cfea;
+  --tre-rtd-blue: #133a5e;
+  --tre-primary: #00509e;
+  --tre-primary-strong: #0b3b75;
+  --tre-nav-base: #133a5e;
+  --tre-nav-border: #2f5f88;
+  --tre-nav-text: #d9e8f6;
+  --tre-nav-text-strong: #e6f1fb;
+  --tre-nav-text-hover: #9ec6ea;
+  --tre-nav-hover: #1a476f;
+  --tre-nav-current: #1d4f7c;
+  --tre-nav-submenu: #163f66;
+  --tre-nav-submenu-deep: #1a496f;
+  --tre-nav-sub-hover: #215887;
+  --tre-nav-sub-hover-deep: #286396;
+  --tre-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --tre-shadow-hover: 0 16px 30px rgba(15, 23, 42, 0.12);
 }
 
 .wy-nav-content {
@@ -58,7 +32,7 @@ h6 {
 }
 
 .wy-nav-content-wrap {
-  background: var(--tre-surface);
+  background: #e2ecf8;
 }
 
 .tre-hero {
@@ -172,6 +146,48 @@ h6 {
   color: var(--tre-primary);
 }
 
+.tre-summary-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 0 0 1.5rem;
+}
+
+.tre-summary-card {
+  background: var(--tre-paper);
+  border: 1px solid var(--tre-line);
+  border-radius: 14px;
+  box-shadow: var(--tre-shadow);
+  padding: 1rem 1.05rem;
+}
+
+.tre-summary-card h2 {
+  align-items: center;
+  border-bottom: 0;
+  display: flex;
+  font-size: 1rem;
+  gap: 0.55rem;
+  margin: 0 0 0.45rem;
+  padding-bottom: 0;
+}
+
+.tre-summary-card p {
+  margin: 0 0 0.75rem;
+}
+
+.tre-summary-card a {
+  align-items: center;
+  color: var(--tre-primary);
+  display: inline-flex;
+  gap: 0.45rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tre-summary-card a:hover {
+  color: var(--tre-primary-strong);
+}
+
 h1 {
   color: var(--tre-primary-strong);
   margin-bottom: 0.75rem;
@@ -179,7 +195,7 @@ h1 {
 }
 
 h2 {
-  border-bottom: 2px solid var(--tre-line);
+  border-bottom: 2px solid #d9e7ff;
   color: var(--tre-primary-strong);
   margin-top: 1.55rem;
   margin-bottom: 1rem;
@@ -192,7 +208,7 @@ h3 {
 
 img[alt="Getting Started Flowchart"] {
   background: var(--tre-paper);
-  border: 1px solid var(--tre-line);
+  border: 1px solid #dce8fb;
   border-radius: 12px;
   box-shadow: var(--tre-shadow);
   display: block;
@@ -200,112 +216,87 @@ img[alt="Getting Started Flowchart"] {
   max-width: 100%;
 }
 
+.tre-card-grid {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 1.4rem;
+}
+
+.tre-card-grid-steps {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.tre-card-grid-modules {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.tre-card {
+  background: var(--tre-paper);
+  border: 1px solid var(--tre-line);
+  border-radius: 14px;
+  box-shadow: var(--tre-shadow);
+  padding: 1rem 1.1rem;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.tre-card:hover {
+  border-color: var(--tre-line-strong);
+  box-shadow: var(--tre-shadow-hover);
+  transform: translateY(-3px);
+}
+
+.tre-step-card {
+  border-top: 4px solid var(--tre-primary);
+}
+
+.tre-module-card {
+  border-top: 4px solid #5f85b3;
+}
+
+.tre-card h3 {
+  align-items: center;
+  display: flex;
+  font-size: 1.05rem;
+  gap: 0.6rem;
+  margin: 0 0 0.75rem;
+}
+
+.tre-card-number {
+  align-items: center;
+  background: #eaf2fb;
+  border: 1px solid #cdddF3;
+  border-radius: 999px;
+  color: var(--tre-primary-strong);
+  display: inline-flex;
+  font-size: 0.88rem;
+  font-weight: 700;
+  height: 1.9rem;
+  justify-content: center;
+  min-width: 1.9rem;
+}
+
+.tre-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
 p,
 li {
   color: var(--tre-soft-ink);
 }
 
-.tre-link-groups {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin: 1rem 0 1.5rem;
+.tre-card li {
+  margin-bottom: 0.35rem;
 }
 
-.tre-link-group {
-  background: var(--tre-paper);
-  border: 1px solid var(--tre-line);
-  border-radius: 14px;
-  box-shadow: var(--tre-shadow);
-  padding: 1.1rem 1.15rem 0.6rem;
-}
-
-.tre-link-group h3 {
-  align-items: center;
-  display: flex;
-  font-size: 1.02rem;
-  gap: 0.6rem;
-  margin: 0 0 0.7rem;
-}
-
-.tre-link-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.tre-link-row {
-  align-items: center;
-  background: transparent;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  color: inherit;
-  display: flex;
-  gap: 0.7rem;
-  padding: 0.55rem 0.6rem;
-  text-decoration: none;
-  transition: background-color 140ms ease, border-color 140ms ease, transform 140ms ease;
-}
-
-a.tre-link-row:hover {
-  background: var(--tre-surface);
-  border-color: var(--tre-line-strong);
-  transform: translateX(2px);
-}
-
-.tre-link-row-icon {
+.tre-card a {
   color: var(--tre-primary);
-  flex: 0 0 auto;
-  font-size: 1rem;
-  text-align: center;
-  width: 1.2rem;
-}
-
-.tre-link-row-body {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  gap: 0.1rem;
-  min-width: 0;
-}
-
-.tre-link-row-title {
-  color: var(--tre-ink);
-  font-size: 0.94rem;
   font-weight: 600;
+  text-decoration-thickness: 1px;
 }
 
-.tre-link-row-desc {
-  color: var(--tre-soft-ink);
-  font-size: 0.82rem;
-}
-
-.tre-link-row-chevron {
-  color: var(--tre-line-strong);
-  flex: 0 0 auto;
-  font-size: 0.8rem;
-  transition: transform 140ms ease, color 140ms ease;
-}
-
-a.tre-link-row:hover .tre-link-row-chevron {
-  color: var(--tre-primary);
-  transform: translateX(3px);
-}
-
-.tre-link-row-soon {
-  opacity: 0.72;
-}
-
-.tre-badge-soon {
-  background: var(--tre-surface);
-  border: 1px solid var(--tre-accent);
-  border-radius: 999px;
-  color: var(--tre-accent);
-  flex: 0 0 auto;
-  font-size: 0.72rem;
-  font-weight: 600;
-  padding: 0.2rem 0.55rem;
-  white-space: nowrap;
+.tre-card a:hover {
+  color: var(--tre-primary-strong);
 }
 
 .tre-icon-heading {
@@ -338,12 +329,13 @@ a.tre-link-row:hover .tre-link-row-chevron {
     justify-content: center;
   }
 
-  .tre-link-groups {
-    gap: 0.75rem;
+  .tre-card-grid {
+    gap: 0.85rem;
   }
 
-  .tre-link-group {
-    padding: 0.95rem 1rem 0.5rem;
+  .tre-card {
+    border-radius: 12px;
+    padding: 0.9rem;
   }
 }
 
@@ -578,7 +570,7 @@ a.tre-link-row:hover .tre-link-row-chevron {
 }
 
 .rst-versions a:hover {
-  color: var(--tre-nav-text-hover);
+  color: #9ec6ea;
 }
 
 /* Global menu normalization: remove gray from all levels and states. */
