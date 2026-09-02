@@ -1,28 +1,63 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap");
 
+/*
+ * Palette and type follow the EOSC Association Corporate Design Manual v.1/2022-09:
+ * Lively Green #008691, Mild Pink #ff5b7f, Warm Black #040204, Light Grey #e4e4e3;
+ * Quicksand for headlines, Roboto Light for body copy.
+ */
 :root {
-  --tre-ink: #0f172a;
-  --tre-soft-ink: #334155;
-  --tre-paper: #f6faff;
-  --tre-surface: #eaf2fb;
-  --tre-line: #cfdff2;
-  --tre-line-strong: #b8cfea;
-  --tre-rtd-blue: #133a5e;
-  --tre-primary: #00509e;
-  --tre-primary-strong: #0b3b75;
-  --tre-nav-base: #133a5e;
-  --tre-nav-border: #2f5f88;
-  --tre-nav-text: #d9e8f6;
-  --tre-nav-text-strong: #e6f1fb;
-  --tre-nav-text-hover: #9ec6ea;
-  --tre-nav-hover: #1a476f;
-  --tre-nav-current: #1d4f7c;
-  --tre-nav-submenu: #163f66;
-  --tre-nav-submenu-deep: #1a496f;
-  --tre-nav-sub-hover: #215887;
-  --tre-nav-sub-hover-deep: #286396;
-  --tre-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-  --tre-shadow-hover: 0 16px 30px rgba(15, 23, 42, 0.12);
+  --tre-ink: #040204;
+  --tre-soft-ink: #646363;
+  --tre-paper: #ffffff;
+  --tre-surface: #e4e4e3;
+  --tre-line: #e4e4e3;
+  --tre-line-strong: #c9c8c7;
+  --tre-primary: #008691;
+  --tre-primary-strong: #00636b;
+  --tre-accent: #ff5b7f;
+  --tre-accent-strong: #e14a6c;
+  --tre-nav-base: #040204;
+  --tre-nav-border: #2b2a2b;
+  --tre-nav-text: rgba(255, 255, 255, 0.72);
+  --tre-nav-text-strong: #ffffff;
+  --tre-nav-text-hover: #ff5b7f;
+  --tre-nav-hover: #17161a;
+  --tre-nav-current: #008691;
+  --tre-nav-submenu: #110f12;
+  --tre-nav-submenu-deep: #1c1a1d;
+  --tre-nav-sub-hover: #232126;
+  --tre-nav-sub-hover-deep: #2d2b2f;
+  --tre-shadow: 0 8px 24px rgba(4, 2, 4, 0.08);
+  --tre-shadow-hover: 0 16px 30px rgba(4, 2, 4, 0.12);
+}
+
+body,
+.wy-nav-content,
+p,
+li,
+td,
+th {
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.tre-hero-panel h2,
+.tre-summary-card h2,
+.tre-card h3 {
+  font-family: "Quicksand", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+}
+
+p,
+li {
+  line-height: 1.5;
 }
 
 .wy-nav-content {
@@ -32,7 +67,7 @@
 }
 
 .wy-nav-content-wrap {
-  background: #e2ecf8;
+  background: var(--tre-surface);
 }
 
 .tre-hero {
@@ -49,7 +84,7 @@
 }
 
 .tre-eyebrow {
-  color: var(--tre-primary);
+  color: var(--tre-accent-strong);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -195,7 +230,7 @@ h1 {
 }
 
 h2 {
-  border-bottom: 2px solid #d9e7ff;
+  border-bottom: 2px solid var(--tre-line-strong);
   color: var(--tre-primary-strong);
   margin-top: 1.55rem;
   margin-bottom: 1rem;
@@ -208,7 +243,7 @@ h3 {
 
 img[alt="Getting Started Flowchart"] {
   background: var(--tre-paper);
-  border: 1px solid #dce8fb;
+  border: 1px solid var(--tre-line);
   border-radius: 12px;
   box-shadow: var(--tre-shadow);
   display: block;
@@ -250,7 +285,7 @@ img[alt="Getting Started Flowchart"] {
 }
 
 .tre-module-card {
-  border-top: 4px solid #5f85b3;
+  border-top: 4px solid var(--tre-accent);
 }
 
 .tre-card h3 {
@@ -263,8 +298,8 @@ img[alt="Getting Started Flowchart"] {
 
 .tre-card-number {
   align-items: center;
-  background: #eaf2fb;
-  border: 1px solid #cdddF3;
+  background: var(--tre-surface);
+  border: 1px solid var(--tre-line-strong);
   border-radius: 999px;
   color: var(--tre-primary-strong);
   display: inline-flex;
@@ -570,7 +605,7 @@ li {
 }
 
 .rst-versions a:hover {
-  color: #9ec6ea;
+  color: var(--tre-nav-text-hover);
 }
 
 /* Global menu normalization: remove gray from all levels and states. */
