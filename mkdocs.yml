@@ -4,7 +4,7 @@ site_author: EOSC-ENTRUST Team
 repo_url: https://github.com/unioslo/tre-operators-docs
 use_directory_urls: true
 theme:
-  name: material
+  name: readthedocs
   features:
     - search.suggest
     - search.highlight
@@ -26,6 +26,7 @@ nav:
   - "M6: Federation": federation.md
   - Appendices:
       - Glossary: appendices/glossary.md
+      - Reference Dictionary: appendices/reference-terminology-dictionary.md
       - Reference Architecture: appendices/reference-architecture.md
       - Resources: appendices/resources.md
       - Copilot Acknowledgement: appendices/copilot-acknowledgement.md
