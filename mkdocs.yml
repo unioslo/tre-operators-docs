@@ -4,7 +4,14 @@ site_author: EOSC-ENTRUST Team
 repo_url: https://github.com/unioslo/tre-operators-docs
 use_directory_urls: true
 theme:
-  name: readthedocs
+  name: material
+
+features:
+    - search.suggest
+    - search.highlight
+    - navigation.tabs
+markdown_extensions:
+  - pymdownx.superfences  # Required to render the MyST-like warning/note boxes nicely
 
 extra_css:
   - stylesheets/home.css
@@ -22,3 +29,7 @@ nav:
       - Reference Architecture: appendices/reference-architecture.md
       - Resources: appendices/resources.md
       - Copilot Acknowledgement: appendices/copilot-acknowledgement.md
+
+
+
+
