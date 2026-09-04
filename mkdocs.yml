@@ -5,8 +5,7 @@ repo_url: https://github.com/unioslo/tre-operators-docs
 use_directory_urls: true
 theme:
   name: material
-
-features:
+  features:
     - search.suggest
     - search.highlight
     - navigation.tabs
