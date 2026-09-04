@@ -1,111 +1,90 @@
 
 # Glossary
 
-Based on definitions from [TEHDAS (2025)](https://tehdas.eu/public-consultations/). See also the highly relevant [UK TRE Glossary](https://glossary.uktre.org/en/latest/).
+This glossary distinguishes definitions taken from legislation or a named framework from operational definitions used only in this guide. A summary does not replace the cited source. Legal interpretations should be checked against the official text and applicable national law. For cross-framework comparisons, see the [Reference Terminology Dictionary](reference-terminology-dictionary.md).
 
 ---
 
 **Anonymisation**  
-Altering personal data so individuals cannot be identified, directly or indirectly.
-
-**Benefit (of data use)**  
-Positive outcomes from data use (e.g., social, health, environmental).
+Information that does not relate to an identified or identifiable natural person, including personal data rendered anonymous so that the data subject is not or is no longer identifiable. Whether a person is identifiable must take account of all means reasonably likely to be used. ([GDPR Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679))
 
 **Data access**  
-User processes data provided by a holder under set conditions without necessarily receiving a copy.
+Use of data in accordance with specific technical, legal, or organisational requirements, without necessarily transmitting or downloading the data. ([Data Governance Act Article 2(13)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0868))
 
 **Data controller**  
-Entity deciding purposes and essential means of personal-data processing; accountable for compliance.
+Natural or legal person, public authority, agency, or other body that, alone or jointly with others, determines the purposes and means of processing personal data. ([GDPR Article 4(7)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679))
 
 **Data linkage**  
-Combining datasets about the same topic/person using identifiers or probabilistic methods.
+Joining datasets using information common to them. Linkage may use direct identifiers, pseudonyms, or probabilistic matching. ([UK TRE Glossary: Linkage of data](https://glossary.uktre.org/en/latest/#term-linkage-of-data--data-linkage-))
 
 **Data minimisation**  
-Collect/process only what’s necessary for the stated purpose; applies across the lifecycle.
+Personal data must be adequate, relevant, and limited to what is necessary for the purposes for which they are processed. ([GDPR Article 5(1)(c)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679))
 
 **Data permit**  
-HDAB decision authorising a user to process specified health data for defined secondary-use purposes.
-
-**Data quality**  
-Fitness of health data elements for intended primary and secondary uses.
+Administrative decision issued by Health Data Access Body (HDAB) to a health data user to process specified electronic health data for specific secondary-use purposes under EHDS Chapter IV. ([EHDS Article 2(2)(v)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Dataset**  
-Structured collection of electronic health data.
+Structured collection of electronic health data. ([EHDS Article 2(2)(w)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Dataset catalogue**  
-Public, structured inventory of dataset descriptions accessible via an online portal.
-
-**Dataset record**  
-Single structured unit in a dataset (e.g., a row) describing one entity/instance.
-
-**Dataset subset**  
-Selected records/variables from a dataset preserving key characteristics.
-
-**Dataset description**  
-Metadata description of datasets published via the catalogue.
-
-**Electronic health data**  
-Personal or non-personal electronic health data.
-
-**EU dataset catalogue**  
-EU-level catalogue of dataset descriptions; EU/national/participant catalogues are public.
+Systematically arranged collection of dataset descriptions with a public, user-oriented part in which dataset parameters are electronically accessible through an online portal. ([EHDS Article 2(2)(y)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Health data access application**  
-Application to access personal-level data in anonymised or pseudonymised form for secondary use.
+Application submitted by a natural or legal person to a Health Data Access Body (HDAB) for one or more secondary-use purposes listed in EHDS Article 53(1). The application must specify whether access is requested in anonymised or pseudonymised format. ([EHDS Article 67](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Health Data Access Body (HDAB)**  
-Member-state authority for secondary use: evaluates requests, issues permits, sources data, provides access in SPEs, and publishes permit info.
+Public sector body or internal service designated by a Member State to perform the secondary-use tasks in EHDS Articles 57 to 59, including deciding applications and requests and issuing data permits. ([EHDS Articles 55 and 57](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Health data applicant**  
-Person/organisation submitting a data request or access application to an HDAB for EHDS Art. 53 purposes.
+Natural or legal person that submits a health data access application or health data request to an HDAB. This is a procedural description, not a separately defined Article 2 term. ([EHDS Articles 67(1) and 69](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Health data holder**  
-Entity with the right to process/provide health data (e.g., providers, registries, payers, research bodies, EU bodies).
+Person or body within the categories listed by the EHDS that has a right or obligation to process personal electronic health data for specified purposes, or the ability to make non-personal electronic health data available through control of a product’s technical design and related services. ([EHDS Article 2(2)(t)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Health data request**  
-Request for anonymised statistical data for permitted secondary-use purposes.
+Request submitted for a purpose listed in EHDS Article 53 with the aim of obtaining a response only in an anonymised statistical format; the health data user does not receive access to the underlying electronic health data. ([EHDS Article 69(1)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Health data user**  
-Person/organisation (incl. EU bodies) lawfully accessing data for secondary use via permit/approval.
+Natural or legal person, including a Union institution, body, office, or agency, granted lawful access to electronic health data for secondary use under a data permit, health data request approval, or access approval by an authorised participant in HealthData@EU. ([EHDS Article 2(2)(u)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Intermediation entity**  
-Legal person (where established) acting for certain holders to process, provide, and exchange data for secondary use.
+Health data intermediation entity that may, where national law provides, fulfil the duties of certain categories of health data holders. The EHDS recital describes such entities as legal persons able to process, make available, register, provide, restrict access to, and exchange electronic health data supplied by health data holders. ([EHDS Article 50(3) and Recital 59](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Interoperability**  
-Ability of organisations/systems/devices to exchange and use info without changing content.
+Ability of organisations, software applications, or devices to interact through supported processes and exchange information and knowledge without changing the content of the data. ([EHDS Article 2(2)(f)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Legal basis of data processing**  
-Conditions that make processing lawful; EHDS lists secondary-use purposes.
+A condition under GDPR Article 6 that makes processing of personal data lawful. Processing special categories of personal data, including health data, must also satisfy Article 9. EHDS Article 53 lists permitted secondary-use purposes but does not itself replace the applicable GDPR legal basis. ([GDPR Articles 6 and 9](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679); [EHDS Article 53](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Metadata**  
-Structured data describing content/use to aid discovery and reuse.
+Data that describes other data, such as its content, format, structure, origin, quality, or use. EHDS Article 77 requires dataset descriptions to be provided as metadata. ([UK TRE Glossary: Metadata](https://glossary.uktre.org/en/latest/#term-metadata); [EHDS Article 77(1)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **National dataset catalogue**  
-Public national catalogue describing sources, nature, and availability conditions of electronic health data.
+Public catalogue maintained through an HDAB containing dataset descriptions for available electronic health data. ([EHDS Articles 77 and 79](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Non-personal electronic health data**  
-Health data that are anonymised or never related to an identifiable person.
+Electronic health data other than personal electronic health data, including data anonymised so that they no longer relate to an identified or identifiable person and data that have never related to a person. ([EHDS Article 2(2)(b)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Personal electronic health data**  
-Health/genetic data relating to an identifiable person, processed electronically.
+Data concerning health and genetic data processed in electronic form. The incorporated GDPR definitions require such data to relate to an identified or identifiable natural person. ([EHDS Articles 2(1) and 2(2)(a)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Pseudonymisation**  
-Processing so data can’t be attributed to a person without separately kept additional info and safeguards.
+Processing personal data so that they cannot be attributed to a specific person without additional information, provided that the additional information is kept separately and protected by technical and organisational measures that prevent attribution. ([GDPR Article 4(5)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679))
 
 **Public value**  
-Weighted view of risks/benefits: sustainability, fairness, harm assessment/mitigation, and safeguards.
+Operational term used in this guide for the societal value expected from a proposed data use after considering its anticipated benefits, risks, and safeguards. It is not a defined term in the EHDS or GDPR and should not be treated as a statutory test.
 
 **Re-identification risk**  
-Likelihood that de-identified data can be linked back to a person.
+Operational term for the possibility that information could be attributed to a person after identifiers have been removed or transformed. GDPR Recital 26 requires account to be taken of means reasonably likely to be used for identification. ([GDPR Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679))
 
 **Secondary use**  
-Processing health data for EHDS Chapter IV purposes other than the original purpose.
+Processing electronic health data for purposes set out in EHDS Chapter IV other than the initial purposes for which the data were collected or produced. ([EHDS Article 2(2)(e)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Secure Processing Environment (SPE)**  
-Controlled environment meeting security/interoperability requirements, granting access only to authorised users and logging activity.
+Physical or virtual environment, together with organisational measures, that allows its provider to determine and supervise data-processing actions and to ensure compliance with applicable law. For EHDS secondary use, Article 73 adds specific technical, organisational, security, and interoperability requirements. ([Data Governance Act Article 2(20)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0868); [EHDS Article 73](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Trusted health data holder**  
-Designated holder eligible for simplified permit procedures and able to supply data via an SPE they manage.
+Health data holder designated under an optional national procedure after an HDAB assesses the Article 72 conditions. The holder may assess an application or request and propose a decision, but the HDAB issues the decision and is not bound by the proposal. ([EHDS Article 72](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327))
 
 **Trusted third party (TTP)**  
-Independent pseudonymisation entity computing pseudonyms from identifiers; holds no other data.
+The EHDS does not define this term generally. Article 66(3) provides that information needed to reverse pseudonymisation may be available only to the HDAB or an entity acting as a trusted third party under national law. DARE UK separately uses “trusted third-party Index Service” for an architecture-specific data-linkage role; the two uses should not be assumed equivalent. ([EHDS Article 66(3)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327); [DARE UK Federated Architecture Blueprint v2.2, section 2.2.2](https://doi.org/10.5281/zenodo.14192786))

@@ -1,176 +1,158 @@
 # Reference Terminology Dictionary for Secure Research Environments
-*A practical guide to related terms used in the European Health Data Space (EHDS/TEHDAS2) and United Kingdom Trusted Research Environment (UK TRE/SATRE/DARE UK) frameworks.*
+*A practical guide to related terms used in the European Health Data Space (EHDS), United Kingdom Trusted Research Environment (UK TRE), DARE UK, and EOSC-ENTRUST sources cited below.*
 
 ## Scope and Status
 This dictionary compares terms from different frameworks. It is not legal advice, a certification scheme, or a standard. Similar terms may still have different legal meanings, controls, or technical scope. The relevant law, regulator guidance, access decision, and local procedures always take priority.
 
-The mappings use these categories:
+For concise EHDS definitions, see the [Glossary](glossary.md). This dictionary adds cross-framework comparisons and implementation terminology. Where the documents overlap, the glossary definition and its cited legislation govern the EHDS meaning.
 
-- **Direct legal match:** the terms have roughly the same legal meaning.
+The mapping classifications are this guide's analysis, not classifications assigned by the cited sources:
+
+- **Shared legal concept:** the same legal definition governs both uses.
 - **Functional correspondence:** the terms serve a similar purpose but have different legal or governance contexts.
 - **Operational analogy:** the comparison may help with implementation, but it is not a formal match.
 - **Project-specific proposal:** a suggested design that needs local approval.
 
-References should include the document title, version or publication date, section or article, and a stable URL where possible. File names in square brackets are placeholders. Replace them with full references before using this document as a formal specification.
+Each source claim below identifies a document and section or article. The mapping conclusions remain interpretive and should be reviewed for the intended implementation and jurisdiction.
 
 ## The 5-Stage Terminology Pipeline
-The terms in this dictionary follow five common stages of a research project. This is a guide, not a claim that every system uses the same workflow or zones.
+The following lifecycle and table are an editorial crosswalk created for this guide. They are not defined by the cited frameworks, and they do not claim that every system uses the same workflow or zones.
 
-1. **Data Discovery:** Researchers use data catalogues and standard metadata, such as DCAT-AP, to find relevant datasets and their custodians. Finding a dataset does not grant access.
-2. **Access Approval:** Researchers submit access requests and receive the relevant legal or administrative decision. The decision may be represented by a machine-readable permit such as DAAMS.
+1. **Data Discovery:** Researchers use data catalogues and metadata to find relevant datasets and their custodians. Finding a dataset does not grant access.
+2. **Access Approval:** Researchers submit access requests and receive the relevant legal or administrative decision.
 3. **Data Preparation:** Data holders prepare the datasets for the approved project. This may include pseudonymisation, linkage, and de-identification.
 4. **Use of Data:** Researchers work in an isolated project workspace inside a Secure Processing Environment (SPE) or Trusted Research Environment (TRE). They may use federated computing where it is available.
-5. **Finalisation:** Proposed outputs go through Statistical Disclosure Control (SDC) or another output review. They may be released only when the project rules, legal requirements, and security controls allow it. The project environment is then archived.
+5. **Finalisation:** Proposed outputs go through Statistical Disclosure Control (SDC) or another output review. They may be released only when the project rules, legal requirements, and security controls allow it. Local retention and disposal rules govern what then happens to the project environment.
 
 | Lifecycle stage | EHDS-oriented term | UK TRE-oriented term | Relationship | Main caveat |
 |---|---|---|---|---|
 | Data discovery | Dataset catalogue | Catalogue or search service | Functional correspondence | Metadata visibility does not imply access |
-| Access approval | Data Permit / Access Permit | Approval and authorisation workflow | Functional correspondence | Legal authority and decision paths differ |
+| Access approval | Data permit / access permit | Approval and authorisation workflow | Functional correspondence | Legal authority and decision paths differ |
 | Data preparation | SPE preparation services | SDZ / ingestion and curation | Functional correspondence | Zone boundaries vary by implementation |
 | Data use | SPE project workspace | RAZ | Narrower functional mapping | A RAZ is not the whole TRE |
 | Finalisation | Output control / SDC | Disclosure control / release review | Functional correspondence | Release criteria are governance-specific |
 
 ## 1. Architectural & Environmental Mappings
 
-### Secure Processing Environment (SPE) / Trusted Research Environment (TRE)
+### Secure processing environment (SPE) / trusted research environment (TRE)
 *   **Mapping type:** Functional correspondence.
-*   **Meaning:** An EHDS Secure Processing Environment and a UK Trusted Research Environment are both secure settings, but they are based on different laws, governance models, and technical designs. A UK Research Analytics Zone is closer to the project workspace inside an SPE or TRE. It is not the same as the whole environment.
-*   **Authoritative References:**
-    *   **EU Data Governance Act (DGA) & EHDS:** [DGA Article 2(20)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0868) and [EHDS Article 73](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327) define an SPE as a secure physical or virtual environment under the control of a public authority or designated operator.
-    *   **UK TRE Framework & SATRE:** The [UK TRE Glossary](https://glossary.uktre.org/en/latest/) and [SATRE Specification v1.0.0](https://satre-specification.readthedocs.io/en/v1.0.0/) define a TRE as a secure environment wrapped in information governance (the Five Safes "Safe Setting").
-    *   **DSSC:** The [Data Spaces Support Centre (DSSC) Glossary](https://dssc.eu/page/blueprint) defines secure processing components for cross-sectoral dataspaces.
+*   **Meaning:** Both terms describe controlled settings for work with sensitive data. They are not synonyms: SPE has a legal definition under the Data Governance Act and specific EHDS requirements, while TRE is used for a broader class of systems and governance practices in the UK TRE Glossary. Treating them as functionally corresponding is this guide's interpretation.
+*   **Sources:**
+    *   **EU:** [Data Governance Act Article 2(20)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0868) defines an SPE; [EHDS Article 73](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327) specifies requirements for EHDS secondary use.
+    *   **UK:** The [UK TRE Glossary: Trusted Research Environment](https://glossary.uktre.org/en/latest/#term-trusted-research-environment--tre-) defines the TRE term and relates it to Five Safes governance.
 
-### Research Analytics Zone (RAZ)
+### Research analytics zone (RAZ)
 *   **Mapping type:** Functional correspondence.
-*   **Meaning:** The secure virtual workspace, such as a virtual desktop or notebook, where researchers work with project data. It is similar to the user-facing project workspace inside an SPE. An SPE may also contain other services and control zones.
-*   **Authoritative References:**
-    *   **DARE UK Blueprint:** [DARE UK Blueprint v2.2 (4.3.1.1)](https://doi.org/10.5281/zenodo.14192786) defines the RAZ as providing the means for a Project Member to gain direct access to approved data in an isolated project environment.
-    *   **TEHDAS2 Specs:** [TEHDAS2 M7.4 (6.5.3)](https://tehdas.eu/) defines the interactive remote desktop or API interface for the data user.
+*   **Meaning:** DARE UK describes the RAZ as the zone where a Project Member directly accesses approved project data, often through a virtual desktop or computational notebook. Comparing it to a user-facing workspace within an SPE is this guide's functional mapping, not a DARE UK or EHDS equivalence.
+*   **Source:** [DARE UK Federated Architecture Blueprint v2.2, section 4.3.1.1](https://doi.org/10.5281/zenodo.14192786).
 
-### Secure Data Zone (SDZ) / Secure Data Storage (SDS)
+### Secure data zone (SDZ) / secure data storage (SDS)
 *   **Mapping type:** Functional correspondence.
-*   **Meaning:** A background zone used to ingest, curate, standardise, and link data. This may include OMOP or CDISC conversions. Researchers normally cannot access it directly, but the exact boundary depends on the local TRE or SPE design.
-*   **Authoritative References:**
-    *   **DARE UK Blueprint:** [DARE UK Blueprint v2.2 (4.3.1.2)](https://doi.org/10.5281/zenodo.14192786) defines the SDZ as the zone supporting the ingress, egress, management, linkage, and curation of research-ready sensitive datasets.
-    *   **SURF SANE:** SANE utilizes a **Secure Data Storage (SDS)** or Secure Data Server, which is a non-interactive VM hosting a Samba server, mounted to Tinker or Blind SANE via a private network to separate raw data from the analysis space [EOSC-ENTRUST_D13.4 - Year one version of EOSC-ENTRUST Blueprint & Interoperability Framework.pdf].
+*   **Meaning:** DARE UK defines the SDZ as supporting ingress, egress, management, linkage, curation, and provision of research-ready sensitive datasets, with access limited to specified governance roles. EOSC-ENTRUST separately describes SURF's SDS implementation as storage mounted through a non-interactive Secure Data Server on a private network. SDZ and SDS are related but not equivalent terms.
+*   **Sources:**
+    *   [DARE UK Federated Architecture Blueprint v2.2, section 4.3.1.2](https://doi.org/10.5281/zenodo.14192786).
+    *   [EOSC-ENTRUST D13.4, section 5.2.2](https://doi.org/10.5281/zenodo.14362388).
 
-### Query Management Zone (QMZ) / SPE Service Endpoint
-*   **Meaning:** The component that receives and runs remote federated queries without moving the raw data.
-*   **Authoritative References:**
-    *   **DARE UK Blueprint:** [DARE UK Blueprint v2.2 (4.3.1.3)](https://doi.org/10.5281/zenodo.14192786) defines the QMZ as the boundary component supporting federated query submission, execution, and output control.
-    *   **TEHDAS2 SPE Specifications:** [TEHDAS2 M7.4 (6.5.4)](https://tehdas.eu/) defines the "SPE Service Endpoint" supporting secure bidirectional streaming protocols (e.g., gRPC with HTTP/2) for federated computing [draft-technical-functional-and-security-specifications-of-secure-processing-environments.pdf].
+### Query management zone (QMZ)
+*   **Mapping type:** Proposed operational analogy; no equivalence is established here.
+*   **Meaning:** DARE UK defines the QMZ as handling queries sent to a TRE by remote TREs or external Job Submission services. No equivalence to an EHDS component is asserted.
+*   **Source:** [DARE UK Federated Architecture Blueprint v2.2, section 4.3.1.3](https://doi.org/10.5281/zenodo.14192786).
 
-### Orchestration Zone (OZ)
+### Orchestration zone (OZ)
+*   **Mapping type:** Framework-specific term.
 *   **Meaning:** The administration area that deploys, configures, maintains, and removes the secure environment.
-*   **Authoritative References:**
-    *   **UK TRE Glossary:** Defines the OZ as the zone managing the deployment, maintenance, and configuration of the TRE, containing no research data and accessible only to infrastructure management roles [UK TRE Glossary].
+*   **Source:** [UK TRE Glossary: Orchestration Zone](https://glossary.uktre.org/en/latest/#term-orchestration-zone--oz-).
 
-### Security Server
+### Security server
 *   **Mapping type:** Functional correspondence.
-*   **Meaning:** A secure gateway or proxy at the edge of a participant’s infrastructure. It routes and protects traffic between environments. The exact security controls depend on the federation design.
-*   **Authoritative References:**
-    *   **DARE UK Blueprint:** [DARE UK Blueprint v2.2 (4.6.2)](https://doi.org/10.5281/zenodo.14192786) defines the Security Server as a distributed, global-plane synchronized component that secures connections between participants.
-    *   **X-Road / SMP / GAIA-X Mappings:** Aligns directly with the X-Road Security Server, GAIA-X Intermediary, or the EU's Smart Middleware Platform (Simpl) Agent.
+*   **Meaning:** In DARE UK, Security Servers are gateways used by Federation Participants. They support secure data exchange and protect the confidentiality, integrity, and auditability of inter-participant exchanges. The blueprint discusses X-Road, GAIA-X, IDSA, and SiMPl as related federated-infrastructure concepts but does not establish direct equivalence to their individual components.
+*   **Source:** [DARE UK Federated Architecture Blueprint v2.2, sections 2.3 and 4.6.2](https://doi.org/10.5281/zenodo.14192786).
 
 ## 2. Legal & Data Protection States
 
 ### Anonymisation
-*   **Mapping type:** Direct legal concept with local release controls.
-*   **Meaning:** Anonymisation means that people can no longer be identified by means that are reasonably likely to be used. SDC and other output controls reduce disclosure risk, but they do not normally prove that the risk is zero. An output may leave the secure environment only when the relevant law, project rules, and release controls allow it.
-*   **Authoritative References:**
-    *   **European Union Law:** [Directive (EU) 2019/1024 (Open Data Directive), Recital 52](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32019L1024) and [GDPR Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679) define anonymised data as data that does not relate to an identified or identifiable natural person.
-    *   **UK TRE Framework:** The [UK TRE Glossary](https://glossary.uktre.org/en/latest/) defines anonymisation as altering personal data so that the individual can no longer be identified, directly or indirectly [TRE Operators Docs Glossary].
+*   **Mapping type:** Related EU and UK legal concepts; jurisdiction-specific assessment required.
+*   **Meaning:** Anonymisation means processing personal data so that an individual is no longer identifiable, taking account of all means reasonably likely to be used for identification. SDC and other output controls reduce disclosure risk, but they do not normally prove that the risk is zero. An output may leave the secure environment only when the relevant law, project rules, and release controls allow it.
+*   **Sources:**
+    *   [GDPR Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679).
+    *   [UK TRE Glossary: Anonymisation](https://glossary.uktre.org/en/latest/#term-anonymisation).
 
 ### Pseudonymisation
-*   **Mapping type:** Direct legal concept under GDPR, with local controls.
-*   **Meaning:** Pseudonymised data is still personal data under GDPR if someone can identify a person using additional information. It must be protected accordingly. Encryption, separate storage of identifying information, and separate key management may be suitable controls. The required controls depend on the risk assessment and system design.
-*   **Authoritative References:**
-    *   **GDPR:** [GDPR Article 4(5)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679) defines pseudonymisation as processing personal data such that it can no longer be attributed to a specific subject without the use of additional, separately kept information.
-    *   **TEHDAS2 Specs:** [TEHDAS2 M7.2 Guidelines](https://tehdas.eu/) outline standards for secure pseudonymisation and transient dataset management.
+*   **Mapping type:** EU GDPR legal concept; UK use must be checked against UK law.
+*   **Meaning:** Under GDPR, pseudonymisation requires separately kept additional information protected by technical and organisational measures. Pseudonymised data remain personal data when they can be attributed to a person using additional information.
+*   **Sources:** [GDPR Article 4(5) and Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679).
 
-### De-identification / Restricted Research Data
+### De-identification / restricted research data
 *   **Mapping type:** Operational terminology; not automatically the same as legal anonymisation.
-*   **Meaning:** These terms often describe research data from which direct identifiers have been removed. The remaining risk is managed through technical, environmental, and administrative controls such as the Five Safes. Unless an appropriate assessment says otherwise, the data should still be treated as potentially personal data. Do not use “factual anonymisation” as a simple synonym for legal anonymisation.
-*   **Authoritative References:**
-    *   **UK Digital Economy Act (DEA) Standards:** The UKSA DEA Data Capability Guidance.
-    *   **Social Sciences and Humanities Open Cloud (SSHOC):** Baseline guidelines developed in SSHOC WP5.4 for cross-national secure access.
+*   **Meaning:** These are operational terms whose meanings vary. Removing direct identifiers does not by itself establish anonymisation under GDPR Recital 26. This dictionary does not assign either term a universal legal meaning.
+*   **Source for the legal distinction:** [GDPR Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679).
 
-### Access Permit / Data Permit
-*   **Mapping type:** Functional correspondence; check the legal status in the relevant framework.
-*   **Meaning:** A Data Permit is an administrative or legal decision allowing a specified secondary use, where that term is used. An Access Permit may express the decision in a machine-readable form. It may start environment setup or data delivery, but those actions must still be checked against the decision and the system’s policies.
-*   **Authoritative References:**
-    *   **EHDS Regulation:** [EHDS Article 2(2y)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327) and [EHDS Article 68](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327).
-    *   **TEHDAS2 Specs:** [TEHDAS2 M7.4 Annex A](https://tehdas.eu/) defines the Access Permit as a machine-actionable data structure that contains the information from a data permit in a standardised format.
+### Data permit
+*   **Mapping type:** EHDS legal term; no cross-framework equivalence asserted.
+*   **Meaning:** An administrative decision issued by an HDAB to a health data user to process specified electronic health data for specified secondary-use purposes. This audit did not locate a stable, versioned source supporting the previous “access permit” comparison, so that comparison has been removed.
+*   **Sources:** [EHDS Articles 2(2)(v) and 68](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327).
 
 ## 3. Key Technical and Organisational Roles
 
-### Data Controller
+### Data controller
+*   **Mapping type:** EU GDPR legal concept; UK use must be checked against UK law.
 *   **Meaning:** Under GDPR, the organisation that decides why and how personal data is processed and is responsible for compliance.
-*   **Authoritative References:**
-    *   **GDPR:** [GDPR Article 4(7)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679).
+*   **Source:** [GDPR Article 4(7)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679).
 
-### Health Data Holder / Data Custodian
-*   **Meaning:** The organisation that collects, stores, or manages sensitive data. Under EHDS, a data holder may be required or allowed to provide approved data to an SPE after receiving a valid permit.
-*   **Authoritative References:**
-    *   **EHDS:** [EHDS Article 2(2y)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327) defines the Health Data Holder as any entity with the right or obligation to provide electronic health data.
-    *   **UK TRE Framework:** Aligns with the role of **Data Custodian** or **Data Provider** defined in the [UK TRE Glossary](https://glossary.uktre.org/en/latest/).
+### Health data holder / data custodian
+*   **Mapping type:** Functional correspondence; Data Custodian is not an EHDS legal synonym.
+*   **Meaning:** Under EHDS, a Health Data Holder is a natural or legal person, public authority, agency, or other body that meets the conditions in Article 2(2)(t). In a UK TRE context, a Data Custodian or Data Provider may perform a similar operational role, but the legal duties and scope can differ.
+*   **Sources:**
+    *   [EHDS Article 2(2)(t)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327).
+    *   [UK TRE Glossary: Data Custodian](https://glossary.uktre.org/en/latest/#term-data-custodian). The functional comparison is this guide's interpretation.
 
-### Health Data User / Researcher / Project Member
-*   **Meaning:** A person who has been given limited, lawful access to the secure environment for an approved research project.
-*   **Authoritative References:**
-    *   **EHDS:** [EHDS Article 2(2u)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327) defines the Health Data User.
-    *   **DARE UK Blueprint:** Maps to the **Project Member**, **Job Submitter**, and **Catalogue Searcher** roles.
+### Health data user / researcher / project member
+*   **Mapping type:** Functional correspondence; the UK project roles are narrower than the EHDS legal term.
+*   **Meaning:** A natural or legal person, including a Union institution, body, office, or agency, that has lawful access to electronic health data for secondary use. In a TRE context, the closest operational roles may include Researcher or Project Member, but these are not direct legal equivalents.
+*   **Sources:**
+    *   [EHDS Article 2(2)(u)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327).
+    *   [DARE UK Federated Architecture Blueprint v2.2, section 3.2](https://doi.org/10.5281/zenodo.14192786) defines Project Member, Job Submitter, and Catalogue Searcher roles. The mapping is this guide's interpretation.
 
-### Data Processor / SPE Operator
-*   **Meaning:** The organisation that runs and manages the SPE or TRE, usually for the Data Controller.
-*   **Authoritative References:**
-    *   **GDPR:** [GDPR Article 4(8)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679).
-    *   **TEHDAS2 Specs:** Aligns with the **SPE Operator**.
+### Data processor
+*   **Mapping type:** EU GDPR legal concept; no equivalence to an environment operator asserted.
+*   **Meaning:** GDPR defines a processor as a person or body that processes personal data on behalf of a controller. An organisation operating an SPE or TRE is not automatically a processor for every activity; its role depends on the processing and applicable governance arrangements. EHDS Article 74 assigns specific controller and processor roles for EHDS secondary use.
+*   **Sources:** [GDPR Article 4(8)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679); [EHDS Article 74](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327).
 
-### Trusted Health Data Holders
-*   **Mapping type:** Framework-specific role; check the local accreditation rules.
-*   **Meaning:** Data holders that are authorised or accredited to run their own secure processing environments. They can process their own data internally without sending it elsewhere. The accreditation and role boundaries depend on the framework.
-*   **Authoritative References:**
-    *   **EHDS Regulation:** Articulated as part of the accredited secure data environments under the EHDS framework.
+### Trusted health data holder
+*   **Mapping type:** Framework-specific role; designation conditions are set by EHDS Article 72.
+*   **Meaning:** A health data holder designated under EHDS Article 72 that can provide access through a compliant Secure Processing Environment and participate in the simplified application procedure. It may assess an application and propose a decision, but the Health Data Access Body remains responsible for issuing the decision.
+*   **Source:** [EHDS Article 72](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327).
 
-### Trusted Third Party (TTP) / Indexing Service
-*   **Meaning:** An independent organisation that creates and manages linkage keys across datasets, such as matching NHS numbers with education IDs, without seeing the sensitive data itself [DARE-UK-FederatedArchitecture-2_2-full.pdf].
-*   **Authoritative References:**
-    *   **DARE UK Blueprint:** [DARE UK Blueprint v2.2 (5.5.4)](https://doi.org/10.5281/zenodo.14192786) [DARE-UK-FederatedArchitecture-2_2-full.pdf].
+### Trusted third party (TTP)
+*   **Mapping type:** Distinct framework-specific uses; no equivalence asserted.
+*   **Meaning:** EHDS Article 66(3) refers to an entity acting as a trusted third party under national law that may hold information needed to reverse pseudonymisation. Separately, the DARE UK data-pooling pattern uses “trusted third-party Index Service” for a service that creates a master index for linkage inside the analysis TRE.
+*   **Sources:**
+    *   [EHDS Article 66(3)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327) uses “trusted third party” for an entity that may hold information needed to reverse pseudonymisation under national law.
+    *   [DARE UK Federated Architecture Blueprint v2.2, section 2.2.2](https://doi.org/10.5281/zenodo.14192786) uses “trusted third-party index service” in its data-pooling pattern. These uses are not asserted to be equivalent.
 
-### Principal Investigator (PI) as Input/Output Approver
-*   **Mapping type:** Project-specific proposal.
-*   **Meaning:** In some projects, the PI may approve inputs or outputs. This must still follow the operator’s controls, the data holder’s requirements, separation-of-duties rules, and any independent review. The PI role does not automatically replace TRE or SPE operator checks.
-*   **Authoritative References:**
-    *   **ENTRUST Blueprint Architecture:** [D13.4 Section 6.2.2](https://doi.org/10.5281/zenodo.14362388) [EOSC-ENTRUST_D13.4 - Year one version of EOSC-ENTRUST Blueprint & Interoperability Framework.pdf].
+### Indexing or linkage service
+*   **Mapping type:** Operational analogy to some TTP functions; not a legal synonym.
+*   **Meaning:** In the DARE UK blueprint, an Index Service creates linkage spines for datasets. For personal data, it converts between personal identifiers and project-specific linkage keys and must be sufficiently trustworthy to handle personal identifiers. The blueprint leaves the construction of those indexes out of scope.
+*   **Source:** [DARE UK Federated Architecture Blueprint v2.2, section 4.3.2](https://doi.org/10.5281/zenodo.14192786).
 
-### Anonymous Reviewers
-*   **Meaning:** A reviewer who receives temporary, limited access to the project area to check results before publication. The reviewer may use a pseudonymous account so the project members do not know their identity [draft-technical-functional-and-security-specifications-of-secure-processing-environments.pdf].
-*   **Authoritative References:**
-    *   **TEHDAS2 Specs:** [TEHDAS2 M7.4 (4.5.1)](https://tehdas.eu/) [draft-technical-functional-and-security-specifications-of-secure-processing-environments.pdf].
+### Principal investigator (PI) as input/output approver
+*   **Mapping type:** Provider-specific implementation described by EOSC-ENTRUST.
+*   **Meaning:** EOSC-ENTRUST D13.4 reports that the SAFE, TSD, and CSC SD Services models require the project PI to act as Output Approver and assign a separate Input Approver role to the PI. This is a provider-specific architecture finding, not a general rule for TREs or SPEs.
+*   **Source:** [EOSC-ENTRUST D13.4, section 6.2.2](https://doi.org/10.5281/zenodo.14362388).
 
 ## 4. Identity, Trust, and Security (AAI)
 
-### Community AAI
-*   **Mapping type:** Functional correspondence.
-*   **Meaning:** The services that connect a researcher’s institutional login, through federations such as eduGAIN, to an identity and set of attributes used by the research network. Authentication, authorisation, identity federation, and attribute exchange are related but different functions [AAI interfaces.pdf, EOSC AAI Architecture 2025 - March 2025.pdf].
-*   **Authoritative References:**
-    *   **AARC Blueprint Architecture:** The AARC Blueprint Architecture 2025 (AARC-BPA-2025) introduces the "Identity Layer" as a new logical component distinct from the "Community AAI" and "Infrastructure Proxy" [EOSC AAI Architecture 2025 - March 2025.pdf].
-    *   **AARC BPA Guidelines:** Expressing group membership and roles according to [AARC-G069](https://aarc-community.org/guidelines/aarc-g069/) [EOSC AAI Architecture 2025 - March 2025.pdf].
-
-### MyAccessID
-*   **Mapping type:** Named service; not a general identity model.
-*   **Meaning:** A federated identity service used in parts of the European Open Science Cloud. Its role, trust relationships, and supported protocols must be checked in the service documentation. They should not be assumed for every federation [EOSC AAI Architecture 2025 - March 2025.pdf].
-*   **Authoritative References:**
-    *   **EOSC AAI March 2025 Specification:** Highlights MyAccessID as the initial hub-and-spoke federated login gateway [EOSC AAI Architecture 2025 - March 2025.pdf].
+### EOSC-ENTRUST AAAI
+*   **Mapping type:** Project-specific architecture.
+*   **Meaning:** EOSC-ENTRUST D16.1 proposes an Authentication, Authorization, and Accounting Infrastructure for a federation of TREs. It builds on the AARC Blueprint Architecture and adds requirements including account creation, identity vetting, attribute-based access control, accounting, and auditing.
+*   **Source:** [EOSC-ENTRUST D16.1, sections 5 to 7](https://doi.org/10.5281/zenodo.15006945).
 
 ### eID / eIDAS / EUDI Wallet
-*   **Meaning:** European digital identity terms and services. For high-assurance access to medical or public-sector data, an institution’s login may need to connect to a verified national electronic ID or the European Digital Identity (EUDI) Wallet [draft-technical-functional-and-security-specifications-of-secure-processing-environments.pdf].
-*   **Authoritative References:**
-    *   **eIDAS Regulation:** Regulation (EU) No 910/2014 [EOSC AAI Architecture 2025 - March 2025.pdf, draft-technical-functional-and-security-specifications-of-secure-processing-environments.pdf].
-    *   **OpenID Federation Wallet Architectures:** [OID-Fed-Wallet 1.0](https://openid.net/specs/openid-federation-wallet-1_0.html) [EOSC AAI Architecture 2025 - March 2025.pdf].
+*   **Mapping type:** Related legal framework and identity mechanisms; not interchangeable terms.
+*   **Meaning:** eIDAS is the EU legal framework for electronic identification and trust services; Regulation (EU) 2024/1183 amended it to establish the European Digital Identity Framework. EOSC-ENTRUST D16.1 proposes high-assurance electronic identity vetting, for example through eID or electronic know-your-customer processes. It treats identity wallets as a future option rather than a mandatory requirement in that version.
+*   **Sources:** [Regulation (EU) No 910/2014](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0910); [Regulation (EU) 2024/1183](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1183); [EOSC-ENTRUST D16.1, section 6.1](https://doi.org/10.5281/zenodo.15006945).
 
-### GA4GH Passports and Visas
-*   **Meaning:** Machine-readable credentials that can contain a researcher’s identity, organisation, training, and current access permissions. They can support automated checks at the SPE boundary [EOSC-ENTRUST_D13.4 - Year one version of EOSC-ENTRUST Blueprint & Interoperability Framework.pdf, draft-technical-functional-and-security-specifications-of-secure-processing-environments.pdf].
-*   **Authoritative References:**
-    *   **Global Alliance for Genomics and Health (GA4GH):** The GA4GH Passport & Visa standard [EOSC AAI Architecture 2025 - March 2025.pdf, draft-technical-functional-and-security-specifications-of-secure-processing-environments.pdf].
+### GA4GH passports and visas
+*   **Mapping type:** Technical standard used as an implementation option.
+*   **Meaning:** D16.1 describes a GA4GH Passport as a collection of digitally signed Visas containing subject attributes such as affiliations, organisational roles, accepted terms and policies, researcher status, and dataset-access decisions. It models the Passport as an attribute repository within attribute-based access control and notes limitations in the Visa types available in specification version 1.2.1.
+*   **Source:** [EOSC-ENTRUST D16.1, sections 6.2.1 and 6.2.3](https://doi.org/10.5281/zenodo.15006945).
