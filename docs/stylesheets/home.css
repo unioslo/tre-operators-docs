@@ -1,42 +1,44 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --tre-ink: #040204;
-  --tre-soft-ink: #646363;
+  --tre-ink: #040305;
+  --tre-soft-ink: #4a4a4a;
   --tre-paper: #ffffff;
-  --tre-surface: #e4e4e3;
-  --tre-line: #e4e4e3;
-  --tre-line-strong: #646363;
-  --tre-rtd-blue: #008691;
-  --tre-primary: #008691;
-  --tre-primary-strong: #040204;
-  --tre-nav-base: #040204;
-  --tre-nav-border: #008691;
-  --tre-nav-text: #e4e4e3;
+  --tre-surface: #f5f5f5;
+  --tre-line: #d8d8d8;
+  --tre-line-strong: #005095;
+  --tre-rtd-blue: #005095;
+  --tre-primary: #005095;
+  --tre-primary-strong: #00192f;
+  --tre-accent: #ed7225;
+  --tre-nav-base: #00192f;
+  --tre-nav-border: #ed7225;
+  --tre-nav-text: #e5ebed;
   --tre-nav-text-strong: #ffffff;
-  --tre-nav-text-hover: #ff5b7f;
-  --tre-nav-hover: #008691;
-  --tre-nav-current: #008691;
-  --tre-nav-submenu: #040204;
-  --tre-nav-submenu-deep: #646363;
-  --tre-nav-sub-hover: #008691;
-  --tre-nav-sub-hover-deep: #646363;
-  --tre-shadow: 0 8px 24px rgba(4, 2, 4, 0.08);
-  --tre-shadow-hover: 0 16px 30px rgba(4, 2, 4, 0.12);
+  --tre-nav-text-hover: #f5904a;
+  --tre-nav-hover: #003a6e;
+  --tre-nav-current: #005095;
+  --tre-nav-submenu: #022e55;
+  --tre-nav-submenu-deep: #003a6e;
+  --tre-nav-sub-hover: #005095;
+  --tre-nav-sub-hover-deep: #003a6e;
+  --tre-shadow: 0 8px 24px rgba(0, 25, 47, 0.08);
+  --tre-shadow-hover: 0 16px 30px rgba(0, 25, 47, 0.14);
 }
 
 body {
   color: var(--tre-soft-ink);
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 .wy-nav-content {
@@ -63,7 +65,7 @@ h3 {
 }
 
 .tre-eyebrow {
-  color: var(--tre-primary);
+  color: var(--tre-accent);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -103,7 +105,7 @@ h3 {
 }
 
 .tre-hero-link:hover {
-  background: var(--tre-primary);
+  background: var(--tre-accent);
   box-shadow: var(--tre-shadow);
   color: var(--tre-paper);
   transform: translateY(-2px);
@@ -124,7 +126,7 @@ h3 {
 
 .tre-hero-panel {
   background: var(--tre-surface);
-  border: 1px solid var(--tre-line-strong);
+  border: 1px solid var(--tre-line);
   border-radius: 14px;
   padding: 1rem;
   width: 100%;
@@ -260,11 +262,11 @@ img[alt="Getting Started Flowchart"] {
 }
 
 .tre-step-card {
-  border-top: 4px solid var(--tre-primary);
+  border-top: 4px solid var(--tre-accent);
 }
 
 .tre-module-card {
-  border-top: 4px solid var(--tre-primary);
+  border-top: 4px solid var(--tre-accent);
 }
 
 .tre-card h3 {
@@ -280,7 +282,7 @@ img[alt="Getting Started Flowchart"] {
   background: var(--tre-surface);
   border: 1px solid var(--tre-line);
   border-radius: 999px;
-  color: var(--tre-primary-strong);
+  color: var(--tre-primary);
   display: inline-flex;
   font-size: 0.88rem;
   font-weight: 700;
