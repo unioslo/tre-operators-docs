@@ -10,6 +10,7 @@ features:
     - search.suggest
     - search.highlight
     - navigation.tabs
+
 markdown_extensions:
   - pymdownx.superfences  # Required to render the MyST-like warning/note boxes nicely
 
@@ -29,7 +30,3 @@ nav:
       - Reference Architecture: appendices/reference-architecture.md
       - Resources: appendices/resources.md
       - Copilot Acknowledgement: appendices/copilot-acknowledgement.md
-
-
-
-
