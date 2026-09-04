@@ -11,12 +11,12 @@ extra_css:
 
 nav:
   - Home: index.md
-  - TRE Fundamentals: fundamentals.md
-  - Architecture: modules/architecture/index.md
-  - Interface Definitions: modules/interfaces/index.md
-  - Operating Procedures: modules/procedures/index.md
-  - Template Legal Agreements: modules/legal/index.md
-  - Federation: federation.md
+  - M1: TRE Fundamentals: fundamentals.md
+  - M2: Architecture: modules/architecture/index.md
+  - M3: Interface Definitions: modules/interfaces/index.md
+  - M4: Operating Procedures: modules/procedures/index.md
+  - M5: Template Legal Agreements: modules/legal/index.md
+  - M6: Federation: federation.md
   - Appendices:
       - Glossary: appendices/glossary.md
       - Reference Architecture: appendices/reference-architecture.md
