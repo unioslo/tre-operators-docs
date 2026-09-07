@@ -1,7 +1,7 @@
 
 # Glossary
 
-This glossary distinguishes definitions taken from legislation or a named framework from operational definitions used only in this guide. A summary does not replace the cited source. Legal interpretations should be checked against the official text and applicable national law. For cross-framework comparisons, see the [Reference Terminology Dictionary](reference-terminology-dictionary.md).
+This glossary distinguishes between terms defined in legislation or established frameworks and terms defined for operational use in this guide. The entries summarise the relevant concepts and sources, but do not replace the original texts. For legal interpretation, please refer to the official legislation and applicable national law. The [Reference Terminology Dictionary](reference-terminology-dictionary.md) provides further context for comparing terminology across frameworks.
 
 ---
 
