@@ -10,7 +10,7 @@ TREs exchange Structured Data Objects using well-defined interface types. Route 
 
 Always package objects exchanged between Participants in a standard way:
 
-- Use the **“Five Safes” RO-Crate standard** for all structured data objects.
+- Use the [**“Five Safes” RO-Crate standard**](https://trefx.uk/5s-crate/) for all structured data objects.
 - Tag each object with metadata that indicates the **Project context** for traceability.
 
 ## Choosing the Right Interface Type
