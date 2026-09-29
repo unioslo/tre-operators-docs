@@ -1,6 +1,6 @@
 # Reference Architecture
 
-![EOSC-ENTRUST TRE Architecture](../images/tre-architecture.svg)
+![EOSC-ENTRUST TRE Architecture](../images/tre_architecture.svg)
 
 *Figure: A Trusted Research Environment (TRE) within the EOSC-ENTRUST federation. Every Federation Participant routes traffic through a Security Server; inside a TRE, three functional zones (RAZ, SDZ, QMZ) separate analysis, data management, and query handling. For the full description of each element, see [Module 2: Architecture](../modules/architecture/index.md) and [Module 3: Interfaces](../modules/interfaces/index.md).*
 
