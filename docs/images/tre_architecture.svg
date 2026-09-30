@@ -3,8 +3,25 @@
   <desc id="tre-arch-desc">A Trusted Research Environment containing three functional zones (RAZ, SDZ, QMZ) behind a Security Server, alongside the other Federation Participants (Federation Services, Index Service, Software Service, Discovery Service, Job Submission Service).</desc>
 
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#005095"/>
+    <marker id="arrow"
+            viewBox="0 0 10 10"
+            refX="9"
+            refY="5"
+            markerWidth="7"
+            markerHeight="7"
+            orient="auto"
+            markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#005095"/>
+    </marker>
+    <marker id="arrow-start"
+            viewBox="0 0 10 10"
+            refX="1"
+            refY="5"
+            markerWidth="7"
+            markerHeight="7"
+            orient="auto"
+            markerUnits="strokeWidth">
+      <path d="M 10 0 L 0 5 L 10 10 Z" fill="#005095"/>
     </marker>
   </defs>
 
@@ -53,7 +70,7 @@
   <text x="635" y="160" text-anchor="middle" font-size="10" fill="#4a4a4a">Gateway for federation traffic</text>
 
   <!-- Connector: Security Server to Federation Participants -->
-  <line x1="350" y1="147" x2="300" y2="147" stroke="#005095" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <line x1="348.5" y1="147" x2="301.5" y2="147" stroke="#005095" stroke-width="2" marker-start="url(#arrow-start)" marker-end="url(#arrow)"/>
 
   <!-- Zones -->
   <!-- RAZ -->
@@ -81,7 +98,7 @@
   <text x="830" y="414" text-anchor="middle" font-size="10" fill="#4a4a4a">Direct and indirect</text>
 
   <!-- Connectors: Security Server to Zones -->
-  <line x1="440" y1="175" x2="440" y2="200" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="635" y1="175" x2="635" y2="200" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
-  <line x1="830" y1="175" x2="830" y2="200" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="440" y1="176.5" x2="440" y2="198.5" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="635" y1="176.5" x2="635" y2="198.5" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="830" y1="176.5" x2="830" y2="198.5" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
 </svg>
