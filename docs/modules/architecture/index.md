@@ -76,21 +76,21 @@ For the architecture diagram and legend, see [Reference Architecture](../../appe
 
 This section presents a generalized architecture for Authentication, Authorization, and Auditing (AAA) integration within a TRE, derived from the design principles and implementation experience of the Services for Sensitive Data (TSD).
 
-### Architectural Overview
-
-![Generalized AAA Integration Architecture](../../images/aaai_architecture.png)
-
-*Figure: Conceptual model showing how authentication, authorization, and auditing components interact within a TRE.*
-
 ### Authentication
+
+![Authentication flow](../../images/aaai-authentication.svg)
 
 The authentication subsystem consists of several coordinated components. At its foundation, the central Identity and Access Management (IAM) system governs all user, project, and group identities, while also providing APIs for authentication, authorization, and resource management. Authentication operations are facilitated by an OpenID Connect (OIDC) provider, which implements standards-based authentication flows—including PKCE for browser clients—and integrates with external identity providers to support multi-institutional access. Federated authentication enables users to log in through trusted third-party providers, simplifying account creation and management processes. The environment enforces multi-factor authentication (MFA), such as time-based (TOTP) or HMAC-based (HOTP) one-time passcodes, which users can manage via self-service portal. Token exchange mechanisms enable the creation of short-lived API access tokens that are limited in scope and purpose. For non-interactive or time-limited workflows, client and instance-based authentication, including “magic links”, enables automated or temporary access, with optional password protection for added security.
 
 ### Authorization
 
+![Authorization flow](../../images/aaai-authorization.svg)
+
 Authorization is centrally managed by a policy enforcement engine, which serves as the Policy Enforcement Point (PEP) for all API requests entering the environment through designated gateways. This engine evaluates each request against access control policies (grants) maintained within the IAM database. These policies may be static, maintained as code or configuration under version control, or dynamically managed via programmable interfaces provided by the IAM API. All access tokens and authorization grants are strictly scoped to specific projects or tenants and to designated API gateways. Network and resource-level isolation is maintained through private VLANs and firewall policies. The authorization workflow includes validating the token’s integrity and claims, matching access policy grants to requested API operations and contextual attributes, and enforcing any additional restrictions such as time windows or usage limits.
 
 ### Auditing
+
+![Auditing and operations flow](../../images/aaai-auditing.svg)
 
 Auditing is implemented across all relevant system layers to support accountability, regulatory compliance, and operational monitoring. Every API operation—spanning file, data, and resource actions—is logged in detail, with audit logs accessible for both operational staff and authorized project administrators. Changes to IAM data and resource allocations are tracked, capturing all create, update, and delete events. All storage and file access operations are monitored for data integrity and incident response purposes. Exports of data and downloads from publication interfaces are recorded to maintain a verifiable trail of data egress. Finally, system event and operations logs are aggregated and made available for ongoing monitoring, security investigations, and incident response.
 
