@@ -269,7 +269,7 @@ img[alt="Getting Started Flowchart"] {
   border-top: 4px solid var(--tre-role-color, var(--tre-accent));
 }
 
-.tre-role-researcher {
+.tre-role-user {
   --tre-role-color: var(--tre-primary);
   --tre-role-surface: #eaf3fb;
 }
@@ -285,16 +285,37 @@ img[alt="Getting Started Flowchart"] {
   --tre-role-surface: #fff2e6;
 }
 
+.tre-audience-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 0 0 1.2rem;
+}
+
+.tre-audience-item {
+  border-left: 4px solid var(--tre-role-color);
+  padding: 0.25rem 0.8rem;
+}
+
+.tre-audience-item h3 {
+  margin: 0 0 0.5rem;
+}
+
+.tre-audience-item p,
+.tre-level-key {
+  margin: 0;
+}
+
+.tre-level-key {
+  margin-bottom: 0.75rem;
+}
+
 .tre-reading-key {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem 0.8rem;
+  gap: 0.5rem;
   margin: 0 0 1.2rem;
-}
-
-.tre-reading-key > span:last-child {
-  flex-basis: 100%;
 }
 
 .tre-module-card .tre-icon-heading {
@@ -339,7 +360,7 @@ img[alt="Getting Started Flowchart"] {
   background: var(--tre-surface);
 }
 
-.tre-level-intermediate {
+.tre-level-practitioner {
   background: var(--tre-nav-text);
   color: var(--tre-primary-strong);
 }
@@ -347,6 +368,23 @@ img[alt="Getting Started Flowchart"] {
 .tre-level-advanced {
   background: var(--tre-primary-strong);
   color: var(--tre-paper);
+}
+
+.tre-skill-label {
+  background: var(--tre-nav-text);
+  border: 1px solid var(--tre-line-strong);
+  border-radius: 4px;
+  color: var(--tre-primary-strong);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+}
+
+.tre-role-note {
+  background: var(--tre-role-surface);
+  border-left: 4px solid var(--tre-role-color);
+  margin: 1rem 0;
+  padding: 0.75rem 0.9rem;
 }
 
 .tre-card h3 {

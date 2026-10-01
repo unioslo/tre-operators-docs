@@ -1,6 +1,6 @@
 # Troubleshooting & FAQs
 
-This section helps you resolve common issues quickly as a TRE operator.
+This section helps TRE Service Operators resolve common issues quickly.
 
 ## Practical Example: User Access Issue
 **Problem:** Researcher cannot access the TRE workspace.

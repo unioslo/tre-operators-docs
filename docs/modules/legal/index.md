@@ -1,6 +1,6 @@
 # Module 5: Legal and Compliance
 
-<div class="tre-page-meta tre-role-builder"><p class="tre-module-meta"><span class="tre-role-label">TRE builder</span><span class="tre-level-label tre-level-intermediate">Intermediate</span></p></div>
+<div class="tre-page-meta tre-role-operator"><p class="tre-module-meta"><span class="tre-role-label">TRE Service Operator</span><span class="tre-level-label tre-level-practitioner">Practitioner</span></p></div>
 
 ## Ethical Frameworks for Federation
 

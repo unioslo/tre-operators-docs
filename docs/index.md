@@ -126,19 +126,36 @@
 
 ## Modules
 
-<div class="tre-reading-key" aria-label="Reading paths">
-	<strong>Reading paths</strong>
-	<span class="tre-role-researcher"><span class="tre-role-label">Researcher</span></span>
-	<span class="tre-role-operator"><span class="tre-role-label">TRE operator</span></span>
-	<span class="tre-role-builder"><span class="tre-role-label">TRE builder</span></span>
-	<span>Each module names its primary audience and knowledge level (Foundational, Intermediate, or Advanced). TRE builders need deeper knowledge to construct infrastructure, install 5S-TES, and configure AAAI services. These are reading guides, not access permissions.</span>
+<div class="tre-audience-grid" aria-label="Role-based learning paths">
+	<section class="tre-audience-item tre-role-user">
+		<h3><span class="tre-role-label">Research Data User</span></h3>
+		<p>Access and use an approved TRE workspace. AAAI integration supports sign-in and project-based access; users do not configure AAAI services.</p>
+	</section>
+	<section class="tre-audience-item tre-role-operator">
+		<h3><span class="tre-role-label">TRE Service Operator</span></h3>
+		<p>Handle day-to-day operations, including onboarding, monitoring, incident response, and controlled software provisioning.</p>
+	</section>
+	<section class="tre-audience-item tre-role-builder">
+		<h3><span class="tre-role-label">TRE Platform Engineer</span></h3>
+		<p>Construct infrastructure, install 5S-TES, and configure AAAI services. Relevant technical tracks include DevOps Engineering and Systems Administration.</p>
+	</section>
+</div>
+<p class="tre-level-key"><strong>Experience levels:</strong> Foundational (new to TREs), Practitioner (working knowledge), and Advanced (deeper technical or operational experience). Modules are organized by persona, technical track where relevant, and experience level. These are learning guides, not formal grades or access permissions.</p>
+
+<div class="tre-reading-key" aria-label="Role and technical track badges">
+	<strong>Module labels:</strong>
+	<span class="tre-level-label tre-level-foundational">Foundational</span>
+	<span class="tre-level-label tre-level-practitioner">Practitioner</span>
+	<span class="tre-level-label tre-level-advanced">Advanced</span>
+	<span class="tre-skill-label">DevOps Engineering</span>
+	<span class="tre-skill-label">Systems Administration</span>
 </div>
 
 <div class="tre-card-grid tre-card-grid-modules">
 
-	<article class="tre-card tre-module-card tre-role-researcher">
+	<article class="tre-card tre-module-card tre-role-user">
 		<h3><i class="fa-solid fa-book-open-reader tre-icon-heading" aria-hidden="true"></i>Module 1: TRE Fundamentals</h3>
-		<p class="tre-module-meta"><span class="tre-role-label">Researcher</span><span class="tre-level-label tre-level-foundational">Foundational</span></p>
+		<p class="tre-module-meta"><span class="tre-role-label">Research Data User</span><span class="tre-level-label tre-level-foundational">Foundational</span></p>
 		<ul>
 			<li>Compliance basics: <a href="fundamentals/">TRE Fundamentals</a></li>
 			<li>Key concepts and terminology</li>
@@ -148,16 +165,16 @@
 
 	<article class="tre-card tre-module-card tre-role-builder">
 		<h3><i class="fa-solid fa-diagram-project tre-icon-heading" aria-hidden="true"></i>Module 2: Architecture and Setup</h3>
-		<p class="tre-module-meta"><span class="tre-role-label">TRE builder</span><span class="tre-level-label tre-level-advanced">Advanced</span></p>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE Platform Engineer</span><span class="tre-level-label tre-level-advanced">Advanced</span><span class="tre-skill-label">DevOps Engineering</span><span class="tre-skill-label">Systems Administration</span></p>
 		<ul>
 			<li>Zones and core components: <a href="modules/architecture/">Architecture</a></li>
 			<li>AAA integration</li>
 		</ul>
 	</article>
 
-	<article class="tre-card tre-module-card tre-role-operator">
+	<article class="tre-card tre-module-card tre-role-builder">
 		<h3><i class="fa-solid fa-code-branch tre-icon-heading" aria-hidden="true"></i>Module 3: Interfaces and Configuration</h3>
-		<p class="tre-module-meta"><span class="tre-role-label">TRE operator</span><span class="tre-level-label tre-level-advanced">Advanced</span></p>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE Platform Engineer</span><span class="tre-level-label tre-level-advanced">Advanced</span><span class="tre-skill-label">DevOps Engineering</span><span class="tre-skill-label">Systems Administration</span></p>
 		<ul>
 			<li>Interface definitions: <a href="modules/interfaces/">Interfaces</a></li>
 		</ul>
@@ -165,15 +182,15 @@
 
 	<article class="tre-card tre-module-card tre-role-operator">
 		<h3><i class="fa-solid fa-gears tre-icon-heading" aria-hidden="true"></i>Module 4: Operations and Procedures</h3>
-		<p class="tre-module-meta"><span class="tre-role-label">TRE operator</span><span class="tre-level-label tre-level-intermediate">Intermediate</span></p>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE Service Operator</span><span class="tre-level-label tre-level-practitioner">Practitioner</span></p>
 		<ul>
 			<li>Onboarding, monitoring, incident response: <a href="modules/procedures/">Procedures</a></li>
 		</ul>
 	</article>
 
-	<article class="tre-card tre-module-card tre-role-builder">
+	<article class="tre-card tre-module-card tre-role-operator">
 		<h3><i class="fa-solid fa-scale-balanced tre-icon-heading" aria-hidden="true"></i>Module 5: Legal and Compliance</h3>
-		<p class="tre-module-meta"><span class="tre-role-label">TRE builder</span><span class="tre-level-label tre-level-intermediate">Intermediate</span></p>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE Service Operator</span><span class="tre-level-label tre-level-practitioner">Practitioner</span></p>
 		<ul>
 			<li>Agreements, certification, governance: <a href="modules/legal/">Legal</a></li>
 		</ul>
@@ -181,7 +198,7 @@
 
 	<article class="tre-card tre-module-card tre-role-builder">
 		<h3><i class="fa-solid fa-people-arrows tre-icon-heading" aria-hidden="true"></i>Module 6: Federation and Collaboration</h3>
-		<p class="tre-module-meta"><span class="tre-role-label">TRE builder</span><span class="tre-level-label tre-level-advanced">Advanced</span></p>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE Platform Engineer</span><span class="tre-level-label tre-level-advanced">Advanced</span></p>
 		<ul>
 			<li>Federation integration: <a href="federation/">Federation</a></li>
 			<li>Data sharing and collaboration</li>

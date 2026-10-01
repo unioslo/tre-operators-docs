@@ -1,6 +1,6 @@
 # Module 4: Operations & Procedures
 
-<div class="tre-page-meta tre-role-operator"><p class="tre-module-meta"><span class="tre-role-label">TRE operator</span><span class="tre-level-label tre-level-intermediate">Intermediate</span></p></div>
+<div class="tre-page-meta tre-role-operator"><p class="tre-module-meta"><span class="tre-role-label">TRE Service Operator</span><span class="tre-level-label tre-level-practitioner">Practitioner</span></p></div>
 
 This module defines consensus-based Standard Operating Procedures (SOPs) required for operational alignment across the federation.
 
@@ -22,10 +22,12 @@ Operating procedures must manage the entire user lifecycle, ensuring access only
 
 ### Core User Roles
 
-1. Data User: conducts analyses, requests software or output release.
-2. TRE Governance: manages project spaces, prepares data, installs software, performs SDC.
+1. Research Data User: accesses the approved workspace, conducts analyses, and requests software or output release.
+2. TRE Service Operator / Governance: handles day-to-day operations, manages project spaces, prepares data, installs approved software, and performs SDC.
 3. Data Holder (Data Controller): assesses access requests and supplies data.
 4. Federation Governance: coordinates multi-party agreements and federated queries.
+
+Infrastructure construction, 5S-TES installation, and AAAI service configuration are builder responsibilities, separate from routine operator duties.
 
 ### Training and Certification
 
@@ -49,7 +51,7 @@ SOPs must standardise the fragmented access-request process:
 
 Define clear procedures for software provisioning while maintaining security controls:
 
-* TRE Operators must be authorised to invoke software interface services.
+* TRE Service Operators must be authorised to invoke software interface services.
 * SOPs must describe how Researchers request additional software. In mature TREs, software installation is handled by TRE staff.
 * Prefer downloading Environment Software Artifacts via federation software services.
 

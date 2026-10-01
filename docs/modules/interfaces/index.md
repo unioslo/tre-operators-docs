@@ -1,6 +1,6 @@
 # Module 3: Interfaces and Configuration: A Practical Guide
 
-<div class="tre-page-meta tre-role-operator"><p class="tre-module-meta"><span class="tre-role-label">TRE operator</span><span class="tre-level-label tre-level-advanced">Advanced</span></p></div>
+<div class="tre-page-meta tre-role-builder"><p class="tre-module-meta"><span class="tre-role-label">TRE Platform Engineer</span><span class="tre-level-label tre-level-advanced">Advanced</span><span class="tre-skill-label">DevOps Engineering</span><span class="tre-skill-label">Systems Administration</span></p></div>
 
 This guide explains how TREs in the federation exchange data securely and efficiently. You will learn how to package data, use the right interface type, and ensure compliance with federation requirements.
 
@@ -64,6 +64,8 @@ By following these practices, you help ensure the integrity, confidentiality, an
 ## Federated AAAI Overview
 
 Federated AAAI provides a secure, consistent approach to identity, access, and auditing across multiple Trusted Research Environments (TREs).
+
+<div class="tre-role-note tre-role-user"><strong>Research Data User focus:</strong> Users authenticate through the configured identity federation and receive access according to project membership and the TRE's authorization rules. AAAI integration enables this access; users do not configure AAAI services.</div>
 
 ---
 

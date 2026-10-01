@@ -2,7 +2,7 @@
 
 # Module 1: TRE Fundamentals
 
-<div class="tre-page-meta tre-role-researcher"><p class="tre-module-meta"><span class="tre-role-label">Researcher</span><span class="tre-level-label tre-level-foundational">Foundational</span></p></div>
+<div class="tre-page-meta tre-role-user"><p class="tre-module-meta"><span class="tre-role-label">Research Data User</span><span class="tre-level-label tre-level-foundational">Foundational</span></p></div>
 
 ## What is a TRE?
 
