@@ -1,5 +1,7 @@
 # Module 3: Interfaces and Configuration: A Practical Guide
 
+<div class="tre-page-meta tre-role-operator"><p class="tre-module-meta"><span class="tre-role-label">TRE operator</span><span class="tre-level-label tre-level-advanced">Advanced</span></p></div>
+
 This guide explains how TREs in the federation exchange data securely and efficiently. You will learn how to package data, use the right interface type, and ensure compliance with federation requirements.
 
 ## How Data Moves Between TREs

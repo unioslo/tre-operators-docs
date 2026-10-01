@@ -1,5 +1,7 @@
 # Module 5: Legal and Compliance
 
+<div class="tre-page-meta tre-role-builder"><p class="tre-module-meta"><span class="tre-role-label">TRE builder</span><span class="tre-level-label tre-level-intermediate">Intermediate</span></p></div>
+
 ## Ethical Frameworks for Federation
 
 This module defines the legal and ethical foundations for cross-border sensitive data federation. Template legal agreements, operating procedures, and interface definitions will be published in future versions of the ENTRUST Blueprint.

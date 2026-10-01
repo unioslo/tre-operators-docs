@@ -126,10 +126,19 @@
 
 ## Modules
 
+<div class="tre-reading-key" aria-label="Reading paths">
+	<strong>Reading paths</strong>
+	<span class="tre-role-researcher"><span class="tre-role-label">Researcher</span></span>
+	<span class="tre-role-operator"><span class="tre-role-label">TRE operator</span></span>
+	<span class="tre-role-builder"><span class="tre-role-label">TRE builder</span></span>
+	<span>Each module names its primary audience and knowledge level (Foundational, Intermediate, or Advanced). TRE builders need deeper knowledge to construct infrastructure, install 5S-TES, and configure AAAI services. These are reading guides, not access permissions.</span>
+</div>
+
 <div class="tre-card-grid tre-card-grid-modules">
 
-	<article class="tre-card tre-module-card">
+	<article class="tre-card tre-module-card tre-role-researcher">
 		<h3><i class="fa-solid fa-book-open-reader tre-icon-heading" aria-hidden="true"></i>Module 1: TRE Fundamentals</h3>
+		<p class="tre-module-meta"><span class="tre-role-label">Researcher</span><span class="tre-level-label tre-level-foundational">Foundational</span></p>
 		<ul>
 			<li>Compliance basics: <a href="fundamentals/">TRE Fundamentals</a></li>
 			<li>Key concepts and terminology</li>
@@ -137,37 +146,42 @@
 		</ul>
 	</article>
 
-	<article class="tre-card tre-module-card">
+	<article class="tre-card tre-module-card tre-role-builder">
 		<h3><i class="fa-solid fa-diagram-project tre-icon-heading" aria-hidden="true"></i>Module 2: Architecture and Setup</h3>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE builder</span><span class="tre-level-label tre-level-advanced">Advanced</span></p>
 		<ul>
 			<li>Zones and core components: <a href="modules/architecture/">Architecture</a></li>
 			<li>AAA integration</li>
 		</ul>
 	</article>
 
-	<article class="tre-card tre-module-card">
+	<article class="tre-card tre-module-card tre-role-operator">
 		<h3><i class="fa-solid fa-code-branch tre-icon-heading" aria-hidden="true"></i>Module 3: Interfaces and Configuration</h3>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE operator</span><span class="tre-level-label tre-level-advanced">Advanced</span></p>
 		<ul>
 			<li>Interface definitions: <a href="modules/interfaces/">Interfaces</a></li>
 		</ul>
 	</article>
 
-	<article class="tre-card tre-module-card">
+	<article class="tre-card tre-module-card tre-role-operator">
 		<h3><i class="fa-solid fa-gears tre-icon-heading" aria-hidden="true"></i>Module 4: Operations and Procedures</h3>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE operator</span><span class="tre-level-label tre-level-intermediate">Intermediate</span></p>
 		<ul>
 			<li>Onboarding, monitoring, incident response: <a href="modules/procedures/">Procedures</a></li>
 		</ul>
 	</article>
 
-	<article class="tre-card tre-module-card">
+	<article class="tre-card tre-module-card tre-role-builder">
 		<h3><i class="fa-solid fa-scale-balanced tre-icon-heading" aria-hidden="true"></i>Module 5: Legal and Compliance</h3>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE builder</span><span class="tre-level-label tre-level-intermediate">Intermediate</span></p>
 		<ul>
 			<li>Agreements, certification, governance: <a href="modules/legal/">Legal</a></li>
 		</ul>
 	</article>
 
-	<article class="tre-card tre-module-card">
+	<article class="tre-card tre-module-card tre-role-builder">
 		<h3><i class="fa-solid fa-people-arrows tre-icon-heading" aria-hidden="true"></i>Module 6: Federation and Collaboration</h3>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE builder</span><span class="tre-level-label tre-level-advanced">Advanced</span></p>
 		<ul>
 			<li>Federation integration: <a href="federation/">Federation</a></li>
 			<li>Data sharing and collaboration</li>

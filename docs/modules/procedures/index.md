@@ -1,5 +1,7 @@
 # Module 4: Operations & Procedures
 
+<div class="tre-page-meta tre-role-operator"><p class="tre-module-meta"><span class="tre-role-label">TRE operator</span><span class="tre-level-label tre-level-intermediate">Intermediate</span></p></div>
+
 This module defines consensus-based Standard Operating Procedures (SOPs) required for operational alignment across the federation.
 
 ---

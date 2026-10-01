@@ -1,6 +1,8 @@
 
 # Module 2: Architecture & setup
 
+<div class="tre-page-meta tre-role-builder"><p class="tre-module-meta"><span class="tre-role-label">TRE builder</span><span class="tre-level-label tre-level-advanced">Advanced</span></p></div>
+
 This section introduces the infrastructure layer of the ENTRUST Blueprint, detailing the Participants and the minimal requirements for creating a trustworthy federation.
 
 ## Design Philosophy

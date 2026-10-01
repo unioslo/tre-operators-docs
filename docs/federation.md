@@ -1,5 +1,7 @@
 # Module 6: Federation & Collaboration
 
+<div class="tre-page-meta tre-role-builder"><p class="tre-module-meta"><span class="tre-role-label">TRE builder</span><span class="tre-level-label tre-level-advanced">Advanced</span></p></div>
+
 Core Services define the Federation and provide common functions for coordinated and secure operation.
 
 ## Security Server (SS)
