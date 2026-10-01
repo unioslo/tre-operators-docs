@@ -1,6 +1,6 @@
 # Module 6: Federation & Collaboration
 
-<div class="tre-page-meta tre-role-builder"><p class="tre-module-meta"><span class="tre-role-label">TRE Platform Engineer</span><span class="tre-level-label tre-level-advanced">Advanced</span><span class="tre-skill-label">DevOps Engineering</span><span class="tre-skill-label">Systems Administration</span></p></div>
+<p class="tre-page-context tre-role-builder"><strong>Audience:</strong>TRE Builder</p>
 
 Core Services define the Federation and provide common functions for coordinated and secure operation.
 

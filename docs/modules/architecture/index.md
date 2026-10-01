@@ -1,7 +1,7 @@
 
 # Module 2: Architecture & setup
 
-<div class="tre-page-meta tre-role-builder"><p class="tre-module-meta"><span class="tre-role-label">TRE Platform Engineer</span><span class="tre-level-label tre-level-advanced">Advanced</span><span class="tre-skill-label">DevOps Engineering</span><span class="tre-skill-label">Systems Administration</span></p></div>
+<p class="tre-page-context tre-role-builder"><strong>Audience:</strong> TRE Builder</p>
 
 This section introduces the infrastructure layer of the ENTRUST Blueprint, detailing the Participants and the minimal requirements for creating a trustworthy federation.
 
