@@ -8,6 +8,11 @@ This section introduces the infrastructure layer of the ENTRUST Blueprint, detai
 ## Design Philosophy
 
 The architecture follows the principle of **"start from where you are"** and proposes the **minimum necessary new infrastructure** required to connect TREs. It is explicitly a "back end" architecture; researchers interact only with TREs, not the Federation infrastructure directly.
+The architecture is part of the ENTRUST Blueprint, which describes **the minimal requirements** for joining a federation of TREs. It does not prescribe a single technology stack or ask providers to replace what they already operate. Instead, it defines the capabilities, roles, and interfaces that every participating TRE must support, so that existing environments can interoperate without being rebuilt.
+The architecture has been validated and revised against the requirements of the ENTRUST Driver use cases. Gaps and additional needs identified during that validation were fed back into the current specification, so the design **reflects practical implementation experience** rather than theory alone.
+Federation depends on participants trusting each other's decisions about who a user is, what they may do, and what has happened. The architecture therefore centres on **a common Authentication, Authorization, and Auditing Infrastructure (AAAI)**, together with defined interfaces for exchanging data objects between federation participants.
+Where appropriate, the architecture is aligned with ongoing developments in the European Health Data Space (**EHDS**) and the European Open Science Cloud (**EOSC**). For example, the Research Analytics Zone is comparable to the EHDS Secure Processing Environment.
+The design is intended as a foundation for future scaling, alignment with domain-specific initiatives, and long-term sustainability of the EOSC-ENTRUST framework. It is an evolving specification: this version is the second iteration, and later versions will build on feedback from implementers.
 
 ## Federation Participants
 
