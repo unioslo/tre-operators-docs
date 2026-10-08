@@ -21,7 +21,6 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Relevance Matrix: relevance-matrix.md
   - "M1: TRE Fundamentals": fundamentals.md
   - "M2: Architecture": modules/architecture/index.md
   - "M3: Interface Definitions": modules/interfaces/index.md
@@ -32,5 +31,6 @@ nav:
       - Glossary: appendices/glossary.md
       - Reference Dictionary: appendices/reference-terminology-dictionary.md
       - Reference Architecture: appendices/reference-architecture.md
+      - Relevance Matrix: appendices/relevance-matrix.md
       - Resources: appendices/resources.md
       - Copilot Acknowledgement: appendices/copilot-acknowledgement.md
