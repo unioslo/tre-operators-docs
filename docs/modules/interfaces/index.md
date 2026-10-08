@@ -4,26 +4,26 @@
 
 Module 3 covers the two things a TRE needs in order to take part in the federation: a way to exchange data and workflows, and a way to establish trust. Part A, data and workflow exchange interfaces, defines how TREs send and receive information as standardised Structured Data Objects packaged as Five Safes RO-Crates and tagged with their Project context. It covers six interface types (Query, Job, Data, Index, Software, and Response), each connecting only to its matching counterpart. All traffic is encrypted and routed through each Participant's Security Server. Part B, federated AAAI, defines how identity, access, and auditing work across TREs. It builds on an AARC-compliant infrastructure with MyAccessID as the central trust hub, using OIDC and OAuth 2.0 for authentication, Project-based membership for access, and central ELK-based auditing for accountability. Each TRE keeps full control of its own final authorisation decision. Together, the two halves let a Builder move data and jobs between TREs while knowing who is asking, what they may do, and what has happened. 
 
-## Overview: how TREs connect
+## Overview: How TREs Connect
 
 Every TRE in the federation talks to other TREs only through its Security Server. Federation services provide identity (MyAccessID), auditing (ELK) and the registry. Objects move between the two Security Servers; both servers rely on the federation services for identity and auditing. 
 
 ![2 TREs, Secucity Servers, Federation Services](../../images/tre-to-tre-interconnect.svg)
 
-## Part A: Data and workflow exchange interfaces
+## Part A: Data and Workflow Exchange Interfaces
 
-### How data moves between TREs 
+### How Data Moves Between TREs
 
 TREs exchange Structured Data Objects using well-defined interface types. Route all traffic to and from interface services through the Security Servers of the host Participant to ensure security and traceability. 
 
-### Packaging structured data 
+### Packaging Structured Data
 
 Always package objects exchanged between Participants in a standard way:
 
 - Use the Five Safes RO-Crate standard for all structured data objects.
 - Tag each object with metadata that indicates the Project context for traceability. 
 
-### Which interface do I need? 
+### Which Interface Do I Need?
 
 Answer the questions in the decision flow below, starting from what you want to do. 
 
@@ -40,7 +40,7 @@ Work down the questions in order; the first yes tells you the interface type and
 | Software | Downloading approved software artifacts from a Software Service | Environment or Job Payload Artifact | Software services |
 | Response | Sending results or answers to queries | Response Object | Response services |
 
-### Security rules that apply to every interface
+### Security Rules That Apply to Every Interface
 
 - Route all interface traffic through Security Servers. 
 - Encrypt all data exchanges between Participants (data extracts, direct and indirect queries, and index data). 
@@ -52,20 +52,20 @@ Work down the questions in order; the first yes tells you the interface type and
 
 Federated AAAI provides a secure, consistent approach to identity, access, and auditing across multiple TREs. Users authenticate through the configured identity federation and receive access according to project membership and the TRE's authorisation rules. Users do not configure AAAI services. 
 
-### Core federation requirements 
+### Core Federation Requirements
 
 - All EOSC Nodes, including TRE Providers, must:
-    - Architecture: run an AAAI infrastructure compliant with the AARC Blueprint.
-    - Federation model: use a hub-and-spoke model with MyAccessID as the central hub for trust and identity services.
-    - Protocols: support OpenID Connect (OIDC) and OAuth 2.0.
-    - Federation membership: join eduGAIN as a Service Provider, submit technical metadata, and meet security requirements.
-    - Authentication: enforce multi-factor authentication (MFA) for access to secure services.
+    - **Architecture**: run an AAAI infrastructure compliant with the AARC Blueprint.
+    - **Federation model**: use a hub-and-spoke model with MyAccessID as the central hub for trust and identity services.
+    - **Protocols**: support OpenID Connect (OIDC) and OAuth 2.0.
+    - **Federation membership**: join eduGAIN as a Service Provider, submit technical metadata, and meet security requirements.
+    - **Authentication**: enforce multi-factor authentication (MFA) for access to secure services.
 - Identity, collaboration, and claims:
-    - Project identity: assign a globally unique Project ID and grant access through membership in that project.
-    - Attribute exchange: use the AARC Blueprint model (AARC-G069) to express user roles and project membership across organisations.
-    - Cross-node use: when a user presents an access token from Node X to a service in Node Y, Node Y uses MyAccessID for token introspection.
-    - Researcher certification: track user training and certification as a "Researcher Passport" to support the "Safe People" principle.
-    - Transparency: publish a web page listing supported collaborations or projects, including URNs, status, and jurisdiction.
+    - **Project identity**: assign a globally unique Project ID and grant access through membership in that project.
+    - **Attribute exchange**: use the AARC Blueprint model (AARC-G069) to express user roles and project membership across organisations.
+    - **Cross-node use**: when a user presents an access token from Node X to a service in Node Y, Node Y uses MyAccessID for token introspection.
+    - **Researcher certification**: track user training and certification as a "Researcher Passport" to support the "Safe People" principle.
+    - **Transparency**: publish a web page listing supported collaborations or projects, including URNs, status, and jurisdiction.
 - Cross-TRE authorisation:
     - Each TRE keeps full control over its final authorisation decision.
     - Use the Project as the unit defining access scope: members, datasets, duration.
@@ -77,7 +77,7 @@ Federated AAAI provides a secure, consistent approach to identity, access, and a
     - TREs and federation services must send audit logs to the central ELK stack.
     - Use the standard audit model to answer who, what, when, and where during audits.
 
-### Worked example: running a workflow on data held in another TRE 
+### Worked Example: Running a Workflow on Data Held in Another TRE
 
 A researcher in TRE A wants to run an analysis workflow on a dataset held in TRE B. The query references an external workflow (a URL), so it uses the Query (Indirect) interface and exchanges a Job Request Object. 
 
@@ -92,7 +92,7 @@ A researcher in TRE A wants to run an analysis workflow on a dataset held in TRE
 
 To be confirmed with the authors: when the workflow is fetched (step 6) and exactly where Output Control applies (step 7). 
 
-## Builder checklist 
+## Builder Checklist
 
 - [ ] AAAI infrastructure compliant with the AARC Blueprint
 - [ ] OIDC and OAuth 2.0 supported
@@ -104,7 +104,7 @@ To be confirmed with the authors: when the workflow is fetched (step 6) and exac
 - [ ] Audit logs sent to the central ELK stack
 - [ ] Web page published listing supported collaborations and projects
 
-## Key standards at a glance 
+## Key Standards at a Glance
 
 | Standard or tool | What it is used for |
 | --- | --- |
