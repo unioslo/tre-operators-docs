@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="EOSC-ENTRUST Team" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>M3: Interface Definitions - TRE Operators Guide</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/home.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "M3: Interface Definitions";
+        var mkdocs_page_input_path = "modules/interfaces/index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> TRE Operators Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../relevance-matrix/">Relevance Matrix</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../fundamentals/">M1: TRE Fundamentals</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../architecture/">M2: Architecture</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">M3: Interface Definitions</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview-how-tres-connect">Overview: How TREs Connect</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#part-a-data-and-workflow-exchange-interfaces">Part A: Data and Workflow Exchange Interfaces</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#how-data-moves-between-tres">How Data Moves Between TREs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#packaging-structured-data">Packaging Structured Data</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#which-interface-do-i-need">Which Interface Do I Need?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#security-rules-that-apply-to-every-interface">Security Rules That Apply to Every Interface</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#part-b-federated-aaai">Part B: Federated AAAI</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#core-federation-requirements">Core Federation Requirements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#worked-example-running-a-workflow-on-data-held-in-another-tre">Worked Example: Running a Workflow on Data Held in Another TRE</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#builder-checklist">Builder Checklist</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#key-standards-at-a-glance">Key Standards at a Glance</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../procedures/">M4: Operating Procedures</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../legal/">M5: Template Legal Agreements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../federation/">M6: Federation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Appendices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/reference-terminology-dictionary/">Reference Dictionary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/reference-architecture/">Reference Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/copilot-acknowledgement/">Copilot Acknowledgement</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">TRE Operators Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">M3: Interface Definitions</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/unioslo/tre-operators-docs/edit/main/docs/modules/interfaces/index.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="module-3-interfaces-and-configuration-a-practical-guide">Module 3: Interfaces and Configuration: A Practical Guide</h1>
+<p class="tre-page-context tre-role-builder"><strong>Audience:</strong>TRE Builder</p>
+
+<p>Module 3 covers the two things a TRE needs in order to take part in the federation: a way to exchange data and workflows, and a way to establish trust. Part A, data and workflow exchange interfaces, defines how TREs send and receive information as standardised Structured Data Objects packaged as Five Safes RO-Crates and tagged with their Project context. It covers six interface types (Query, Job, Data, Index, Software, and Response), each connecting only to its matching counterpart. All traffic is encrypted and routed through each Participant's Security Server. Part B, federated AAAI, defines how identity, access, and auditing work across TREs. It builds on an AARC-compliant infrastructure with MyAccessID as the central trust hub, using OIDC and OAuth 2.0 for authentication, Project-based membership for access, and central ELK-based auditing for accountability. Each TRE keeps full control of its own final authorisation decision. Together, the two halves let a Builder move data and jobs between TREs while knowing who is asking, what they may do, and what has happened. </p>
+<h2 id="overview-how-tres-connect">Overview: How TREs Connect</h2>
+<p>Every TRE in the federation talks to other TREs only through its Security Server. Federation services provide identity (MyAccessID), auditing (ELK) and the registry. Objects move between the two Security Servers; both servers rely on the federation services for identity and auditing. </p>
+<p><img alt="2 TREs, Secucity Servers, Federation Services" src="../../images/tre-to-tre-interconnect.svg" /></p>
+<h2 id="part-a-data-and-workflow-exchange-interfaces">Part A: Data and Workflow Exchange Interfaces</h2>
+<h3 id="how-data-moves-between-tres">How Data Moves Between TREs</h3>
+<p>TREs exchange Structured Data Objects using well-defined interface types. Route all traffic to and from interface services through the Security Servers of the host Participant to ensure security and traceability. </p>
+<h3 id="packaging-structured-data">Packaging Structured Data</h3>
+<p>Always package objects exchanged between Participants in a standard way:</p>
+<ul>
+<li>Use the Five Safes RO-Crate standard for all structured data objects.</li>
+<li>Tag each object with metadata that indicates the Project context for traceability. </li>
+</ul>
+<h3 id="which-interface-do-i-need">Which Interface Do I Need?</h3>
+<p>Answer the questions in the decision flow below, starting from what you want to do. </p>
+<p><img alt="Interface decision flow, 6 questions" src="../../images/interface-type-decision.svg" /></p>
+<p>Work down the questions in order; the first yes tells you the interface type and the object you will exchange. </p>
+<table>
+<thead>
+<tr>
+<th>Interface type</th>
+<th>Use when</th>
+<th>Object exchanged</th>
+<th>Connects only to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Query (Direct)</td>
+<td>The query is fully contained in the payload (e.g. SQL)</td>
+<td>Query Object</td>
+<td>Query (Direct) services</td>
+</tr>
+<tr>
+<td>Query (Indirect)</td>
+<td>The query references an external executable artifact (e.g. a workflow URL)</td>
+<td>Job Request Object</td>
+<td>Query (Indirect) services</td>
+</tr>
+<tr>
+<td>Data Ingress / Egress</td>
+<td>Moving complete sensitive datasets or large extracts</td>
+<td>Data Extract Object</td>
+<td>Egress connects only to Ingress</td>
+</tr>
+<tr>
+<td>Index</td>
+<td>Exchanging lists of personal or depersonalised identifiers and master linkage spines</td>
+<td>Index Object</td>
+<td>Index services</td>
+</tr>
+<tr>
+<td>Software</td>
+<td>Downloading approved software artifacts from a Software Service</td>
+<td>Environment or Job Payload Artifact</td>
+<td>Software services</td>
+</tr>
+<tr>
+<td>Response</td>
+<td>Sending results or answers to queries</td>
+<td>Response Object</td>
+<td>Response services</td>
+</tr>
+</tbody>
+</table>
+<h3 id="security-rules-that-apply-to-every-interface">Security Rules That Apply to Every Interface</h3>
+<ul>
+<li>Route all interface traffic through Security Servers. </li>
+<li>Encrypt all data exchanges between Participants (data extracts, direct and indirect queries, and index data). </li>
+<li>Tag all objects with project metadata for traceability. </li>
+<li>Only Data Manager roles can invoke interfaces that expose sensitive metadata or data extracts. </li>
+</ul>
+<h2 id="part-b-federated-aaai">Part B: Federated AAAI</h2>
+<p>Federated AAAI provides a secure, consistent approach to identity, access, and auditing across multiple TREs. Users authenticate through the configured identity federation and receive access according to project membership and the TRE's authorisation rules. Users do not configure AAAI services. </p>
+<h3 id="core-federation-requirements">Core Federation Requirements</h3>
+<ul>
+<li>All EOSC Nodes, including TRE Providers, must:<ul>
+<li><strong>Architecture</strong>: run an AAAI infrastructure compliant with the AARC Blueprint.</li>
+<li><strong>Federation model</strong>: use a hub-and-spoke model with MyAccessID as the central hub for trust and identity services.</li>
+<li><strong>Protocols</strong>: support OpenID Connect (OIDC) and OAuth 2.0.</li>
+<li><strong>Federation membership</strong>: join eduGAIN as a Service Provider, submit technical metadata, and meet security requirements.</li>
+<li><strong>Authentication</strong>: enforce multi-factor authentication (MFA) for access to secure services.</li>
+</ul>
+</li>
+<li>Identity, collaboration, and claims:<ul>
+<li><strong>Project identity</strong>: assign a globally unique Project ID and grant access through membership in that project.</li>
+<li><strong>Attribute exchange</strong>: use the AARC Blueprint model (AARC-G069) to express user roles and project membership across organisations.</li>
+<li><strong>Cross-node use</strong>: when a user presents an access token from Node X to a service in Node Y, Node Y uses MyAccessID for token introspection.</li>
+<li><strong>Researcher certification</strong>: track user training and certification as a "Researcher Passport" to support the "Safe People" principle.</li>
+<li><strong>Transparency</strong>: publish a web page listing supported collaborations or projects, including URNs, status, and jurisdiction.</li>
+</ul>
+</li>
+<li>Cross-TRE authorisation:<ul>
+<li>Each TRE keeps full control over its final authorisation decision.</li>
+<li>Use the Project as the unit defining access scope: members, datasets, duration.</li>
+<li>Use OIDC UserInfo or OAuth 2.0 Token Introspection for general questions (for example, "Is this user a member of Project X?").</li>
+<li>For fine-grained rules, exchange request attributes (subject, object, action, environment) as JSON over REST APIs, define policies in ODRL or REGO, provide policy bundles as .tar.gz archives, and aggregate policies with Open Policy Agent (OPA) before deciding.</li>
+</ul>
+</li>
+<li>Auditing and accounting:<ul>
+<li>Use a central ELK Stack (Elasticsearch, Logstash, Kibana) as the federation's auditing and accounting service. TREs may also run local ELK instances.</li>
+<li>Submit all accounting data through an ELK-compatible API.</li>
+<li>TREs and federation services must send audit logs to the central ELK stack.</li>
+<li>Use the standard audit model to answer who, what, when, and where during audits.</li>
+</ul>
+</li>
+</ul>
+<h3 id="worked-example-running-a-workflow-on-data-held-in-another-tre">Worked Example: Running a Workflow on Data Held in Another TRE</h3>
+<p>A researcher in TRE A wants to run an analysis workflow on a dataset held in TRE B. The query references an external workflow (a URL), so it uses the Query (Indirect) interface and exchanges a Job Request Object. </p>
+<ol>
+<li>The researcher is authenticated. The researcher logs in to TRE A through the identity federation and passes MFA. Their access is tied to a registered Project with a globally unique Project ID, and their role and project membership are expressed as AARC-G069 claims.</li>
+<li>TRE A builds the Job Request Object. The job request is packaged as a Five Safes RO-Crate and tagged with the Project context.</li>
+<li>The request leaves TRE A through its Security Server. The object is encrypted and sent to the Query (Indirect) service of TRE B.</li>
+<li>TRE B checks who is asking. It validates the user's access token through MyAccessID token introspection.</li>
+<li>TRE B makes its own authorisation decision. It evaluates the request attributes against its policies using Open Policy Agent, combining federation-level and local rules.</li>
+<li>The job is approved and run. The request goes through the Job Approval process in TRE B's Query Management Zone, and the Job Executor runs the workflow next to the data.</li>
+<li>Results are checked and returned. Results go through Output Control, are packaged as a Response Object, and are returned through TRE B's Security Server to TRE A, encrypted and project-tagged.</li>
+<li>Everything is audited. Both TREs and the federation services send audit logs to the central ELK stack.</li>
+</ol>
+<p>To be confirmed with the authors: when the workflow is fetched (step 6) and exactly where Output Control applies (step 7). </p>
+<h2 id="builder-checklist">Builder Checklist</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> AAAI infrastructure compliant with the AARC Blueprint</li>
+<li class="task-list-item"><input type="checkbox" disabled/> OIDC and OAuth 2.0 supported</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Joined eduGAIN as a Service Provider</li>
+<li class="task-list-item"><input type="checkbox" disabled/> MFA enforced for secure services</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Globally unique Project IDs assigned</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Security Server in place for all interface traffic</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Required interfaces implemented and encrypted</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Audit logs sent to the central ELK stack</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Web page published listing supported collaborations and projects</li>
+</ul>
+<h2 id="key-standards-at-a-glance">Key Standards at a Glance</h2>
+<table>
+<thead>
+<tr>
+<th>Standard or tool</th>
+<th>What it is used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Five Safes RO-Crate</td>
+<td>Packaging structured data objects</td>
+</tr>
+<tr>
+<td>AARC Blueprint and AARC-G069</td>
+<td>Federated AAI architecture and role/membership claims</td>
+</tr>
+<tr>
+<td>MyAccessID</td>
+<td>Central trust and identity hub</td>
+</tr>
+<tr>
+<td>eduGAIN</td>
+<td>Identity federation membership</td>
+</tr>
+<tr>
+<td>OIDC and OAuth 2.0</td>
+<td>Authentication and token-based access</td>
+</tr>
+<tr>
+<td>ODRL and REGO</td>
+<td>Policy languages for fine-grained authorisation</td>
+</tr>
+<tr>
+<td>Open Policy Agent (OPA)</td>
+<td>Aggregating policies and making the decision</td>
+</tr>
+<tr>
+<td>ELK Stack</td>
+<td>Central auditing and accounting</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../architecture/" class="btn btn-neutral float-left" title="M2: Architecture"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../procedures/" class="btn btn-neutral float-right" title="M4: Operating Procedures">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/unioslo/tre-operators-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../architecture/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../procedures/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

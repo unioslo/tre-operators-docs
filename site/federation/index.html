@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="EOSC-ENTRUST Team" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>M6: Federation - TRE Operators Guide</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../stylesheets/home.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "M6: Federation";
+        var mkdocs_page_input_path = "federation.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> TRE Operators Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../relevance-matrix/">Relevance Matrix</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../fundamentals/">M1: TRE Fundamentals</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../modules/architecture/">M2: Architecture</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../modules/interfaces/">M3: Interface Definitions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../modules/procedures/">M4: Operating Procedures</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../modules/legal/">M5: Template Legal Agreements</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">M6: Federation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#security-server-ss">Security Server (SS)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#federation-registry-services">Federation Registry Services</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#trust-services-and-aaai">Trust Services and AAAI</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Appendices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../appendices/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appendices/reference-terminology-dictionary/">Reference Dictionary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appendices/reference-architecture/">Reference Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appendices/resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appendices/copilot-acknowledgement/">Copilot Acknowledgement</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">TRE Operators Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">M6: Federation</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/unioslo/tre-operators-docs/edit/main/docs/federation.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="module-6-federation-collaboration">Module 6: Federation &amp; Collaboration</h1>
+<p class="tre-page-context tre-role-builder"><strong>Audience:</strong>TRE Builder</p>
+
+<p>Core Services define the Federation and provide common functions for coordinated and secure operation.</p>
+<h2 id="security-server-ss">Security Server (SS)</h2>
+<p>Every Federation Participant runs a standard Security Server, which acts as the secure gateway for all inter-TRE traffic.</p>
+<ul>
+<li>Deploy a standard Security Server for each Federation Participant.</li>
+<li>Configure Security Servers according to the approved global settings.</li>
+<li>Security Servers continue operating independently if control-plane connectivity to Federation Management Services is interrupted.</li>
+</ul>
+<h2 id="federation-registry-services">Federation Registry Services</h2>
+<p>Registry services record information about the Federation's elements. Register all Projects with the Federation Registry.</p>
+<p>The Registry records information in three categories:</p>
+<ol>
+<li>Infrastructure Metadata: Describe Participants and log operational data.</li>
+<li>Content Metadata (Dataset Metadata): Record catalogue-level information about datasets, such as Data Controller, name, and time coverage.</li>
+<li>Governance Metadata: Track users and activities, including Project metadata (title, host TRE, duration, authorised members) and User metadata (affiliation, accreditation status, training records).</li>
+</ol>
+<h2 id="trust-services-and-aaai">Trust Services and AAAI</h2>
+<p>Trust services secure the data exchange layer and support confidentiality, integrity, non-repudiation, and availability.</p>
+<ul>
+<li>The Project defines the authorisation context, links Project Members to the data they can use, and specifies the host TRE.</li>
+<li>Assign globally recognizable and unique Federation Identities to Projects, Project Members, and Datasets.</li>
+<li>Train or accredit all users of sensitive data to an acceptable level ("Safe People").</li>
+</ul>
+<p>For definitions of federation-related terms, see the <a href="../appendices/glossary/">Glossary</a>. For architectural details, see <a href="../appendices/reference-architecture/">Reference Architecture</a>.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../modules/legal/" class="btn btn-neutral float-left" title="M5: Template Legal Agreements"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../appendices/glossary/" class="btn btn-neutral float-right" title="Glossary">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/unioslo/tre-operators-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../modules/legal/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../appendices/glossary/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

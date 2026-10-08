@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="EOSC-ENTRUST Team" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Relevance Matrix - TRE Operators Guide</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../stylesheets/home.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Relevance Matrix";
+        var mkdocs_page_input_path = "relevance-matrix.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> TRE Operators Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Relevance Matrix</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-read-this-matrix">How to Read This Matrix</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#relevance">Relevance</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tre-types">TRE Types</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#roles-and-responsibilities">Roles and Responsibilities</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#core-tre">Core TRE</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#m1-fundamentals">M1 Fundamentals</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#m2-architecture-and-setup">M2 Architecture and Setup</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#m3-interfaces-and-configuration">M3 Interfaces and Configuration</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#m4-operations-and-procedures">M4 Operations and Procedures</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#m5-legal-and-compliance">M5 Legal and Compliance</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#federated-tre">Federated TRE</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#m6-federation">M6 Federation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#content-categories">Content Categories</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../fundamentals/">M1: TRE Fundamentals</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../modules/architecture/">M2: Architecture</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../modules/interfaces/">M3: Interface Definitions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../modules/procedures/">M4: Operating Procedures</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../modules/legal/">M5: Template Legal Agreements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../federation/">M6: Federation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Appendices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../appendices/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appendices/reference-terminology-dictionary/">Reference Dictionary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appendices/reference-architecture/">Reference Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appendices/resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../appendices/copilot-acknowledgement/">Copilot Acknowledgement</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">TRE Operators Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Relevance Matrix</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/unioslo/tre-operators-docs/edit/main/docs/relevance-matrix.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="relevance-matrix">Relevance Matrix</h1>
+<p>This matrix shows which parts of the handbook matter for each type of TRE and role. Use it to plan a reading path: find your TRE type and role, then work through the topics marked ● first.</p>
+<p>The handbook is split into two scopes:</p>
+<ul>
+<li><strong>Core TRE — Modules 1 to 5.</strong> Everything needed to run a TRE on its own, whether or not it joins a federation.</li>
+<li><strong>Federated TRE — Module 6.</strong> Additional obligations that apply when a TRE connects to other TREs through the federation.</li>
+</ul>
+<h2 id="how-to-read-this-matrix">How to Read This Matrix</h2>
+<h3 id="relevance">Relevance</h3>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>●</td>
+<td>Relevant. Expected reading for this TRE type or role.</td>
+</tr>
+<tr>
+<td>○</td>
+<td>Informative, or relevant only for specific implementations.</td>
+</tr>
+<tr>
+<td><em>(blank)</em></td>
+<td>Not relevant.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tre-types">TRE Types</h3>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>TRE type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ORG</strong></td>
+<td>Organisational TRE — operated by and for a single institution.</td>
+</tr>
+<tr>
+<td><strong>NAT</strong></td>
+<td>National TRE — operated at national scale, typically serving registry and health data.</td>
+</tr>
+<tr>
+<td><strong>FED</strong></td>
+<td>Federated TRE — connected to other TREs through the federation.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="roles-and-responsibilities">Roles and Responsibilities</h3>
+<p>Role names follow the terminology used elsewhere in this handbook. Security architecture and configuration are shown under TRE Builder; day-to-day operations and incident response are shown under TRE Operator.</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OPS</strong></td>
+<td>TRE Operator</td>
+<td>Day-to-day operations, monitoring, incident response, and user support.</td>
+</tr>
+<tr>
+<td><strong>BLD</strong></td>
+<td>TRE Builder</td>
+<td>Infrastructure, security architecture and controls, interface and AAAI configuration.</td>
+</tr>
+<tr>
+<td><strong>DAT</strong></td>
+<td>Data Manager</td>
+<td>Data ingress, curation, linkage, and egress preparation.</td>
+</tr>
+<tr>
+<td><strong>GOV</strong></td>
+<td>TRE / Federation Governance</td>
+<td>Legal and compliance decisions, policy, access approvals, and multi-party coordination.</td>
+</tr>
+<tr>
+<td><strong>OUT</strong></td>
+<td>Output Approver</td>
+<td>Disclosure control and oversight of output release.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="core-tre">Core TRE</h2>
+<p>Modules 1 to 5 apply to every TRE, federated or not.</p>
+<h3 id="m1-fundamentals">M1 Fundamentals</h3>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Category</th>
+<th style="text-align: center;">ORG</th>
+<th style="text-align: center;">NAT</th>
+<th style="text-align: center;">FED</th>
+<th style="text-align: center;">OPS</th>
+<th style="text-align: center;">BLD</th>
+<th style="text-align: center;">DAT</th>
+<th style="text-align: center;">GOV</th>
+<th style="text-align: center;">OUT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TRE concepts and principles</td>
+<td>core</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+</tr>
+<tr>
+<td>Roles and responsibilities</td>
+<td>core</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+</tr>
+</tbody>
+</table>
+<h3 id="m2-architecture-and-setup">M2 Architecture and Setup</h3>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Category</th>
+<th style="text-align: center;">ORG</th>
+<th style="text-align: center;">NAT</th>
+<th style="text-align: center;">FED</th>
+<th style="text-align: center;">OPS</th>
+<th style="text-align: center;">BLD</th>
+<th style="text-align: center;">DAT</th>
+<th style="text-align: center;">GOV</th>
+<th style="text-align: center;">OUT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TRE architecture and zones</td>
+<td>core</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Interface, IAM and AAI</td>
+<td>core / advanced</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Monitoring and audit</td>
+<td>core</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="m3-interfaces-and-configuration">M3 Interfaces and Configuration</h3>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Category</th>
+<th style="text-align: center;">ORG</th>
+<th style="text-align: center;">NAT</th>
+<th style="text-align: center;">FED</th>
+<th style="text-align: center;">OPS</th>
+<th style="text-align: center;">BLD</th>
+<th style="text-align: center;">DAT</th>
+<th style="text-align: center;">GOV</th>
+<th style="text-align: center;">OUT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data ingress and egress</td>
+<td>core</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+</tr>
+<tr>
+<td>Query and response interfaces</td>
+<td>advanced</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Software interfaces</td>
+<td>advanced</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="m4-operations-and-procedures">M4 Operations and Procedures</h3>
+<p>Module 4 follows the <strong>TRE project operational lifecycle</strong>: a project is taken on, given what it needs to work, operated, has its results checked and released, and is finally closed down. Incident and change management are not a stage; they run across all of them.</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Topic</th>
+<th>Category</th>
+<th style="text-align: center;">ORG</th>
+<th style="text-align: center;">NAT</th>
+<th style="text-align: center;">FED</th>
+<th style="text-align: center;">OPS</th>
+<th style="text-align: center;">BLD</th>
+<th style="text-align: center;">DAT</th>
+<th style="text-align: center;">GOV</th>
+<th style="text-align: center;">OUT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Intake</td>
+<td>User and project onboarding</td>
+<td>core</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>2. Provisioning</td>
+<td>Data and software operations</td>
+<td>core</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>3. Release</td>
+<td>Output checking and SDC</td>
+<td>core</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+</tr>
+<tr>
+<td>4. Closure</td>
+<td>Project closure, retention and deletion</td>
+<td>core</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><em>Throughout</em></td>
+<td>Incident and change management</td>
+<td>core</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="m5-legal-and-compliance">M5 Legal and Compliance</h3>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Category</th>
+<th style="text-align: center;">ORG</th>
+<th style="text-align: center;">NAT</th>
+<th style="text-align: center;">FED</th>
+<th style="text-align: center;">OPS</th>
+<th style="text-align: center;">BLD</th>
+<th style="text-align: center;">DAT</th>
+<th style="text-align: center;">GOV</th>
+<th style="text-align: center;">OUT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Legal and governance responsibilities</td>
+<td>core</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>EHDS and domain-specific requirements</td>
+<td>advanced</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="federated-tre">Federated TRE</h2>
+<p>Module 6 applies only to a TRE that connects to other TREs. An organisational TRE that operates on its own can treat this module as background reading.</p>
+<h3 id="m6-federation">M6 Federation</h3>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Category</th>
+<th style="text-align: center;">ORG</th>
+<th style="text-align: center;">NAT</th>
+<th style="text-align: center;">FED</th>
+<th style="text-align: center;">OPS</th>
+<th style="text-align: center;">BLD</th>
+<th style="text-align: center;">DAT</th>
+<th style="text-align: center;">GOV</th>
+<th style="text-align: center;">OUT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Federation governance</td>
+<td>federated</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Federation trust, registry and AAI</td>
+<td>federated</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>Federation incident coordination</td>
+<td>federated</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-categories">Content Categories</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>core</strong></td>
+<td>Baseline material. Every TRE operator needs it.</td>
+</tr>
+<tr>
+<td><strong>advanced</strong></td>
+<td>Needed for a specific capability or implementation choice.</td>
+</tr>
+<tr>
+<td><strong>federated</strong></td>
+<td>Applies once the TRE joins a federation.</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../fundamentals/" class="btn btn-neutral float-right" title="M1: TRE Fundamentals">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/unioslo/tre-operators-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../fundamentals/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

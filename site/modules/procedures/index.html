@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="EOSC-ENTRUST Team" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>M4: Operating Procedures - TRE Operators Guide</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/home.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "M4: Operating Procedures";
+        var mkdocs_page_input_path = "modules/procedures/index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> TRE Operators Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../relevance-matrix/">Relevance Matrix</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../fundamentals/">M1: TRE Fundamentals</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../architecture/">M2: Architecture</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../interfaces/">M3: Interface Definitions</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">M4: Operating Procedures</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#the-need-for-standardisation">The Need for Standardisation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#user-handling-and-training">User Handling and Training</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#core-user-roles">Core User Roles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#training-and-certification">Training and Certification</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#data-access-requests">Data Access Requests</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#software-management">Software Management</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#statistical-disclosure-control-sdc-output-release">Statistical Disclosure Control (SDC) &amp; Output Release</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#terminology-and-focus-shift">Terminology and Focus Shift</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#output-approver-roles">Output Approver Roles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#output-for-federation-vs-outside-world">Output for Federation vs Outside World</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#credit-attribution">Credit Attribution</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#risk-management-service-alignment">Risk Management &amp; Service Alignment</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#security-and-control">Security and Control</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#it-service-management-itsm-standards">IT Service Management (ITSM) Standards</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#compliance-and-certification">Compliance and Certification</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#data-protection">Data Protection</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#data-deletion-and-archiving-policies">Data Deletion and Archiving Policies</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#timely-data-deletion">Timely Data Deletion</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#archiving-for-reproducibility">Archiving for Reproducibility</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../legal/">M5: Template Legal Agreements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../federation/">M6: Federation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Appendices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/reference-terminology-dictionary/">Reference Dictionary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/reference-architecture/">Reference Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/copilot-acknowledgement/">Copilot Acknowledgement</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">TRE Operators Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">M4: Operating Procedures</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/unioslo/tre-operators-docs/edit/main/docs/modules/procedures/index.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="module-4-operations-procedures">Module 4: Operations &amp; Procedures</h1>
+<p class="tre-page-context tre-role-operator"><strong>Audience:</strong>TRE Operator</p>
+
+<p>This module defines consensus-based Standard Operating Procedures (SOPs) required for operational alignment across the federation.</p>
+<hr />
+<h2 id="the-need-for-standardisation">The Need for Standardisation</h2>
+<p>The federation must enforce consistent workflows across all TRE governance actors. SOPs should cover:</p>
+<ul>
+<li>Interoperability standards, service onboarding, change management, and incident response.</li>
+<li>A user journey that supports non-linear analysis: researchers may refine analyses, request new software, or add data sources after project start.</li>
+<li>Coordination of multi-party agreements, federated queries, and ad-hoc Data Access Committees (DACs) by the federation governance actor.</li>
+</ul>
+<hr />
+<h2 id="user-handling-and-training">User Handling and Training</h2>
+<p>Operating procedures must manage the entire user lifecycle, ensuring access only by authorized and certified individuals.</p>
+<h3 id="core-user-roles">Core User Roles</h3>
+<ol>
+<li>User: accesses the approved workspace, conducts analyses, and requests software or output release.</li>
+<li>Operator / Governance: handles day-to-day operations, manages project spaces, prepares data, installs approved software, and performs SDC.</li>
+<li>Data Holder (Data Controller): assesses access requests and supplies data.</li>
+<li>Federation Governance: coordinates multi-party agreements and federated queries.</li>
+</ol>
+<p>Infrastructure construction, 5S-TES installation, and AAAI service configuration are builder responsibilities, separate from routine operator duties.</p>
+<h3 id="training-and-certification">Training and Certification</h3>
+<p>To implement the “Safe People” principle:</p>
+<ul>
+<li>All users must complete mandatory training covering project spaces, statistical disclosure control (SDC), and data access policies.</li>
+<li>Maintain an electronic record (or “Researcher Passport”) linked to the AAAI system for interoperability across the network.</li>
+<li>Ensure users understand their ethical responsibilities, either via the TRE or their home organisation.</li>
+</ul>
+<h3 id="data-access-requests">Data Access Requests</h3>
+<p>SOPs must standardise the fragmented access-request process:</p>
+<ul>
+<li>Establish a unified process supporting cross-TRE data requests.</li>
+<li>A single point of access should funnel requests to relevant TREs via federation governance.</li>
+<li>Coordinate signing of multiple Data Use Agreements (DUAs) through federation governance to streamline researcher workflows.</li>
+</ul>
+<hr />
+<h2 id="software-management">Software Management</h2>
+<p>Define clear procedures for software provisioning while maintaining security controls:</p>
+<ul>
+<li>Operators must be authorised to invoke software interface services.</li>
+<li>SOPs must describe how Researchers request additional software. In mature TREs, software installation is handled by TRE staff.</li>
+<li>Prefer downloading Environment Software Artifacts via federation software services.</li>
+</ul>
+<hr />
+<h2 id="statistical-disclosure-control-sdc-output-release">Statistical Disclosure Control (SDC) &amp; Output Release</h2>
+<p>This module outlines the process for output checking and SDC application before any result release.</p>
+<h3 id="terminology-and-focus-shift">Terminology and Focus Shift</h3>
+<p>Replace the concept of simple “export” with full SDC application. All result outputs <strong>must</strong> pass SDC checks before release to eliminate residual disclosure risk.</p>
+<h3 id="output-approver-roles">Output Approver Roles</h3>
+<p>The Output Approver oversees all research outputs leaving the TRE:</p>
+<ul>
+<li>In the ENTRUST RAZ model, the Principal Investigator (PI) acts as Output Approver to reduce bottlenecks and clarify legal responsibility.</li>
+<li>The Data Controller retains legal decision-making authority under GDPR.</li>
+<li>TRE Governance performs SDC checks using a rules-based, triaged approach.</li>
+</ul>
+<h3 id="output-for-federation-vs-outside-world">Output for Federation vs Outside World</h3>
+<ul>
+<li><strong>Within the federation:</strong> Response Objects (query results) may be classified “SDC amber” and exchanged between participants under the federation’s closed, trusted environment.</li>
+<li><strong>Outside the federation:</strong> Outputs destined for publication must pass the project’s approved disclosure-control process and undergo Output Control oversight.</li>
+</ul>
+<h3 id="credit-attribution">Credit Attribution</h3>
+<p>SOPs must ensure accurate credit to original data generators and enforce data citation (for example via DOIs).</p>
+<hr />
+<h2 id="risk-management-service-alignment">Risk Management &amp; Service Alignment</h2>
+<p>Operational procedures must safeguard service security, resilience, and quality through robust frameworks.</p>
+<h3 id="security-and-control">Security and Control</h3>
+<ul>
+<li>All data exchanges (extracts, queries, results, index data) must be encrypted to ensure confidentiality and integrity.</li>
+<li>TREs must secure data access through systems like AAAI, SSO, and multi-factor authentication.</li>
+<li>Project environments must be strictly isolated.</li>
+<li>Each participant must run a Security Server (SS) that remains operable even if disconnected from central management.</li>
+</ul>
+<h3 id="it-service-management-itsm-standards">IT Service Management (ITSM) Standards</h3>
+<ul>
+<li>TREs must implement an efficient Service Management System (SMS) to manage security components.</li>
+<li>Adoption of standards such as FitSM is recommended to support the federated service delivery model.</li>
+</ul>
+<h3 id="compliance-and-certification">Compliance and Certification</h3>
+<ul>
+<li>TREs should pursue formal certifications (e.g., ISO / IEC 27001) to demonstrate strong information-security management.</li>
+<li>SOPs must address compliance with national legal frameworks governing data sharing.</li>
+</ul>
+<h3 id="data-protection">Data Protection</h3>
+<ul>
+<li>Minimize data collection and storage in line with GDPR principles.</li>
+<li>Implement encryption both in transit and at rest.</li>
+<li>Apply Privacy-by-Design to embed user data protection from system inception.</li>
+</ul>
+<hr />
+<h2 id="data-deletion-and-archiving-policies">Data Deletion and Archiving Policies</h2>
+<p>Define procedures for managing data at the end of a project lifecycle to ensure legal compliance and reproducibility.</p>
+<h3 id="timely-data-deletion">Timely Data Deletion</h3>
+<ul>
+<li>TREs must implement mechanisms to delete user data once its authorised retention period expires or when required by the data provider.</li>
+<li>Project environments must have a defined finite duration in the metadata.</li>
+</ul>
+<h3 id="archiving-for-reproducibility">Archiving for Reproducibility</h3>
+<ul>
+<li>Instead of closing projects outright, TREs should archive project spaces to allow reinstatement (e.g., for peer review follow-up).</li>
+<li>Archive project analysis environments, code, and intermediate results via the Software Service.</li>
+<li>For certain datasets (especially clinical regulatory ones), implement long-term digital archiving and formal curation.</li>
+<li>Each TRE must publish a clear archival policy outlining retention and recovery conditions.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../interfaces/" class="btn btn-neutral float-left" title="M3: Interface Definitions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../legal/" class="btn btn-neutral float-right" title="M5: Template Legal Agreements">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/unioslo/tre-operators-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../interfaces/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../legal/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -126,6 +126,8 @@
 
 ## Modules
 
+Use the [Relevance Matrix](relevance-matrix.md) to choose a reading path by TRE type and role.
+
 The guide uses three simple roles: **TRE User**, **TRE Operator**, and **TRE Builder**.
 
 | Role | Main responsibility |

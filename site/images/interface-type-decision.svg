@@ -1,0 +1,85 @@
+<svg viewBox="0 0 900 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="interface-decision-title interface-decision-desc" font-family="Raleway, sans-serif">
+  <title id="interface-decision-title">Picking the interface type by the first question you can answer yes to</title>
+  <desc id="interface-decision-desc">A decision list worked through from the top. Are you sending results or answers to a query? If yes, use a Response, carrying a response object. Is the query fully contained in the payload? If yes, use a direct Query, carrying a query object. Does the query reference an external workflow? If yes, use an indirect Query, carrying a job request object. Are you moving a full dataset or a large extract? If yes, use data egress or ingress, carrying a data extract object. Are you exchanging identifiers or linkage spines? If yes, use Index, carrying an index object. Are you downloading approved software? If yes, use Software, carrying an environment or job payload artifact.</desc>
+
+  <defs>
+    <marker id="arrow"
+            viewBox="0 0 10 10"
+            refX="9"
+            refY="5"
+            markerWidth="7"
+            markerHeight="7"
+            orient="auto"
+            markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#005095"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="578" fill="#ffffff"/>
+
+  <text x="25" y="32" font-size="15" font-family="Montserrat, sans-serif" font-weight="600" fill="#005095">Pick the interface type by the first question you can answer yes to</text>
+
+  <!-- 1. Response -->
+  <rect x="25" y="70" width="450" height="52" rx="8" fill="#ffffff" stroke="#005095" stroke-width="1.5"/>
+  <text x="45" y="100" font-size="11.5" fill="#040305">Are you sending results or answers to a query?</text>
+  <text x="520" y="83" text-anchor="middle" font-size="10" fill="#4a4a4a">yes</text>
+  <line x1="476.5" y1="96" x2="563.5" y2="96" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="565" y="65" width="310" height="62" rx="8" fill="#f5f5f5" stroke="#005095" stroke-width="2.25"/>
+  <text x="720" y="92" text-anchor="middle" font-size="12.5" font-family="Montserrat, sans-serif" font-weight="600" fill="#040305">Response</text>
+  <text x="720" y="111" text-anchor="middle" font-size="10" fill="#4a4a4a">Response Object</text>
+  <text x="262" y="145" font-size="10" fill="#4a4a4a">no</text>
+  <line x1="250" y1="123" x2="250" y2="154.5" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 2. Query (direct) -->
+  <rect x="25" y="156" width="450" height="52" rx="8" fill="#ffffff" stroke="#005095" stroke-width="1.5"/>
+  <text x="45" y="186" font-size="11.5" fill="#040305">Is the query fully contained in the payload?</text>
+  <text x="520" y="169" text-anchor="middle" font-size="10" fill="#4a4a4a">yes</text>
+  <line x1="476.5" y1="182" x2="563.5" y2="182" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="565" y="151" width="310" height="62" rx="8" fill="#f5f5f5" stroke="#005095" stroke-width="2.25"/>
+  <text x="720" y="178" text-anchor="middle" font-size="12.5" font-family="Montserrat, sans-serif" font-weight="600" fill="#040305">Query (direct)</text>
+  <text x="720" y="197" text-anchor="middle" font-size="10" fill="#4a4a4a">Query Object</text>
+  <text x="262" y="231" font-size="10" fill="#4a4a4a">no</text>
+  <line x1="250" y1="209" x2="250" y2="240.5" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 3. Query (indirect) -->
+  <rect x="25" y="242" width="450" height="52" rx="8" fill="#ffffff" stroke="#005095" stroke-width="1.5"/>
+  <text x="45" y="272" font-size="11.5" fill="#040305">Does the query reference an external workflow?</text>
+  <text x="520" y="255" text-anchor="middle" font-size="10" fill="#4a4a4a">yes</text>
+  <line x1="476.5" y1="268" x2="563.5" y2="268" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="565" y="237" width="310" height="62" rx="8" fill="#f5f5f5" stroke="#005095" stroke-width="2.25"/>
+  <text x="720" y="264" text-anchor="middle" font-size="12.5" font-family="Montserrat, sans-serif" font-weight="600" fill="#040305">Query (indirect)</text>
+  <text x="720" y="283" text-anchor="middle" font-size="10" fill="#4a4a4a">Job Request Object</text>
+  <text x="262" y="317" font-size="10" fill="#4a4a4a">no</text>
+  <line x1="250" y1="295" x2="250" y2="326.5" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 4. Data egress and ingress -->
+  <rect x="25" y="328" width="450" height="52" rx="8" fill="#ffffff" stroke="#005095" stroke-width="1.5"/>
+  <text x="45" y="358" font-size="11.5" fill="#040305">Moving a full dataset or a large extract?</text>
+  <text x="520" y="341" text-anchor="middle" font-size="10" fill="#4a4a4a">yes</text>
+  <line x1="476.5" y1="354" x2="563.5" y2="354" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="565" y="323" width="310" height="62" rx="8" fill="#f5f5f5" stroke="#005095" stroke-width="2.25"/>
+  <text x="720" y="350" text-anchor="middle" font-size="12.5" font-family="Montserrat, sans-serif" font-weight="600" fill="#040305">Data egress / ingress</text>
+  <text x="720" y="369" text-anchor="middle" font-size="10" fill="#4a4a4a">Data Extract Object</text>
+  <text x="262" y="403" font-size="10" fill="#4a4a4a">no</text>
+  <line x1="250" y1="381" x2="250" y2="412.5" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 5. Index -->
+  <rect x="25" y="414" width="450" height="52" rx="8" fill="#ffffff" stroke="#005095" stroke-width="1.5"/>
+  <text x="45" y="444" font-size="11.5" fill="#040305">Exchanging identifiers or linkage spines?</text>
+  <text x="520" y="427" text-anchor="middle" font-size="10" fill="#4a4a4a">yes</text>
+  <line x1="476.5" y1="440" x2="563.5" y2="440" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="565" y="409" width="310" height="62" rx="8" fill="#f5f5f5" stroke="#005095" stroke-width="2.25"/>
+  <text x="720" y="436" text-anchor="middle" font-size="12.5" font-family="Montserrat, sans-serif" font-weight="600" fill="#040305">Index</text>
+  <text x="720" y="455" text-anchor="middle" font-size="10" fill="#4a4a4a">Index Object</text>
+  <text x="262" y="489" font-size="10" fill="#4a4a4a">no</text>
+  <line x1="250" y1="467" x2="250" y2="498.5" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 6. Software -->
+  <rect x="25" y="500" width="450" height="52" rx="8" fill="#ffffff" stroke="#005095" stroke-width="1.5"/>
+  <text x="45" y="530" font-size="11.5" fill="#040305">Downloading approved software?</text>
+  <text x="520" y="513" text-anchor="middle" font-size="10" fill="#4a4a4a">yes</text>
+  <line x1="476.5" y1="526" x2="563.5" y2="526" stroke="#005095" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="565" y="495" width="310" height="62" rx="8" fill="#f5f5f5" stroke="#005095" stroke-width="2.25"/>
+  <text x="720" y="522" text-anchor="middle" font-size="12.5" font-family="Montserrat, sans-serif" font-weight="600" fill="#040305">Software</text>
+  <text x="720" y="541" text-anchor="middle" font-size="10" fill="#4a4a4a">Environment or Job Payload Artifact</text>
+</svg>

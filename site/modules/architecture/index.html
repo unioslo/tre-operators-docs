@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="EOSC-ENTRUST Team" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>M2: Architecture - TRE Operators Guide</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/home.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "M2: Architecture";
+        var mkdocs_page_input_path = "modules/architecture/index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> TRE Operators Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../relevance-matrix/">Relevance Matrix</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../fundamentals/">M1: TRE Fundamentals</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">M2: Architecture</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#design-philosophy">Design Philosophy</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#federation-participants">Federation Participants</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#federation-participants_1">Federation Participants</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#interoperability-requirement">Interoperability Requirement</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#zones">Zones</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tre-functional-zones-raz-sdz-and-qmz">TRE Functional Zones: RAZ, SDZ, and QMZ</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#research-analytics-zone-raz">Research Analytics Zone (RAZ)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#secure-data-zone-sdz">Secure Data Zone (SDZ)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#query-management-zone-qmz">Query Management Zone (QMZ)</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tre-architecture">TRE Architecture</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#generalized-aaa-architecture-in-a-tre">Generalized AAA Architecture in a TRE</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#authentication">Authentication</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#authorization">Authorization</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#auditing">Auditing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#key-architectural-components-and-integration-points">Key Architectural Components and Integration Points</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../interfaces/">M3: Interface Definitions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../procedures/">M4: Operating Procedures</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../legal/">M5: Template Legal Agreements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../federation/">M6: Federation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Appendices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/reference-terminology-dictionary/">Reference Dictionary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/reference-architecture/">Reference Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../appendices/copilot-acknowledgement/">Copilot Acknowledgement</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">TRE Operators Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">M2: Architecture</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/unioslo/tre-operators-docs/edit/main/docs/modules/architecture/index.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="module-2-architecture-setup">Module 2: Architecture &amp; setup</h1>
+<p class="tre-page-context tre-role-builder"><strong>Audience:</strong> TRE Builder</p>
+
+<p>This section introduces the infrastructure layer of the ENTRUST Blueprint, detailing the Participants and the minimal requirements for creating a trustworthy federation.</p>
+<h2 id="design-philosophy">Design Philosophy</h2>
+<p>The architecture follows the principle of <strong>"start from where you are"</strong> and proposes the <strong>minimum necessary new infrastructure</strong> required to connect TREs. It is explicitly a "back end" architecture; researchers interact only with TREs, not the Federation infrastructure directly.
+The architecture is part of the ENTRUST Blueprint, which describes <strong>the minimal requirements</strong> for joining a federation of TREs. It does not prescribe a single technology stack or ask providers to replace what they already operate. Instead, it defines the capabilities, roles, and interfaces that every participating TRE must support, so that existing environments can interoperate without being rebuilt.
+The architecture has been validated and revised against the requirements of the ENTRUST Driver use cases. Gaps and additional needs identified during that validation were fed back into the current specification, so the design <strong>reflects practical implementation experience</strong> rather than theory alone.
+Federation depends on participants trusting each other's decisions about who a user is, what they may do, and what has happened. The architecture therefore centres on <strong>a common Authentication, Authorization, and Auditing Infrastructure (AAAI)</strong>, together with defined interfaces for exchanging data objects between federation participants.
+Where appropriate, the architecture is aligned with ongoing developments in the European Health Data Space (<strong>EHDS</strong>) and the European Open Science Cloud (<strong>EOSC</strong>). For example, the Research Analytics Zone is comparable to the EHDS Secure Processing Environment.
+The design is intended as a foundation for future scaling, alignment with domain-specific initiatives, and long-term sustainability of the EOSC-ENTRUST framework. It is an evolving specification: this version is the second iteration, and later versions will build on feedback from implementers.</p>
+<h2 id="federation-participants">Federation Participants</h2>
+<p>Participants are the strategic capabilities forming the federation network.</p>
+<h3 id="federation-participants_1">Federation Participants</h3>
+<ul>
+<li>
+<p><strong>Trusted Research Environment (TRE)</strong></p>
+<ul>
+<li><em>Function</em>: Primary vehicle for delivering sensitive data to researchers in a secure, controlled, and approved manner.</li>
+<li><em>Key Components</em>: Research Analytics Zone (RAZ), Secure Data Zone (SDZ), Query Management Zone (QMZ).</li>
+</ul>
+</li>
+<li>
+<p><strong>Index Service</strong></p>
+<ul>
+<li><em>Function</em>: Creates linkage spines to link distinct datasets at the individual level, enabling authorized joint datasets.</li>
+<li><em>Key Components</em>: Pseudonymization service, Linkage spines registry.</li>
+</ul>
+</li>
+<li>
+<p><strong>Software Service</strong></p>
+<ul>
+<li><em>Function</em>: Provides approved software artifacts, including environment configurations and research artifacts (workflows, containers).</li>
+<li><em>Key Components</em>: Environment Artifacts, Research Artifacts.</li>
+</ul>
+</li>
+<li>
+<p><strong>Discovery Service</strong></p>
+<ul>
+<li><em>Function</em>: Provides information (metadata) about features of the Federation to users outside the Federation, potentially querying the Registry.</li>
+<li><em>Key Components</em>: Output Control process.</li>
+</ul>
+</li>
+<li>
+<p><strong>Job Submission Service</strong></p>
+<ul>
+<li><em>Function</em>: Receives job requests (indirect queries) from researchers and manages forwarding and result handling.</li>
+<li><em>Key Components</em>: Job Approval process, Output Control process.</li>
+</ul>
+</li>
+<li>
+<p><strong>Federation Services</strong></p>
+<ul>
+<li><em>Function</em>: Provides coordinating functions: Registry, Trust, Accounting, Management, and Monitoring.</li>
+<li><em>Key Components</em>: AAAI Capability, Registry.</li>
+</ul>
+</li>
+</ul>
+<h2 id="interoperability-requirement">Interoperability Requirement</h2>
+<p>Maintain integrity, non-repudiation, and traceability in the federation. Register all Projects with the Federation's Registry services, and assign globally recognizable and unique Project Identities.</p>
+<p>For the definition and core characteristics of a Trusted Research Environment (TRE), see <a href="../../fundamentals/">TRE Fundamentals</a>.</p>
+<h2 id="zones">Zones</h2>
+<h3 id="tre-functional-zones-raz-sdz-and-qmz">TRE Functional Zones: RAZ, SDZ, and QMZ</h3>
+<p>The TRE model is divided into three functional zones, reflecting different governance and security contexts. A TRE may contain one or more of these zones.</p>
+<h4 id="research-analytics-zone-raz">Research Analytics Zone (RAZ)</h4>
+<p>The RAZ provides the environment for Project Members to access approved data for analysis.
+Include one or more Project Environments in the RAZ. If the RAZ supports remote data presentations, support the Query (direct) and incoming Response interface types.
+The ENTRUST RAZ model includes the Principal Investigator (PI) acting as both the Output Approver and Input Approver for the project environment. This modification avoids infrastructure scalability bottlenecks and clarifies legal responsibility, especially where the TRE is not the data controller.
+The RAZ is comparable to the European Health Data Space's (EHDS) Secure Processing Environment (SPE) concept.</p>
+<h4 id="secure-data-zone-sdz">Secure Data Zone (SDZ)</h4>
+<p>The SDZ manages, links, curates, ingresses, and egresses research-ready sensitive datasets.
+Include a Data Management function in the SDZ. Route all data movements to or from the SDZ through the Data Management function. Grant Data Manager and Output Approver roles access to the SDZ; do not grant access to other roles. Support the Data Egress and Data Ingress interface types in the SDZ for sending and receiving Data Extract Objects.
+The ENTRUST architecture includes the Secure Data Archive (SDA) as a specialized SDZ that stores published Curated Data and handles Data Access Requests to such published data. Assign unique IDs and accompanying metadata to Curated Data to enable credit attributions.</p>
+<h4 id="query-management-zone-qmz">Query Management Zone (QMZ)</h4>
+<p>The QMZ handles queries sent from other, remote TREs or external Job Submission services, typically sitting alongside an SDZ.
+For direct queries, include an External Presentation component (e.g., a database view) and support the incoming Query (direct) interface type. For indirect queries, include a Job Controller component and a Job Executor component, and route the Job Request through a Job Approval process. Provide a High-Performance Computing (HPC) component in the QMZ to support the execution of indirect query jobs.</p>
+<h2 id="tre-architecture">TRE Architecture</h2>
+<p>For the architecture diagram and legend, see <a href="../../appendices/reference-architecture/">Reference Architecture</a>.</p>
+<h2 id="generalized-aaa-architecture-in-a-tre">Generalized AAA Architecture in a TRE</h2>
+<p>This section presents a generalized architecture for Authentication, Authorization, and Auditing (AAA) integration within a TRE, derived from the design principles and implementation experience of the Services for Sensitive Data (TSD).</p>
+<h3 id="authentication">Authentication</h3>
+<p><img alt="Authentication flow" src="../../images/aaai-authentication.svg" /></p>
+<p>The authentication subsystem consists of several coordinated components. At its foundation, the central Identity and Access Management (IAM) system governs all user, project, and group identities, while also providing APIs for authentication, authorization, and resource management. Authentication operations are facilitated by an OpenID Connect (OIDC) provider, which implements standards-based authentication flows—including PKCE for browser clients—and integrates with external identity providers to support multi-institutional access. Federated authentication enables users to log in through trusted third-party providers, simplifying account creation and management processes. The environment enforces multi-factor authentication (MFA), such as time-based (TOTP) or HMAC-based (HOTP) one-time passcodes, which users can manage via self-service portal. Token exchange mechanisms enable the creation of short-lived API access tokens that are limited in scope and purpose. For non-interactive or time-limited workflows, client and instance-based authentication, including “magic links”, enables automated or temporary access, with optional password protection for added security.</p>
+<h3 id="authorization">Authorization</h3>
+<p><img alt="Authorization flow" src="../../images/aaai-authorization.svg" /></p>
+<p>Authorization is centrally managed by a policy enforcement engine, which serves as the Policy Enforcement Point (PEP) for all API requests entering the environment through designated gateways. This engine evaluates each request against access control policies (grants) maintained within the IAM database. These policies may be static, maintained as code or configuration under version control, or dynamically managed via programmable interfaces provided by the IAM API. All access tokens and authorization grants are strictly scoped to specific projects or tenants and to designated API gateways. Network and resource-level isolation is maintained through private VLANs and firewall policies. The authorization workflow includes validating the token’s integrity and claims, matching access policy grants to requested API operations and contextual attributes, and enforcing any additional restrictions such as time windows or usage limits.</p>
+<h3 id="auditing">Auditing</h3>
+<p><img alt="Auditing and operations flow" src="../../images/aaai-auditing.svg" /></p>
+<p>Auditing is implemented across all relevant system layers to support accountability, regulatory compliance, and operational monitoring. Every API operation—spanning file, data, and resource actions—is logged in detail, with audit logs accessible for both operational staff and authorized project administrators. Changes to IAM data and resource allocations are tracked, capturing all create, update, and delete events. All storage and file access operations are monitored for data integrity and incident response purposes. Exports of data and downloads from publication interfaces are recorded to maintain a verifiable trail of data egress. Finally, system event and operations logs are aggregated and made available for ongoing monitoring, security investigations, and incident response.</p>
+<h3 id="key-architectural-components-and-integration-points">Key Architectural Components and Integration Points</h3>
+<p>The environment employs multiple API gateways (external, internal, and restricted) to route all API traffic, enforce TLS, and delegate authentication and authorization to centralized control points. A message broker enables event-driven service integrations, publishing relevant events to subscribed internal and external consumers. Microservices synchronize user, group, and project information from the IAM system to external directories as needed. Core research, compute, storage, and notification APIs all integrate directly with the central IAM for authentication and authorization. Web-based self-service and administrative portals, as well as data collection services, interact with the AAA infrastructure for secure, auditable operations. Project-level network isolation is enforced via software-defined firewalls and VLAN segmentation, dynamically configured based on IAM and directory data. Staff operational access is tightly regulated by IAM-based role assignment, group membership, multi-factor authentication, and the use of bastion hosts; all privileged actions are auditable.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../fundamentals/" class="btn btn-neutral float-left" title="M1: TRE Fundamentals"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../interfaces/" class="btn btn-neutral float-right" title="M3: Interface Definitions">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/unioslo/tre-operators-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../../fundamentals/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../interfaces/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

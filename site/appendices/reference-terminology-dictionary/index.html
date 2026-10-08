@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="EOSC-ENTRUST Team" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Reference Dictionary - TRE Operators Guide</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/home.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Reference Dictionary";
+        var mkdocs_page_input_path = "appendices/reference-terminology-dictionary.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> TRE Operators Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../relevance-matrix/">Relevance Matrix</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../fundamentals/">M1: TRE Fundamentals</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../modules/architecture/">M2: Architecture</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../modules/interfaces/">M3: Interface Definitions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../modules/procedures/">M4: Operating Procedures</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../modules/legal/">M5: Template Legal Agreements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../federation/">M6: Federation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Appendices</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Reference Dictionary</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#scope-and-status">Scope and Status</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-5-stage-terminology-pipeline">The 5-Stage Terminology Pipeline</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1-architectural-environmental-mappings">1. Architectural &amp; Environmental Mappings</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#secure-processing-environment-spe-trusted-research-environment-tre">Secure processing environment (SPE) / trusted research environment (TRE)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#research-analytics-zone-raz">Research analytics zone (RAZ)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#secure-data-zone-sdz-secure-data-storage-sds">Secure data zone (SDZ) / secure data storage (SDS)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#query-management-zone-qmz">Query management zone (QMZ)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#orchestration-zone-oz">Orchestration zone (OZ)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#security-server">Security server</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-legal-data-protection-states">2. Legal &amp; Data Protection States</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#anonymisation">Anonymisation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pseudonymisation">Pseudonymisation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#de-identification-restricted-research-data">De-identification / restricted research data</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#data-permit">Data permit</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-key-technical-and-organisational-roles">3. Key Technical and Organisational Roles</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#data-controller">Data controller</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#health-data-holder-data-custodian">Health data holder / data custodian</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#health-data-user-researcher-project-member">Health data user / researcher / project member</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#data-processor">Data processor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#trusted-health-data-holder">Trusted health data holder</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#trusted-third-party-ttp">Trusted third party (TTP)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#indexing-or-linkage-service">Indexing or linkage service</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#principal-investigator-pi-as-inputoutput-approver">Principal investigator (PI) as input/output approver</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-identity-trust-and-security-aai">4. Identity, Trust, and Security (AAI)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#eosc-entrust-aaai">EOSC-ENTRUST AAAI</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#eid-eidas-eudi-wallet">eID / eIDAS / EUDI Wallet</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ga4gh-passports-and-visas">GA4GH passports and visas</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../reference-architecture/">Reference Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../copilot-acknowledgement/">Copilot Acknowledgement</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">TRE Operators Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Appendices</li>
+      <li class="breadcrumb-item active">Reference Dictionary</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/unioslo/tre-operators-docs/edit/main/docs/appendices/reference-terminology-dictionary.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="reference-terminology-dictionary-for-secure-research-environments">Reference Terminology Dictionary for Secure Research Environments</h1>
+<p><em>A practical guide to related terms used in the European Health Data Space (EHDS), United Kingdom Trusted Research Environment (UK TRE), DARE UK, and EOSC-ENTRUST sources cited below.</em></p>
+<h2 id="scope-and-status">Scope and Status</h2>
+<p>This dictionary compares terms from different frameworks. It is not legal advice, a certification scheme, or a standard. Similar terms may still have different legal meanings, controls, or technical scope. The relevant law, regulator guidance, access decision, and local procedures always take priority.</p>
+<p>For concise EHDS definitions, see the <a href="../glossary/">Glossary</a>. This dictionary adds cross-framework comparisons and implementation terminology. Where the documents overlap, the glossary definition and its cited legislation govern the EHDS meaning.</p>
+<p>The mapping classifications are this guide's analysis, not classifications assigned by the cited sources:</p>
+<ul>
+<li><strong>Shared legal concept:</strong> the same legal definition governs both uses.</li>
+<li><strong>Functional correspondence:</strong> the terms serve a similar purpose but have different legal or governance contexts.</li>
+<li><strong>Operational analogy:</strong> the comparison may help with implementation, but it is not a formal match.</li>
+<li><strong>Project-specific proposal:</strong> a suggested design that needs local approval.</li>
+</ul>
+<p>Each source claim below identifies a document and section or article. The mapping conclusions remain interpretive and should be reviewed for the intended implementation and jurisdiction.</p>
+<h2 id="the-5-stage-terminology-pipeline">The 5-Stage Terminology Pipeline</h2>
+<p>The following lifecycle and table are an editorial crosswalk created for this guide. They are not defined by the cited frameworks, and they do not claim that every system uses the same workflow or zones.</p>
+<ol>
+<li><strong>Data Discovery:</strong> Researchers use data catalogues and metadata to find relevant datasets and their custodians. Finding a dataset does not grant access.</li>
+<li><strong>Access Approval:</strong> Researchers submit access requests and receive the relevant legal or administrative decision.</li>
+<li><strong>Data Preparation:</strong> Data holders prepare the datasets for the approved project. This may include pseudonymisation, linkage, and de-identification.</li>
+<li><strong>Use of Data:</strong> Researchers work in an isolated project workspace inside a Secure Processing Environment (SPE) or Trusted Research Environment (TRE). They may use federated computing where it is available.</li>
+<li><strong>Finalisation:</strong> Proposed outputs go through Statistical Disclosure Control (SDC) or another output review. They may be released only when the project rules, legal requirements, and security controls allow it. Local retention and disposal rules govern what then happens to the project environment.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Lifecycle stage</th>
+<th>EHDS-oriented term</th>
+<th>UK TRE-oriented term</th>
+<th>Relationship</th>
+<th>Main caveat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data discovery</td>
+<td>Dataset catalogue</td>
+<td>Catalogue or search service</td>
+<td>Functional correspondence</td>
+<td>Metadata visibility does not imply access</td>
+</tr>
+<tr>
+<td>Access approval</td>
+<td>Data permit / access permit</td>
+<td>Approval and authorisation workflow</td>
+<td>Functional correspondence</td>
+<td>Legal authority and decision paths differ</td>
+</tr>
+<tr>
+<td>Data preparation</td>
+<td>SPE preparation services</td>
+<td>SDZ / ingestion and curation</td>
+<td>Functional correspondence</td>
+<td>Zone boundaries vary by implementation</td>
+</tr>
+<tr>
+<td>Data use</td>
+<td>SPE project workspace</td>
+<td>RAZ</td>
+<td>Narrower functional mapping</td>
+<td>A RAZ is not the whole TRE</td>
+</tr>
+<tr>
+<td>Finalisation</td>
+<td>Output control / SDC</td>
+<td>Disclosure control / release review</td>
+<td>Functional correspondence</td>
+<td>Release criteria are governance-specific</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-architectural-environmental-mappings">1. Architectural &amp; Environmental Mappings</h2>
+<h3 id="secure-processing-environment-spe-trusted-research-environment-tre">Secure processing environment (SPE) / trusted research environment (TRE)</h3>
+<ul>
+<li><strong>Mapping type:</strong> Functional correspondence.</li>
+<li><strong>Meaning:</strong> Both terms describe controlled settings for work with sensitive data. They are not synonyms: SPE has a legal definition under the Data Governance Act and specific EHDS requirements, while TRE is used for a broader class of systems and governance practices in the UK TRE Glossary. Treating them as functionally corresponding is this guide's interpretation.</li>
+<li><strong>Sources:</strong><ul>
+<li><strong>EU:</strong> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R0868">Data Governance Act Article 2(20)</a> defines an SPE; <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327">EHDS Article 73</a> specifies requirements for EHDS secondary use.</li>
+<li><strong>UK:</strong> The <a href="https://glossary.uktre.org/en/latest/#term-trusted-research-environment--tre-">UK TRE Glossary: Trusted Research Environment</a> defines the TRE term and relates it to Five Safes governance.</li>
+</ul>
+</li>
+</ul>
+<h3 id="research-analytics-zone-raz">Research analytics zone (RAZ)</h3>
+<ul>
+<li><strong>Mapping type:</strong> Functional correspondence.</li>
+<li><strong>Meaning:</strong> DARE UK describes the RAZ as the zone where a Project Member directly accesses approved project data, often through a virtual desktop or computational notebook. Comparing it to a user-facing workspace within an SPE is this guide's functional mapping, not a DARE UK or EHDS equivalence.</li>
+<li><strong>Source:</strong> <a href="https://doi.org/10.5281/zenodo.14192786">DARE UK Federated Architecture Blueprint v2.2, section 4.3.1.1</a>.</li>
+</ul>
+<h3 id="secure-data-zone-sdz-secure-data-storage-sds">Secure data zone (SDZ) / secure data storage (SDS)</h3>
+<ul>
+<li><strong>Mapping type:</strong> Functional correspondence.</li>
+<li><strong>Meaning:</strong> DARE UK defines the SDZ as supporting ingress, egress, management, linkage, curation, and provision of research-ready sensitive datasets, with access limited to specified governance roles. EOSC-ENTRUST separately describes SURF's SDS implementation as storage mounted through a non-interactive Secure Data Server on a private network. SDZ and SDS are related but not equivalent terms.</li>
+<li><strong>Sources:</strong><ul>
+<li><a href="https://doi.org/10.5281/zenodo.14192786">DARE UK Federated Architecture Blueprint v2.2, section 4.3.1.2</a>.</li>
+<li><a href="https://doi.org/10.5281/zenodo.14362388">EOSC-ENTRUST D13.4, section 5.2.2</a>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="query-management-zone-qmz">Query management zone (QMZ)</h3>
+<ul>
+<li><strong>Mapping type:</strong> Proposed operational analogy; no equivalence is established here.</li>
+<li><strong>Meaning:</strong> DARE UK defines the QMZ as handling queries sent to a TRE by remote TREs or external Job Submission services. No equivalence to an EHDS component is asserted.</li>
+<li><strong>Source:</strong> <a href="https://doi.org/10.5281/zenodo.14192786">DARE UK Federated Architecture Blueprint v2.2, section 4.3.1.3</a>.</li>
+</ul>
+<h3 id="orchestration-zone-oz">Orchestration zone (OZ)</h3>
+<ul>
+<li><strong>Mapping type:</strong> Framework-specific term.</li>
+<li><strong>Meaning:</strong> The administration area that deploys, configures, maintains, and removes the secure environment.</li>
+<li><strong>Source:</strong> <a href="https://glossary.uktre.org/en/latest/#term-orchestration-zone--oz-">UK TRE Glossary: Orchestration Zone</a>.</li>
+</ul>
+<h3 id="security-server">Security server</h3>
+<ul>
+<li><strong>Mapping type:</strong> Functional correspondence.</li>
+<li><strong>Meaning:</strong> In DARE UK, Security Servers are gateways used by Federation Participants. They support secure data exchange and protect the confidentiality, integrity, and auditability of inter-participant exchanges. The blueprint discusses X-Road, GAIA-X, IDSA, and SiMPl as related federated-infrastructure concepts but does not establish direct equivalence to their individual components.</li>
+<li><strong>Source:</strong> <a href="https://doi.org/10.5281/zenodo.14192786">DARE UK Federated Architecture Blueprint v2.2, sections 2.3 and 4.6.2</a>.</li>
+</ul>
+<h2 id="2-legal-data-protection-states">2. Legal &amp; Data Protection States</h2>
+<h3 id="anonymisation">Anonymisation</h3>
+<ul>
+<li><strong>Mapping type:</strong> Related EU and UK legal concepts; jurisdiction-specific assessment required.</li>
+<li><strong>Meaning:</strong> Anonymisation means processing personal data so that an individual is no longer identifiable, taking account of all means reasonably likely to be used for identification. SDC and other output controls reduce disclosure risk, but they do not normally prove that the risk is zero. An output may leave the secure environment only when the relevant law, project rules, and release controls allow it.</li>
+<li><strong>Sources:</strong><ul>
+<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679">GDPR Recital 26</a>.</li>
+<li><a href="https://glossary.uktre.org/en/latest/#term-anonymisation">UK TRE Glossary: Anonymisation</a>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="pseudonymisation">Pseudonymisation</h3>
+<ul>
+<li><strong>Mapping type:</strong> EU GDPR legal concept; UK use must be checked against UK law.</li>
+<li><strong>Meaning:</strong> Under GDPR, pseudonymisation requires separately kept additional information protected by technical and organisational measures. Pseudonymised data remain personal data when they can be attributed to a person using additional information.</li>
+<li><strong>Sources:</strong> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679">GDPR Article 4(5) and Recital 26</a>.</li>
+</ul>
+<h3 id="de-identification-restricted-research-data">De-identification / restricted research data</h3>
+<ul>
+<li><strong>Mapping type:</strong> Operational terminology; not automatically the same as legal anonymisation.</li>
+<li><strong>Meaning:</strong> These are operational terms whose meanings vary. Removing direct identifiers does not by itself establish anonymisation under GDPR Recital 26. This dictionary does not assign either term a universal legal meaning.</li>
+<li><strong>Source for the legal distinction:</strong> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679">GDPR Recital 26</a>.</li>
+</ul>
+<h3 id="data-permit">Data permit</h3>
+<ul>
+<li><strong>Mapping type:</strong> EHDS legal term; no cross-framework equivalence asserted.</li>
+<li><strong>Meaning:</strong> An administrative decision issued by an HDAB to a health data user to process specified electronic health data for specified secondary-use purposes. This audit did not locate a stable, versioned source supporting the previous “access permit” comparison, so that comparison has been removed.</li>
+<li><strong>Sources:</strong> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327">EHDS Articles 2(2)(v) and 68</a>.</li>
+</ul>
+<h2 id="3-key-technical-and-organisational-roles">3. Key Technical and Organisational Roles</h2>
+<h3 id="data-controller">Data controller</h3>
+<ul>
+<li><strong>Mapping type:</strong> EU GDPR legal concept; UK use must be checked against UK law.</li>
+<li><strong>Meaning:</strong> Under GDPR, the organisation that decides why and how personal data is processed and is responsible for compliance.</li>
+<li><strong>Source:</strong> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679">GDPR Article 4(7)</a>.</li>
+</ul>
+<h3 id="health-data-holder-data-custodian">Health data holder / data custodian</h3>
+<ul>
+<li><strong>Mapping type:</strong> Functional correspondence; Data Custodian is not an EHDS legal synonym.</li>
+<li><strong>Meaning:</strong> Under EHDS, a Health Data Holder is a natural or legal person, public authority, agency, or other body that meets the conditions in Article 2(2)(t). In a UK TRE context, a Data Custodian or Data Provider may perform a similar operational role, but the legal duties and scope can differ.</li>
+<li><strong>Sources:</strong><ul>
+<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327">EHDS Article 2(2)(t)</a>.</li>
+<li><a href="https://glossary.uktre.org/en/latest/#term-data-custodian">UK TRE Glossary: Data Custodian</a>. The functional comparison is this guide's interpretation.</li>
+</ul>
+</li>
+</ul>
+<h3 id="health-data-user-researcher-project-member">Health data user / researcher / project member</h3>
+<ul>
+<li><strong>Mapping type:</strong> Functional correspondence; the UK project roles are narrower than the EHDS legal term.</li>
+<li><strong>Meaning:</strong> A natural or legal person, including a Union institution, body, office, or agency, that has lawful access to electronic health data for secondary use. In a TRE context, the closest operational roles may include Researcher or Project Member, but these are not direct legal equivalents.</li>
+<li><strong>Sources:</strong><ul>
+<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327">EHDS Article 2(2)(u)</a>.</li>
+<li><a href="https://doi.org/10.5281/zenodo.14192786">DARE UK Federated Architecture Blueprint v2.2, section 3.2</a> defines Project Member, Job Submitter, and Catalogue Searcher roles. The mapping is this guide's interpretation.</li>
+</ul>
+</li>
+</ul>
+<h3 id="data-processor">Data processor</h3>
+<ul>
+<li><strong>Mapping type:</strong> EU GDPR legal concept; no equivalence to an environment operator asserted.</li>
+<li><strong>Meaning:</strong> GDPR defines a processor as a person or body that processes personal data on behalf of a controller. An organisation operating an SPE or TRE is not automatically a processor for every activity; its role depends on the processing and applicable governance arrangements. EHDS Article 74 assigns specific controller and processor roles for EHDS secondary use.</li>
+<li><strong>Sources:</strong> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679">GDPR Article 4(8)</a>; <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327">EHDS Article 74</a>.</li>
+</ul>
+<h3 id="trusted-health-data-holder">Trusted health data holder</h3>
+<ul>
+<li><strong>Mapping type:</strong> Framework-specific role; designation conditions are set by EHDS Article 72.</li>
+<li><strong>Meaning:</strong> A health data holder designated under EHDS Article 72 that can provide access through a compliant Secure Processing Environment and participate in the simplified application procedure. It may assess an application and propose a decision, but the Health Data Access Body remains responsible for issuing the decision.</li>
+<li><strong>Source:</strong> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327">EHDS Article 72</a>.</li>
+</ul>
+<h3 id="trusted-third-party-ttp">Trusted third party (TTP)</h3>
+<ul>
+<li><strong>Mapping type:</strong> Distinct framework-specific uses; no equivalence asserted.</li>
+<li><strong>Meaning:</strong> EHDS Article 66(3) refers to an entity acting as a trusted third party under national law that may hold information needed to reverse pseudonymisation. Separately, the DARE UK data-pooling pattern uses “trusted third-party Index Service” for a service that creates a master index for linkage inside the analysis TRE.</li>
+<li><strong>Sources:</strong><ul>
+<li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32025R0327">EHDS Article 66(3)</a> uses “trusted third party” for an entity that may hold information needed to reverse pseudonymisation under national law.</li>
+<li><a href="https://doi.org/10.5281/zenodo.14192786">DARE UK Federated Architecture Blueprint v2.2, section 2.2.2</a> uses “trusted third-party index service” in its data-pooling pattern. These uses are not asserted to be equivalent.</li>
+</ul>
+</li>
+</ul>
+<h3 id="indexing-or-linkage-service">Indexing or linkage service</h3>
+<ul>
+<li><strong>Mapping type:</strong> Operational analogy to some TTP functions; not a legal synonym.</li>
+<li><strong>Meaning:</strong> In the DARE UK blueprint, an Index Service creates linkage spines for datasets. For personal data, it converts between personal identifiers and project-specific linkage keys and must be sufficiently trustworthy to handle personal identifiers. The blueprint leaves the construction of those indexes out of scope.</li>
+<li><strong>Source:</strong> <a href="https://doi.org/10.5281/zenodo.14192786">DARE UK Federated Architecture Blueprint v2.2, section 4.3.2</a>.</li>
+</ul>
+<h3 id="principal-investigator-pi-as-inputoutput-approver">Principal investigator (PI) as input/output approver</h3>
+<ul>
+<li><strong>Mapping type:</strong> Provider-specific implementation described by EOSC-ENTRUST.</li>
+<li><strong>Meaning:</strong> EOSC-ENTRUST D13.4 reports that the SAFE, TSD, and CSC SD Services models require the project PI to act as Output Approver and assign a separate Input Approver role to the PI. This is a provider-specific architecture finding, not a general rule for TREs or SPEs.</li>
+<li><strong>Source:</strong> <a href="https://doi.org/10.5281/zenodo.14362388">EOSC-ENTRUST D13.4, section 6.2.2</a>.</li>
+</ul>
+<h2 id="4-identity-trust-and-security-aai">4. Identity, Trust, and Security (AAI)</h2>
+<h3 id="eosc-entrust-aaai">EOSC-ENTRUST AAAI</h3>
+<ul>
+<li><strong>Mapping type:</strong> Project-specific architecture.</li>
+<li><strong>Meaning:</strong> EOSC-ENTRUST D16.1 proposes an Authentication, Authorization, and Accounting Infrastructure for a federation of TREs. It builds on the AARC Blueprint Architecture and adds requirements including account creation, identity vetting, attribute-based access control, accounting, and auditing.</li>
+<li><strong>Source:</strong> <a href="https://doi.org/10.5281/zenodo.15006945">EOSC-ENTRUST D16.1, sections 5 to 7</a>.</li>
+</ul>
+<h3 id="eid-eidas-eudi-wallet">eID / eIDAS / EUDI Wallet</h3>
+<ul>
+<li><strong>Mapping type:</strong> Related legal framework and identity mechanisms; not interchangeable terms.</li>
+<li><strong>Meaning:</strong> eIDAS is the EU legal framework for electronic identification and trust services; Regulation (EU) 2024/1183 amended it to establish the European Digital Identity Framework. EOSC-ENTRUST D16.1 proposes high-assurance electronic identity vetting, for example through eID or electronic know-your-customer processes. It treats identity wallets as a future option rather than a mandatory requirement in that version.</li>
+<li><strong>Sources:</strong> <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0910">Regulation (EU) No 910/2014</a>; <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1183">Regulation (EU) 2024/1183</a>; <a href="https://doi.org/10.5281/zenodo.15006945">EOSC-ENTRUST D16.1, section 6.1</a>.</li>
+</ul>
+<h3 id="ga4gh-passports-and-visas">GA4GH passports and visas</h3>
+<ul>
+<li><strong>Mapping type:</strong> Technical standard used as an implementation option.</li>
+<li><strong>Meaning:</strong> D16.1 describes a GA4GH Passport as a collection of digitally signed Visas containing subject attributes such as affiliations, organisational roles, accepted terms and policies, researcher status, and dataset-access decisions. It models the Passport as an attribute repository within attribute-based access control and notes limitations in the Visa types available in specification version 1.2.1.</li>
+<li><strong>Source:</strong> <a href="https://doi.org/10.5281/zenodo.15006945">EOSC-ENTRUST D16.1, sections 6.2.1 and 6.2.3</a>.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../glossary/" class="btn btn-neutral float-left" title="Glossary"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../reference-architecture/" class="btn btn-neutral float-right" title="Reference Architecture">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/unioslo/tre-operators-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../glossary/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../reference-architecture/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

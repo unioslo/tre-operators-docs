@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Documentation for Trusted Research Environment (TRE) operators in the context of Federated EOSC-ENTRUST" /><meta name="author" content="EOSC-ENTRUST Team" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>TRE Operators Guide</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="stylesheets/home.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> TRE Operators Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="relevance-matrix/">Relevance Matrix</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="fundamentals/">M1: TRE Fundamentals</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="modules/architecture/">M2: Architecture</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="modules/interfaces/">M3: Interface Definitions</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="modules/procedures/">M4: Operating Procedures</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="modules/legal/">M5: Template Legal Agreements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="federation/">M6: Federation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Appendices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="appendices/glossary/">Glossary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="appendices/reference-terminology-dictionary/">Reference Dictionary</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="appendices/reference-architecture/">Reference Architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="appendices/resources/">Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="appendices/copilot-acknowledgement/">Copilot Acknowledgement</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">TRE Operators Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Home</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/unioslo/tre-operators-docs/edit/main/docs/index.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <section class="tre-hero">
+    <div class="tre-hero-main">
+        <p class="tre-eyebrow">EOSC-ENTRUST Documentation</p>
+        <h1>TRE Operators Guide</h1>
+        <p class="tre-lead">Build, operate, and maintain secure, compliant, and interoperable Trusted Research Environments across federated infrastructures.</p>
+
+        <div class="tre-hero-actions">
+            <a class="tre-hero-link" href="fundamentals/"><i class="fa-solid fa-book-open tre-icon-inline" aria-hidden="true"></i>Start with fundamentals</a>
+            <a class="tre-hero-link tre-hero-link-secondary" href="modules/architecture/"><i class="fa-solid fa-diagram-project tre-icon-inline" aria-hidden="true"></i>View architecture</a>
+            <a class="tre-hero-link tre-hero-link-secondary" href="federation/"><i class="fa-solid fa-globe tre-icon-inline" aria-hidden="true"></i>Read federation guide</a>
+        </div>
+    </div>
+
+    <div class="tre-hero-side">
+        <div class="tre-hero-panel">
+            <h2><i class="fa-solid fa-table-cells-large tre-icon-heading" aria-hidden="true"></i>At a Glance</h2>
+            <ul>
+                <li><i class="fa-solid fa-layer-group tre-icon-list" aria-hidden="true"></i>6 core modules</li>
+                <li><i class="fa-solid fa-list-check tre-icon-list" aria-hidden="true"></i>9 setup steps</li>
+                <li><i class="fa-solid fa-shield-halved tre-icon-list" aria-hidden="true"></i>Architecture, interfaces, legal, and operations guidance</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div class="tre-summary-grid">
+    <article class="tre-summary-card">
+        <h2><i class="fa-solid fa-compass tre-icon-heading" aria-hidden="true"></i>Start Here</h2>
+        <p>Understand the TRE model, terminology, and core expectations before setup.</p>
+        <a href="fundamentals/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Open fundamentals</a>
+    </article>
+
+    <article class="tre-summary-card">
+        <h2><i class="fa-solid fa-server tre-icon-heading" aria-hidden="true"></i>Deploy Core Services</h2>
+        <p>Review the architecture, federation dependencies, and trust components.</p>
+        <a href="modules/architecture/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Open architecture</a>
+    </article>
+
+    <article class="tre-summary-card">
+        <h2><i class="fa-solid fa-scale-balanced tre-icon-heading" aria-hidden="true"></i>Operate and Govern</h2>
+        <p>Use the procedures and legal modules to support onboarding, monitoring, and compliance.</p>
+        <a href="modules/procedures/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Open procedures</a>
+    </article>
+</div>
+
+<h2 id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Understand TRE concepts and terminology</li>
+<li>Set up and configure TRE architecture</li>
+<li>Implement interfaces and operational procedures</li>
+<li>Apply legal and compliance requirements</li>
+<li>Integrate with federated TREs</li>
+</ul>
+<h2 id="getting-started-checklist">Getting Started Checklist</h2>
+<div class="tre-card-grid tre-card-grid-steps">
+
+    <article class="tre-card tre-step-card">
+        <h3><span class="tre-card-number">1</span><i class="fa-solid fa-book tre-icon-heading" aria-hidden="true"></i>Understand TRE Fundamentals</h3>
+        <ul>
+            <li>Read <a href="fundamentals/">TRE Fundamentals</a>.</li>
+            <li>Review key terminology in the <a href="appendices/glossary/">Glossary</a>.</li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-step-card">
+        <h3><span class="tre-card-number">2</span><i class="fa-solid fa-sitemap tre-icon-heading" aria-hidden="true"></i>Review Reference Architecture</h3>
+        <ul>
+            <li>Study <a href="modules/architecture/">Architecture</a> diagrams and component descriptions.</li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-step-card">
+        <h3><span class="tre-card-number">3</span><i class="fa-solid fa-file-signature tre-icon-heading" aria-hidden="true"></i>Prepare Legal Agreements</h3>
+        <ul>
+            <li>Download and adapt template legal agreements (DSA, DTA, DUA).</li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-step-card">
+        <h3><span class="tre-card-number">4</span><i class="fa-solid fa-network-wired tre-icon-heading" aria-hidden="true"></i>Set Up Core Infrastructure</h3>
+        <ul>
+            <li>Deploy Security Server.</li>
+            <li>Register with Federation Registry.</li>
+            <li>Configure Trust Services and AAAI.</li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-step-card">
+        <h3><span class="tre-card-number">5</span><i class="fa-solid fa-plug-circle-check tre-icon-heading" aria-hidden="true"></i>Implement Interfaces</h3>
+        <ul>
+            <li>Integrate required APIs and data exchange protocols.</li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-step-card">
+        <h3><span class="tre-card-number">6</span><i class="fa-solid fa-clipboard-list tre-icon-heading" aria-hidden="true"></i>Establish Operating Procedures</h3>
+        <ul>
+            <li>Document operational tasks and maintenance routines.</li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-step-card">
+        <h3><span class="tre-card-number">7</span><i class="fa-solid fa-globe tre-icon-heading" aria-hidden="true"></i>Connect to Federation</h3>
+        <ul>
+            <li>Ensure compliance with federation requirements.</li>
+            <li>Test inter-TRE connectivity.</li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-step-card">
+        <h3><span class="tre-card-number">8</span><i class="fa-solid fa-user-graduate tre-icon-heading" aria-hidden="true"></i>Train and Accredit Users</h3>
+        <ul>
+            <li>Verify researcher accreditation and training records.</li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-step-card">
+        <h3><span class="tre-card-number">9</span><i class="fa-solid fa-folder-open tre-icon-heading" aria-hidden="true"></i>Consult Appendices</h3>
+        <ul>
+            <li>Use <a href="appendices/reference-architecture/">Reference Architecture</a> and <a href="appendices/resources/">Resources</a> for troubleshooting and support.</li>
+        </ul>
+    </article>
+
+</div>
+
+<h2 id="modules">Modules</h2>
+<p>Use the <a href="relevance-matrix/">Relevance Matrix</a> to choose a reading path by TRE type and role.</p>
+<p>The guide uses three simple roles: <strong>TRE User</strong>, <strong>TRE Operator</strong>, and <strong>TRE Builder</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Main responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TRE User</td>
+<td>Access and use an approved TRE workspace</td>
+</tr>
+<tr>
+<td>TRE Operator</td>
+<td>Handle day-to-day operations</td>
+</tr>
+<tr>
+<td>TRE Builder</td>
+<td>Construct infrastructure, install 5S-TES, and configure AAAI</td>
+</tr>
+</tbody>
+</table>
+<div class="tre-card-grid tre-card-grid-modules">
+
+    <article class="tre-card tre-module-card tre-role-user">
+        <h3><i class="fa-solid fa-book-open-reader tre-icon-heading" aria-hidden="true"></i>Module 1: TRE Fundamentals</h3>
+        <p class="tre-module-meta"><span class="tre-role-label">User</span></p>
+        <ul>
+            <li>Understand TRE concepts and safe use.</li>
+            <li>Review key terminology in the <a href="appendices/glossary/">Glossary</a>.</li>
+            <li><a href="fundamentals/">Open TRE Fundamentals</a></li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-module-card tre-role-builder">
+        <h3><i class="fa-solid fa-diagram-project tre-icon-heading" aria-hidden="true"></i>Module 2: Architecture and Setup</h3>
+        <p class="tre-module-meta"><span class="tre-role-label">TRE Builder</span></p>
+        <ul>
+            <li>Zones and core components: <a href="modules/architecture/">Architecture</a></li>
+            <li>AAA integration</li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-module-card tre-role-builder">
+        <h3><i class="fa-solid fa-code-branch tre-icon-heading" aria-hidden="true"></i>Module 3: Interfaces and Configuration</h3>
+        <p class="tre-module-meta"><span class="tre-role-label">TRE Builder</span></p>
+        <ul>
+            <li><a href="modules/interfaces/">Review interface definitions</a></li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-module-card tre-role-operator">
+        <h3><i class="fa-solid fa-gears tre-icon-heading" aria-hidden="true"></i>Module 4: Operations and Procedures</h3>
+        <p class="tre-module-meta"><span class="tre-role-label">Operator</span></p>
+        <ul>
+            <li>Onboarding, monitoring, and incident response: <a href="modules/procedures/">Procedures</a></li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-module-card tre-role-operator">
+        <h3><i class="fa-solid fa-scale-balanced tre-icon-heading" aria-hidden="true"></i>Module 5: Legal and Compliance</h3>
+        <p class="tre-module-meta"><span class="tre-role-label">Operator</span></p>
+        <ul>
+            <li>Agreements, compliance, and governance: <a href="modules/legal/">Legal</a></li>
+        </ul>
+    </article>
+
+    <article class="tre-card tre-module-card tre-role-builder">
+        <h3><i class="fa-solid fa-people-arrows tre-icon-heading" aria-hidden="true"></i>Module 6: Federation and Collaboration</h3>
+        <p class="tre-module-meta"><span class="tre-role-label">TRE Builder</span></p>
+        <ul>
+            <li>Federation integration: <a href="federation/">Federation</a></li>
+            <li>Data sharing and collaboration</li>
+        </ul>
+    </article>
+
+</div>
+
+<h2 id="appendices-and-resources">Appendices and Resources</h2>
+<ul>
+<li><a href="appendices/reference-architecture/">Reference Architecture</a></li>
+<li><a href="appendices/resources/">Resources</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="relevance-matrix/" class="btn btn-neutral float-right" title="Relevance Matrix">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/unioslo/tre-operators-docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+      <span><a href="relevance-matrix/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2026-10-08 09:20:26.035655+00:00
+-->
