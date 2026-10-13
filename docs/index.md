@@ -2,7 +2,7 @@
 	<div class="tre-hero-main">
 		<p class="tre-eyebrow">EOSC-ENTRUST Documentation</p>
 		<h1>TRE Operators Guide</h1>
-		<p class="tre-lead">Build, operate, and maintain secure, compliant, and interoperable Trusted Research Environments across federated infrastructures.</p>
+		<p class="tre-lead">This guide is part of the EOSC-ENTRUST Training Package. It helps Trusted Research Environment (TRE) providers build, operate, and maintain secure, compliant, and interoperable environments that are ready to join a federated ecosystem across Europe.</p>
 
 		<div class="tre-hero-actions">
 			<a class="tre-hero-link" href="fundamentals/"><i class="fa-solid fa-book-open tre-icon-inline" aria-hidden="true"></i>Start with fundamentals</a>
@@ -51,7 +51,20 @@
 - Apply legal and compliance requirements
 - Integrate with federated TREs
 
-## Getting Started Checklist
+## Who is this guide for?
+
+- TRE User: Researchers and analysts working with sensitive data -
+	- They should access and use an approved TRE workspace safely and in line with training and accreditation requirements.
+ 	- <a href="fundamentals/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Start with M1: TRE Fundamentals</a>
+	</article>
+- TRE Operator: The team running a TRE day to day -
+	- They should onboard users, monitor the environment, respond to incidents, and manage agreements and compliance.
+ 	- <a href="modules/procedures/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Start with M4: Operating Procedures</a>
+	</article>
+- TRE builder: The technical team setting up the infrastructure -
+	- They should deploy core components, install 5S-TES, configure AAAI, implement interfaces, and connect the TRE to the federation.
+ 	- <a href="modules/architecture/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Start with M2: Architecture</a>
+	</article>
 
 <div class="tre-card-grid tre-card-grid-steps">
 
