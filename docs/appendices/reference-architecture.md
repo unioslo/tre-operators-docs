@@ -1,6 +1,5 @@
 # Reference Architecture
-
-![EOSC-ENTRUST Blueprintet TRE Architecture](../images/blueprint_architecture.svg)
+![EOSC-ENTRUST TRE Blueprint Architecture](../images/blueprint_architecture.svg)
 
 ![EOSC-ENTRUST TRE Architecture](../images/tre_architecture.svg)
 
