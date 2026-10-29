@@ -1,8 +1,15 @@
 <section class="tre-hero">
 	<div class="tre-hero-main">
-		<p class="tre-eyebrow">EOSC-ENTRUST Documentation</p>
-		<h1>TRE Operators Guide</h1>
-		<p class="tre-lead">This guide is part of the EOSC-ENTRUST Training Package. It helps Trusted Research Environment (TRE) providers build, operate, and maintain secure, compliant, and interoperable environments that are ready to join a federated ecosystem across Europe.</p>
+		<p class="tre-eyebrow">EOSC-ENTRUST</p>
+		<h1>EOSC-ENTRUST Blueprint</h1>
+		<p class="tre-lead"> EOSC-ENTRUST is developing a scalable, interoperable framework for secure, federated access to sensitive research data across Europe. The project is aligned with the European Health Data Space (EHDS) and the European Open Science Cloud (EOSC), and it is grounded in real-world implementation needs. The ENTRUST Blueprint defines the minimal requirements for joining a federated TRE ecosystem. It covers:
+			
+- architecture specifications
+- legal templates
+- operating procedures
+- interface definitions for Authentication, Authorization, and Auditing Infrastructure (AAAI)
+			
+This guide walks you through these components module by module. A TRE Provider Catalogue complements it by giving researchers a structured overview of available environments and their access and security specifications. Together, these outputs advance cross-border collaboration in sensitive data research. This guide is part of the EOSC-ENTRUST Training Package and helps Trusted Research Environment (TRE) providers build, operate, and maintain secure, compliant, and interoperable environments that are ready to join a federated ecosystem across Europe.</p>
 
 		<div class="tre-hero-actions">
 			<a class="tre-hero-link" href="fundamentals/"><i class="fa-solid fa-book-open tre-icon-inline" aria-hidden="true"></i>Start with fundamentals</a>
@@ -54,7 +61,7 @@
 ## Who is this guide for?
 
 - TRE User: Researchers and analysts working with sensitive data -
-	- They should access and use an approved TRE workspace safely and in line with training and accreditation requirements.
+	- They should access and use an approved TRE workspace safely and in line with training and accreditation requirements. 
  	- <a href="fundamentals/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Start with M1: TRE Fundamentals</a>
 	</article>
 - TRE Operator: The team running a TRE day to day -
@@ -62,10 +69,18 @@
  	- <a href="modules/procedures/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Start with M4: Operating Procedures</a>
 	</article>
 - TRE builder: The technical team setting up the infrastructure -
-	- They should deploy core components, install 5S-TES, configure AAAI, implement interfaces, and connect the TRE to the federation.
+	- They should construct infrastructure, deploy core components, install 5S-TES, configure AAAI, implement interfaces, and connect the TRE to the federation. 
  	- <a href="modules/architecture/"><i class="fa-solid fa-arrow-right tre-icon-inline" aria-hidden="true"></i>Start with M2: Architecture</a>
 	</article>
 
+## Why this matters?
+Researchers who want to share sensitive data across borders face several obstacles:
+- Sensitive research data is siloed across national boundaries, with no common framework for secure cross-border federated access.
+- GDPR and EHDS impose strict requirements for processing sensitive data, but leave the technical implementation largely undefined.
+- TRE providers show low federation readiness, with fragmented architectures and inconsistent terminology.
+- There are no standardised procedures for user registration, data access requests, or cross-border legal harmonisation across TREs.
+
+The Blueprint and this guide address these gaps by giving TRE providers a common, practical path to federation readiness.
 <div class="tre-card-grid tre-card-grid-steps">
 
 	<article class="tre-card tre-step-card">
@@ -140,14 +155,6 @@
 ## Modules
 
 Use the [Relevance Matrix](relevance-matrix.md) to choose a reading path by TRE type and role.
-
-The guide uses three simple roles: **TRE User**, **TRE Operator**, and **TRE Builder**.
-
-| Role | Main responsibility |
-| --- | --- |
-| TRE User | Access and use an approved TRE workspace |
-| TRE Operator | Handle day-to-day operations |
-| TRE Builder | Construct infrastructure, install 5S-TES, and configure AAAI |
 
 <div class="tre-card-grid tre-card-grid-modules">
 
