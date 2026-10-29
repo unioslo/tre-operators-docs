@@ -9,3 +9,4 @@
 - DARE UK: [Federated Architecture Blueprint](https://zenodo.org/records/14192786)
 - [SPE and TRE terminology for sensitive data processing](https://zenodo.org/records/15696511)
 - Five safes: [Framework](https://fivesafes.org/)
+- EOSC-ENTRUST: [D21.2 Training package for Digital Objects & Workflow](https://zenodo.org/records/22639696)
