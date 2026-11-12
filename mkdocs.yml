@@ -1,12 +1,14 @@
 site_name: TRE Operators Guide
 site_description: Documentation for Trusted Research Environment (TRE) operators in the context of Federated EOSC-ENTRUST
 site_author: EOSC-ENTRUST Team
+copyright: "This work was funded by the EOSC-ENTRUST project, part of the European Union’s Horizon Europe Programme under grant agreement number 101131056"
 repo_url: https://github.com/unioslo/tre-operators-docs
 # Default branch is main not master
 edit_uri: ./edit/main/docs
 use_directory_urls: true
 theme:
   name: readthedocs
+  logo: images/eosc-entrust_logo_neg.png
   features:
     - search.suggest
     - search.highlight
