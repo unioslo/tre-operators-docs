@@ -135,6 +135,7 @@ h3 {
 }
 
 .tre-hero-side {
+  align-self: start;
   display: flex;
 }
 
