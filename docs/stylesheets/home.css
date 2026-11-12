@@ -740,7 +740,6 @@ li {
 
 /* Hide Read the Docs footer attribution */
 .rst-footer-buttons,
-footer .rst-content-footer-text,
-footer .rst-content-footer-text p {
+footer {
   display: none !important;
 }
