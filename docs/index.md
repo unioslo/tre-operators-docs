@@ -1,15 +1,24 @@
 <section class="tre-hero">
 	<div class="tre-hero-main">
 		<p class="tre-eyebrow">EOSC-ENTRUST</p>
-		<h1>EOSC-ENTRUST Blueprint</h1>
-		<p class="tre-lead">Build a secure, cross-border research environment for sensitive data. The EOSC-ENTRUST Blueprint provides the core requirements to join a federated TRE ecosystem aligned with EHDS and EOSC standards. It covers:</p>
+		<h1>The EOSC-ENTRUST guide for building interoperable TRE services</h1>
+		<p class="tre-lead">Welcome to this online guide that aims to support providers of trusted research environments in building interoperable services according to the EOSC-ENTRUST Blueprint and Interoperability Framework. EOSC-ENTRUST aims to create a European network of Trusted Research Environments (TREs) for sensitive data and drive European interoperability by joint development of a common blueprint for federated data access and analysis.
+
+EOSC-ENTRUST stands for “European Open Science Cloud – European Network of TRUSTed Research Environments”. 
+
+This guide is set up to accompany the EOSC-ENTRUST Blueprint to specifically guide TRE providers in building and/or adjusting their infrastructures technologically and organisationally to enable and allow exchange of data and workflows across TRE boundaries and national borders.
+On these pages, you will find an overview of- and guides to:</p>
 		<ul class="tre-lead-list">
-			<li>Architecture Specifications</li>
-			<li>Legal Templates</li>
-			<li>Operating Procedures</li>
-			<li>Interface definitions for Authentication, Authorization, and Auditing Infrastructure (AAAI)</li>
+			<li>the standard architecture of a TREs and a description of its core components (Module 1)</li>
+			<li>the Blueprint architecture for a federated network of TREs, suggested requirements (Module 2)</li>
+			<li>interface definitions allowing TREs to connect and data and jobs to be exchanged (Module 3)</li>
+			<li>operating procedures for a federation of TREs (Module 4)</li>
+			<li> template legal agreements necessary to allow federation of TREs (Module 5)</li>
+			In addition to 
+			<li>a glossary of terms relevant for federated TREs</li> and
+			<li>links to relevant existing training material that may be of further help</li>
 		</ul>
-<p class="tre-lead">Use this guide to understand each component, from foundational concepts through deployment and governance. Reference the <a href="https://eosc-entrust.eu/providers">TRE Provider Catalogue</a> to explore available environments and plan your infrastructure.</p>
+<p class="tre-lead">Please note that the EOSC-ENTRUST Blueprint is still in progress. At the time of writing, a federated network of TREs has not yet been implemented across Europe. This guide will therefore strive to highlight topics that have currently been suggested and agreed within the project, but does not provide a complete guide to how to build and connect a fully compliant TRE to a federated network. Reference the <a href="https://eosc-entrust.eu/providers">TRE Provider Catalogue</a> to explore available environments and plan your infrastructure.</p>
 
 		<div class="tre-hero-actions">
 			<a class="tre-hero-link" href="fundamentals/"><i class="fa-solid fa-book-open tre-icon-inline" aria-hidden="true"></i>Start with fundamentals</a>
