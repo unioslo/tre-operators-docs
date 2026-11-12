@@ -715,27 +715,29 @@ li {
   opacity: 1 !important;
 }
 
-/* Funding Banner */
+/* Funding Banner - UX Friendly Design */
 .tre-funding-banner {
-  background: var(--tre-primary);
-  border-left: 4px solid var(--tre-accent);
-  color: var(--tre-paper);
+  background: #eaf3fb;
+  border-left: 4px solid var(--tre-primary);
+  color: var(--tre-ink);
   margin: 0.25rem 0.25rem 1rem 0.25rem;
   padding: 1rem 1.4rem;
   border-radius: 8px;
-  box-shadow: var(--tre-shadow);
+  box-shadow: 0 2px 8px rgba(0, 80, 149, 0.08);
+  font-family: "Raleway", sans-serif;
 }
 
 .tre-funding-banner p {
   margin: 0;
   font-size: 0.95rem;
-  line-height: 1.5;
-  color: var(--tre-paper);
+  line-height: 1.6;
+  color: var(--tre-ink);
+  font-weight: 400;
 }
 
 .tre-funding-banner strong {
   font-weight: 600;
-  color: var(--tre-accent);
+  color: var(--tre-primary);
 }
 
 /* Hide Read the Docs footer attribution */
