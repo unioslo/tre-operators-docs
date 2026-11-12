@@ -737,3 +737,10 @@ li {
   font-weight: 600;
   color: var(--tre-accent);
 }
+
+/* Hide Read the Docs footer attribution */
+.rst-footer-buttons,
+footer .rst-content-footer-text,
+footer .rst-content-footer-text p {
+  display: none !important;
+}
