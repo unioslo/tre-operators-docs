@@ -1,3 +1,7 @@
+<div class="tre-funding-banner">
+	<p><strong>Funding:</strong> This work was funded by the EOSC-ENTRUST project, part of the European Union's Horizon Europe Programme under grant agreement number 101131056</p>
+</div>
+
 <section class="tre-hero">
 	<div class="tre-hero-main">
 		<p class="tre-eyebrow">EOSC-ENTRUST</p>

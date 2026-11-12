@@ -714,3 +714,26 @@ li {
   color: var(--tre-nav-text-hover) !important;
   opacity: 1 !important;
 }
+
+/* Funding Banner */
+.tre-funding-banner {
+  background: var(--tre-primary);
+  border-left: 4px solid var(--tre-accent);
+  color: var(--tre-paper);
+  margin: 0.25rem 0.25rem 1rem 0.25rem;
+  padding: 1rem 1.4rem;
+  border-radius: 8px;
+  box-shadow: var(--tre-shadow);
+}
+
+.tre-funding-banner p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--tre-paper);
+}
+
+.tre-funding-banner strong {
+  font-weight: 600;
+  color: var(--tre-accent);
+}
