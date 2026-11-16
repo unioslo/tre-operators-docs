@@ -1,8 +1,8 @@
-# Module 3: Interfaces and Configuration: A Practical Guide
+# Module 4: Federation Interface Definitions and Collaboration
 
 <p class="tre-page-context tre-role-builder"><strong>Audience:</strong>TRE Builder</p>
 
-Module 3 covers the two things a TRE needs in order to take part in the federation: a way to exchange data and workflows, and a way to establish trust. Part A, data and workflow exchange interfaces, defines how TREs send and receive information as standardised Structured Data Objects packaged as Five Safes RO-Crates and tagged with their Project context. It covers six interface types (Query, Job, Data, Index, Software, and Response), each connecting only to its matching counterpart. All traffic is encrypted and routed through each Participant's Security Server. Part B, federated AAAI, defines how identity, access, and auditing work across TREs. It builds on an AARC-compliant infrastructure with MyAccessID as the central trust hub, using OIDC and OAuth 2.0 for authentication, Project-based membership for access, and central ELK-based auditing for accountability. Each TRE keeps full control of its own final authorisation decision. Together, the two halves let a Builder move data and jobs between TREs while knowing who is asking, what they may do, and what has happened. 
+Module 4 covers the two things a TRE needs in order to take part in the federation: a way to exchange data and workflows, and a way to establish trust. Part A, data and workflow exchange interfaces, defines how TREs send and receive information as standardised Structured Data Objects packaged as Five Safes RO-Crates and tagged with their Project context. It covers six interface types (Query, Job, Data, Index, Software, and Response), each connecting only to its matching counterpart. All traffic is encrypted and routed through each Participant's Security Server. Part B, federated AAAI, defines how identity, access, and auditing work across TREs. It builds on an AARC-compliant infrastructure with MyAccessID as the central trust hub, using OIDC and OAuth 2.0 for authentication, Project-based membership for access, and central ELK-based auditing for accountability. Each TRE keeps full control of its own final authorisation decision. Together, the two halves let a Builder move data and jobs between TREs while knowing who is asking, what they may do, and what has happened.
 
 ## Overview: How TREs Connect
 
@@ -11,6 +11,8 @@ Every TRE in the federation talks to other TREs only through its Security Server
 ![2 TREs, Secucity Servers, Federation Services](../../images/tre-to-tre-interconnect.svg)
 
 ## Part A: Data and Workflow Exchange Interfaces
+
+In a federation it is important for researchers to understand how they can move their analyses from a single dataset to federated data with the understanding they need to scope and plan their analysis, complemented by concrete examples of common statistical methods. This part, data and workflow exchange interfaces, defines how TREs send and receive information as standardized Structured Data Objects packaged as Five Safes RO-Crates and tagged with their Project context. It covers six interface types (Query, Job, Data, Index, Software, and Response), each connecting only to its matching counterpart. All traffic is encrypted and routed through each Participant's Security Server. 
 
 ### How Data Moves Between TREs
 
@@ -49,6 +51,8 @@ Work down the questions in order; the first yes tells you the interface type and
 
 
 ## Part B: Federated AAAI
+
+The ENTRUST AAAI is derived from the Life Science AAI (LS AAI), also known as LS Login, which is the federated authentication and authorisation infrastructure that enables life-science researchers to sign in using their home organisation credentials or community or commercial identities (e.g. ORCID). It defines how identity, access, and auditing work across TREs and builds on an AARC-compliant infrastructure with MyAccessID as the central trust hub, using OIDC and OAuth 2.0 for authentication, Project-based membership for access, and central ELK-based auditing for accountability. Each TRE keeps full control of its own final authorisation decision. Together, the two halves let a Builder move data and jobs between TREs while knowing who is asking, what they may do, and what has happened.
 
 Federated AAAI provides a secure, consistent approach to identity, access, and auditing across multiple TREs. Users authenticate through the configured identity federation and receive access according to project membership and the TRE's authorisation rules. Users do not configure AAAI services. 
 

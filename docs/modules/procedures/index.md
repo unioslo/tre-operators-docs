@@ -1,8 +1,9 @@
-# Module 4: Operations & Procedures
+# Module 5: Operating Procedures
 
-<p class="tre-page-context tre-role-operator"><strong>Audience:</strong>TRE Operator</p>
+<p class="tre-page-context tre-role-operator"><strong>Audience:</strong>TRE Builders, TRE Operators and Federation Operators</p>
 
-This module defines consensus-based Standard Operating Procedures (SOPs) required for operational alignment across the federation.
+This module summarises what the main Standard Operating Procedures (SOPs) needed for operational alignment across a federation of TREs should cover. The SOPs should be agreed by consensus among the participants, so that workflows are consistent across all governance actors.
+The SOPs described here are a general starting point, not a complete or fixed set. Which SOPs are needed, and how strict they must be, depends on the type of data the federation will share. Federating sensitive health data, for example, will require stricter procedures for access approval, disclosure control, and archiving than a federation of less sensitive data. Each federation should therefore adapt these SOPs to its own data types, legal context, and risk profile.
 
 ---
 
@@ -128,3 +129,13 @@ Define procedures for managing data at the end of a project lifecycle to ensure 
 * Archive project analysis environments, code, and intermediate results via the Software Service.
 * For certain datasets (especially clinical regulatory ones), implement long-term digital archiving and formal curation.
 * Each TRE must publish a clear archival policy outlining retention and recovery conditions.
+
+## Frameworks for Federation Level SOPs
+
+The following frameworks have been used as inspiration for the EOSC-ENTRUST Blueprint:
+
+- **Data Spaces Support Centre (DSSC)** - Designed to support, harmonize, and accelerate the creation of interoperable data spaces across multiple sectors in Europe. [https://dataspacessupportcentre.refined.site/](https://dataspacessupportcentre.refined.site/)
+
+- **SATRE 2.0** - Community-driven specification and assurance framework for TREs. [https://satre-specification.readthedocs.io/en/v2.0.1/](https://satre-specification.readthedocs.io/en/v2.0.1/)
+
+- **EHDS** - Guideline for Health Data Access Bodies on the procedures and formats for data access (TEHDAS2). [https://doi.org/10.5281/zenodo.20199187](https://doi.org/10.5281/zenodo.20199187)

@@ -2,10 +2,7 @@
 
 This matrix shows which parts of the handbook matter for each type of TRE and role. Use it to plan a reading path: find your TRE type and role, then work through the topics marked ● first.
 
-The handbook is split into two scopes:
-
-- **Core TRE — Modules 1 to 5.** Everything needed to run a TRE on its own, whether or not it joins a federation.
-- **Federated TRE — Module 6.** Additional obligations that apply when a TRE connects to other TREs through the federation.
+The handbook covers five core modules needed to run a TRE:
 
 ## How to Read This Matrix
 
@@ -37,18 +34,25 @@ Role names follow the terminology used elsewhere in this handbook. Security arch
 | **GOV** | TRE / Federation Governance | Legal and compliance decisions, policy, access approvals, and multi-party coordination. |
 | **OUT** | Output Approver | Disclosure control and oversight of output release. |
 
-## Core TRE
+## Modules
 
-Modules 1 to 5 apply to every TRE, federated or not.
+Modules 1 to 5 provide everything needed to run a TRE.
 
-### M1 Fundamentals
+### M1 TRE Architecture and Fundamentals
 
 | Topic | Category | ORG | NAT | FED | OPS | BLD | DAT | GOV | OUT |
 |---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | TRE concepts and principles | core | ● | ● | ● | ● | ● | ● | ● | ● |
 | Roles and responsibilities | core | ● | ● | ● | ● | ● | ● | ● | ● |
 
-### M2 Architecture and Setup
+### M2 Template Legal Agreement
+
+| Topic | Category | ORG | NAT | FED | OPS | BLD | DAT | GOV | OUT |
+|---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Legal and governance responsibilities | core | ● | ● | ● | ○ | ○ | ○ | ● | |
+| EHDS and domain-specific requirements | advanced | ○ | ● | ● | | ○ | ○ | ● | |
+
+### M3 Blueprint Architecture
 
 | Topic | Category | ORG | NAT | FED | OPS | BLD | DAT | GOV | OUT |
 |---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -56,7 +60,7 @@ Modules 1 to 5 apply to every TRE, federated or not.
 | Interface, IAM and AAI | core / advanced | ● | ● | ● | ● | ● | | ○ | |
 | Monitoring and audit | core | ● | ● | ● | ● | ● | ○ | ○ | |
 
-### M3 Interfaces and Configuration
+### M4 Federation Interface Definitions and Collaboration
 
 | Topic | Category | ORG | NAT | FED | OPS | BLD | DAT | GOV | OUT |
 |---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -64,9 +68,9 @@ Modules 1 to 5 apply to every TRE, federated or not.
 | Query and response interfaces | advanced | ○ | ● | ● | ● | ● | ○ | ○ | |
 | Software interfaces | advanced | ○ | ● | ● | ● | ○ | ● | ○ | |
 
-### M4 Operations and Procedures
+### M5 Operating Procedures
 
-Module 4 follows the **TRE project operational lifecycle**: a project is taken on, given what it needs to work, operated, has its results checked and released, and is finally closed down. Incident and change management are not a stage; they run across all of them.
+Module 5 follows the **TRE project operational lifecycle**: a project is taken on, given what it needs to work, operated, has its results checked and released, and is finally closed down. Incident and change management are not a stage; they run across all of them.
 
 | Stage | Topic | Category | ORG | NAT | FED | OPS | BLD | DAT | GOV | OUT |
 |---|---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -76,29 +80,7 @@ Module 4 follows the **TRE project operational lifecycle**: a project is taken o
 | 4. Closure | Project closure, retention and deletion | core | ● | ● | ● | ● | ○ | ● | ● | |
 | *Throughout* | Incident and change management | core | ● | ● | ● | ● | ● | ○ | ● | |
 
-### M5 Legal and Compliance
-
-| Topic | Category | ORG | NAT | FED | OPS | BLD | DAT | GOV | OUT |
-|---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Legal and governance responsibilities | core | ● | ● | ● | ○ | ○ | ○ | ● | |
-| EHDS and domain-specific requirements | advanced | ○ | ● | ● | | ○ | ○ | ● | |
-
-## Federated TRE
-
-Module 6 applies only to a TRE that connects to other TREs. An organisational TRE that operates on its own can treat this module as background reading.
-
-### M6 Federation
-
-| Topic | Category | ORG | NAT | FED | OPS | BLD | DAT | GOV | OUT |
-|---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| Federation governance | federated | ○ | ● | ● | ○ | ○ | | ● | |
-| Federation trust, registry and AAI | federated | ○ | ● | ● | ● | ● | | ○ | |
-| Federation incident coordination | federated | | ● | ● | ● | ● | | ● | |
-
-## Content Categories
-
 | Category | Meaning |
 |---|---|
 | **core** | Baseline material. Every TRE operator needs it. |
 | **advanced** | Needed for a specific capability or implementation choice. |
-| **federated** | Applies once the TRE joins a federation. |

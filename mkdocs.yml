@@ -23,16 +23,17 @@ extra_css:
 
 nav:
   - Home: index.md
-  - "M1: TRE Fundamentals": fundamentals.md
-  - "M2: Architecture": modules/architecture/index.md
-  - "M3: Interface Definitions": modules/interfaces/index.md
-  - "M4: Operating Procedures": modules/procedures/index.md
-  - "M5: Template Legal Agreements": modules/legal/index.md
-  - "M6: Federation": federation.md
+  - "M1: TRE Architecture": fundamentals.md
+  - "M2: Legal Agreement Templates": modules/legal/index.md
+  - "M3: Blueprint Architecture": modules/architecture/index.md
+  - "M4: Interface Definitions": modules/interfaces/index.md
+  - "M5: Operating Procedures": modules/procedures/index.md
   - Appendices:
-      - Glossary: appendices/glossary.md
-      - Reference Dictionary: appendices/reference-terminology-dictionary.md
-      - Reference Architecture: appendices/reference-architecture.md
+      - Terminology:
+          - Glossary: appendices/glossary.md
+          - Reference Dictionary: appendices/reference-terminology-dictionary.md
+      - Resources:
+          - Relevant Training Material: appendices/resources.md
+          - Other Relevant Links: appendices/resources.md
       - Relevance Matrix: appendices/relevance-matrix.md
-      - Resources: appendices/resources.md
       - Copilot Acknowledgement: appendices/copilot-acknowledgement.md
