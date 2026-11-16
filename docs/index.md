@@ -21,3 +21,63 @@
 			<li>Operating procedures for a federation of TREs (<a href="modules/procedures/">Module 5</a>)</li>
 		</ul>
 <p class="tre-lead">In addition, you will find a <a href="appendices/glossary/">Glossary</a> and <a href="appendices/reference-terminology-dictionary/">Reference Dictionary</a> of terms relevant for federated TREs, and links to relevant existing training material that may be of further help and guidance for TRE users, providers and other interested parties.</p>
+	</div>
+</section>
+
+## Modules
+
+Use the [Relevance Matrix](appendices/relevance-matrix.md) to choose a reading path by TRE type and role.
+
+<div class="tre-card-grid tre-card-grid-modules">
+
+	<article class="tre-card tre-module-card tre-role-user">
+		<h3><i class="fa-solid fa-book-open-reader tre-icon-heading" aria-hidden="true"></i>Module 1: TRE Architecture and Fundamentals</h3>
+		<p class="tre-module-meta"><span class="tre-role-label">User</span></p>
+		<ul>
+			<li>Understand TRE concepts and core principles.</li>
+			<li>Review key roles and responsibilities.</li>
+			<li><a href="fundamentals/">Open TRE Fundamentals</a></li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-module-card tre-role-operator">
+		<h3><i class="fa-solid fa-scale-balanced tre-icon-heading" aria-hidden="true"></i>Module 2: Legal Agreement Templates</h3>
+		<p class="tre-module-meta"><span class="tre-role-label">Governance</span></p>
+		<ul>
+			<li>Legal frameworks and governance requirements.</li>
+			<li>EHDS compliance and best practices.</li>
+			<li><a href="modules/legal/">Open Legal Templates</a></li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-module-card tre-role-builder">
+		<h3><i class="fa-solid fa-diagram-project tre-icon-heading" aria-hidden="true"></i>Module 3: Blueprint Architecture</h3>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE Builder</span></p>
+		<ul>
+			<li>TRE zones and core components.</li>
+			<li>Interface, IAM, and AAI integration.</li>
+			<li><a href="modules/architecture/">Open Blueprint Architecture</a></li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-module-card tre-role-builder">
+		<h3><i class="fa-solid fa-code-branch tre-icon-heading" aria-hidden="true"></i>Module 4: Federation Interface Definitions and Collaboration</h3>
+		<p class="tre-module-meta"><span class="tre-role-label">TRE Builder</span></p>
+		<ul>
+			<li>Data ingress and egress interfaces.</li>
+			<li>Query and response specifications.</li>
+			<li><a href="modules/interfaces/">Open Interface Definitions</a></li>
+		</ul>
+	</article>
+
+	<article class="tre-card tre-module-card tre-role-operator">
+		<h3><i class="fa-solid fa-gears tre-icon-heading" aria-hidden="true"></i>Module 5: Operating Procedures</h3>
+		<p class="tre-module-meta"><span class="tre-role-label">Operator</span></p>
+		<ul>
+			<li>Project lifecycle and operational procedures.</li>
+			<li>Incident and change management.</li>
+			<li><a href="modules/procedures/">Open Operating Procedures</a></li>
+		</ul>
+	</article>
+
+</div>
